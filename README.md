@@ -1,5 +1,22 @@
 # model-evaluation-workbench
 
+
+This code pattern details about the Watson Model Evaluation Workbench which provides user a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.
+By the end of this code pattern reading, one will be able to:
+
+To compare their different Watson cognitive service’s models and selecting the threshold and best-performing machine learning model.
+
+User can configure their Watson cognitive service access details in workbench and input their model test data to workbench for service performance evaluation.
+
+Workbench execute supported Watson cognitive services with their input model’s test data, prepare performance evaluation data, calculates performance statistics and present user with the following recommendations, curve and summary statistics:
+o	Recommendations: 
+	Optimal threshold and maximized F1Score for F1Score optimization
+	Optimal threshold and maximized Accuracy for Accuracy optimization
+Receiver Operating Characteristic (ROC) curve
+
+![](/Images/Reference_Architecture.png)
+
+
 # Java Hello World Sample
 
 This project contains a simple servlet application.
