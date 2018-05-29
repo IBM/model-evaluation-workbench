@@ -21,6 +21,35 @@ Receiver Operating Characteristic (ROC) curve
 2. Java Stastical Libraries
 3. Cognitive Services(IBM Watson Conversation, NLC and NLU)
 
+# Featured Technologies
+
+Java Stastical Librabries
+
+J2EE: A secure Object-oriented programming language, used to build applications. IBM WebSphere Commerce platform is built on J2EE framework which includes (JSP, Java, Java Script, Struts, REST & Webservices, EJBs)
+
+# Watch The Video
+
+
+
+
+
+
+
+
+# Steps
+
+## Pre-requisites
+* Clone the GIT repository
+
+Two ways:
+* Deploy to IBM cloud using "Deploy to Cloud" Button
+* Manual deploy to IBM Cloud
+   * Clone the repo, 
+   * follow the doc(war file, IBM bluemix)
+
+
+Follow these steps to setup and run this developer pattern. The steps are described in detail below.
+
 
 # Java Hello World Sample
 
