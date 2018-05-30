@@ -114,6 +114,29 @@ IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into a
   - In a few minutes, your application should be running at the URL you chose.
 
 ## Next Step
+
+# Watson Service Configuration
+
+Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
+
+The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below, e.g.,
+  CONVERSATION_WORKSPACE_ID_CONFIG_1 = <workspaceid>
+  CONVERSATION_USERNAME_CONFIG_1 = <username >
+  CONVERSATION_PASSWORD_CONFIG_1 = < password>
+
+If User needs to configure multiple CONVERSATION service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
+CONVERSATION_WORKSPACE_ID_CONFIG_2 = <workspaceid>
+CONVERSATION_USERNAME_CONFIG_2 = <username >
+CONVERSATION_PASSWORD_CONFIG_2 = < password>
+
+Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
+
+- Watson Service Configuration
+![](/Images/Service_Configuration1.png)
+
+- Watson Model Evaluation Workbench: Dashboard
+![](/Images/Dashboard1.png)
+
 Ready to learn how to interact with a database? Check out this [Sample and tutorial](https://github.com/IBM-Bluemix/get-started-java) to help you get started with a Java EE app, REST API and a database.
 
 ## Liberty App Accelerator
