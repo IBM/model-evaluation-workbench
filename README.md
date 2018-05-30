@@ -40,12 +40,13 @@ J2EE: A secure Object-oriented programming language, used to build applications.
 
 ## Pre-requisites
 * Clone the GIT repository
+* 
 
-Two ways:
+Two ways to Deploy:
 * Deploy to IBM cloud using "Deploy to Cloud" Button
 * Manual deploy to IBM Cloud
-   * Clone the repo, 
-   * follow the doc(war file, IBM bluemix)
+   * Clone the repository 
+   * Follow the below steps to generate war file and deploy in IBM bluemix
 
 
 Follow these steps to setup and run this developer pattern. The steps are described in detail below.
