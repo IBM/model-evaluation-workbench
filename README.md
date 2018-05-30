@@ -14,12 +14,16 @@ o	Recommendations:
 	Optimal threshold and maximized Accuracy for Accuracy optimization
 Receiver Operating Characteristic (ROC) curve
 
+## Architectural Diagram:
 ![](/Images/Reference_Architecture.png)
+
+
 
 # Included Components
 1. Java Liberty Run Time
 2. Java Stastical Libraries
 3. Cognitive Services(IBM Watson Conversation, NLC and NLU)
+
 
 # Featured Technologies
 
