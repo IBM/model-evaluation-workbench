@@ -1,4 +1,4 @@
-# model-evaluation-workbench
+# Model-Evaluation-Workbench
 
 
 This code pattern details about the Watson Model Evaluation Workbench which provides user a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.
