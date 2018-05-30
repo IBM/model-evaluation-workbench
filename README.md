@@ -14,7 +14,7 @@ o	Recommendations:
 	Optimal threshold and maximized Accuracy for Accuracy optimization
 Receiver Operating Characteristic (ROC) curve
 
-![](/Images/Reference_Architecture.png)
+
 
 # Included Components
 1. Java Liberty Run Time
