@@ -17,7 +17,9 @@ Receiver Operating Characteristic (ROC) curve
 ## Architectural Diagram:
 ![](/Images/Reference_Architecture.png)
 
-
+- Details
+1. User launches the [Watson Model Evaluation Workbench](https://workbenchmodelevalpattern.au-syd.mybluemix.net/) through the URL https://workbenchmodelevalpattern.au-syd.mybluemix.net/
+2. 
 
 # Included Components
 1. Java Liberty Run Time
