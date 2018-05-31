@@ -49,9 +49,9 @@ designed for the cloud.
 
 # Steps
 
-[Prerequisites](#1-prerequisites)
-[Deploying Application on IBM Cloud] (#2-Deploying Application on IBM Cloud)
-[Running the application/Model Evaluation] (#3-Running the application/Model Evaluation)
+1. [Prerequisites](#1-prerequisites)
+2. [Deploying Application on IBM Cloud] (#2-Deploying Application on IBM Cloud)
+3. [Running the application/Model Evaluation] (#3-Running the application/Model Evaluation)
 
 ## Pre-requisites
 * Clone the GIT repository
