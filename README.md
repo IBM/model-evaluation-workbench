@@ -1,5 +1,4 @@
-# Model-Evaluation-Workbench
-
+# Cognitive Model Evaluation
 
 This code pattern details about the Watson Model Evaluation Workbench which provides user a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.
 By the end of this code pattern reading, one will be able to:
@@ -14,7 +13,7 @@ o	Recommendations:
 	Optimal threshold and maximized Accuracy for Accuracy optimization
 Receiver Operating Characteristic (ROC) curve
 
-## Architectural Diagram:
+## Architecture Diagram:
 ![](/Images/Reference_Architecture.png)
 
 - Details
@@ -24,7 +23,10 @@ Receiver Operating Characteristic (ROC) curve
 # Included Components
 1. Java Liberty Run Time
 2. Java Stastical Libraries
-3. Cognitive Services(IBM Watson Conversation, NLC and NLU)
+3. Cognitive Services
+ - Natural Language Classifier
+ - Natural Language Understanding
+ - Watson Assistant
 
 
 # Featured Technologies
