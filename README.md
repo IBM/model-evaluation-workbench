@@ -47,15 +47,17 @@ designed for the cloud.
 
 
 
-# Steps
+## Steps
 
-1. [Prerequisites](#1-prerequisites)
-2. [Deploying Application on IBM Cloud] (#2-Deploying Application on IBM Cloud)
-3. [Running the application/Model Evaluation] (#3-Running the application/Model Evaluation)
+## 1 - Pre-requisites
+## 2 - Deploying Application on IBM Cloud
+## 3 - Running the application/Model Evaluation
+## 4 - Analyze the Results
 
-## Pre-requisites
+
+### Pre-requisites
 * Clone the GIT repository
-* 
+* IBM Cloud account: If you do not have an IBM Cloud account, you can create an account [here](https://console.bluemix.net/).
 
 Two ways to Deploy:
 * Deploy to IBM cloud using "Deploy to Cloud" Button
