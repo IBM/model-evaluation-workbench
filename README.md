@@ -27,6 +27,7 @@ Receiver Operating Characteristic (ROC) curve
  - Natural Language Classifier
  - Natural Language Understanding
  - Watson Assistant
+ 
 
 
 # Featured Technologies
@@ -61,11 +62,27 @@ designed for the cloud.
 
 ### 2 - Deploying Application on IBM Cloud
 Two ways to Deploy:
-* Deploy to IBM cloud using "Deploy to Cloud" Button
-* Manual deploy to IBM Cloud
+#### * 2.1 Deploy using "Deploy to IBM Cloud" Button
+
+
+
+* 2.2 Manual deploy to IBM Cloud
    * Clone the repository 
    * Follow the below steps to generate war file and deploy in IBM bluemix
+ 
+  -2.1 Deploy to IBM Cloud using "Deploy to Cloud" Button.
+Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud. You would
+be presented with a toolchain view and asked to "Deploy" the application. Go ahead and
+click `Deploy` button. The application should get deployed. Ensure that the application
+is started and that a service is created and bound to the application just deployed. <br/>
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/model-evaluation-workbench.git)
 
+##### 3.1.2 Deploy using Manual
+
+
+#### 3.1 Deploy Java Liberty application to IBM Cloud
+You can deploy the Java Liberty application using the `Deploy to IBM Cloud` button or
+using manual steps.
 
 Follow these steps to setup and run this developer pattern. The steps are described in detail below.
 
@@ -74,7 +91,7 @@ This project contains a simple servlet application.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.ibm.com/muralidhar-chavan/cognitive-model-evaluation-workbench.git)
 
-## Running the application using the command-line
+## Running the application
 
 This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server. 
 
@@ -131,7 +148,7 @@ IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into a
 
 ## Next Step
 
-# Watson Service Configuration
+# Model Service Configurations
 
 Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
 
