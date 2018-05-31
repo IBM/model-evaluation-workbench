@@ -55,10 +55,11 @@ designed for the cloud.
 ## 4 - Analyze the Results
 
 
-### Pre-requisites
-* Clone the GIT repository
-* IBM Cloud account: If you do not have an IBM Cloud account, you can create an account [here](https://console.bluemix.net/).
+### 1 - Pre-requisites
+* Clone the GIT repository.
+* Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
+### 2 - Deploying Application on IBM Cloud
 Two ways to Deploy:
 * Deploy to IBM cloud using "Deploy to Cloud" Button
 * Manual deploy to IBM Cloud
@@ -68,8 +69,6 @@ Two ways to Deploy:
 
 Follow these steps to setup and run this developer pattern. The steps are described in detail below.
 
-
-# Java Hello World Sample
 
 This project contains a simple servlet application.
 
