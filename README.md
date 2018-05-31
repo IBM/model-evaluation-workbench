@@ -31,9 +31,12 @@ Receiver Operating Characteristic (ROC) curve
 
 # Featured Technologies
 
-Java Stastical Librabries
+* [Liberty for Java](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime):
+Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is
+a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server
+designed for the cloud.
 
-J2EE: A secure Object-oriented programming language, used to build applications. IBM WebSphere Commerce platform is built on J2EE framework which includes (JSP, Java, Java Script, Struts, REST & Webservices, EJBs)
+* J2EE: A secure Object-oriented programming language, used to build applications. IBM WebSphere Commerce platform is built on J2EE framework which includes (JSP, Java, Java Script, Struts, REST & Webservices, EJBs)
 
 # Watch The Video
 
@@ -45,6 +48,10 @@ J2EE: A secure Object-oriented programming language, used to build applications.
 
 
 # Steps
+
+[Prerequisites](#1-prerequisites)
+[Deploying Application on IBM Cloud] (#2-Deploying Application on IBM Cloud)
+[Running the application/Model Evaluation] (#3-Running the application/Model Evaluation)
 
 ## Pre-requisites
 * Clone the GIT repository
