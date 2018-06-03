@@ -1,0 +1,8 @@
+applications:
+- path: target/workbenchModelEval.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: workbenchModelEval
+  host: workbenchModelEval
+  disk_quota: 1024M
