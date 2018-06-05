@@ -17,6 +17,22 @@ Receiver Operating Characteristic (ROC) curve
 ![](/Images/Reference_Architecture.png)
 
 - Details
+1. User can use the client device() to access the application
+2. Client Invokes the URL. 
+3. Parsing Input test data.
+4. Invoke adapter which calls the Cognitive service models(NLC, etc)
+5. Parsing the Cognitive(model) service configuration.
+6. Connect to Cognitive model services.
+7. Gets response from Cognitie services.
+8. Compares Input data with cognitive model results and do performance evaluation(ROC Curve, etc.)
+9. Performance analysis is shown in UI.
+10. User consumes the performance analysis results.
+
+
+
+3. Access Cognitive(model) service configuration.
+4. 
+5. 
 1. aaa User launches the [Watson Model Evaluation Workbench](https://workbenchmodelevalpattern.au-syd.mybluemix.net/) through the URL https://workbenchmodelevalpattern.au-syd.mybluemix.net/
 2. 
 
