@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Watson Model Evaluation Workbench</title>
+</head>
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e9e9e9;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+} 
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#container> div {
+    width: 100%;
+    background-color: #ffffff;
+}
+#logoContainer {
+    float: left;
+}
+#logoContainer img {
+    padding: 0 5px;
+}
+#logoContainer div {
+    position: absolute;
+    top: 0px;
+    left: 145px;
+}
+#logoContainer div h2 {
+    color: #0075c2;
+}
+#logoContainer div h4 {
+    color: #0e948c;
+}
+#logoContainer div p {
+    color: #719146;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.found {
+  fill: #ff4136;
+  stroke: #ff4136;
+}
+
+.search {
+  float: left;
+  font: 10px sans-serif;
+  width: 30%;
+}
+
+ul.select2-results {
+ max-height: 100px;
+}
+
+.select2-container,
+.select2-drop,
+.select2-search,
+.select2-search input {
+  font: 10px sans-serif;
+}
+
+#block_container {
+  display: inline;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.tess {
+  fill: none;
+  stroke: aliceblue;
+  stroke-width: 0px;
+  opacity: 0.5;
+}
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 1.5px;
+}
+    
+.dot {
+    fill: none;
+}
+.vors :hover circle {
+  fill: red;
+}
+   
+.vors :hover text {
+	opacity: 1;
+}   
+    
+.hidetext {
+    opacity: 0;
+}
+    
+
+a:nth-child(even){background-color: #f2f2f2}
+.footer {
+  clear: both;
+  position: absolute;
+  z-index: 10;
+  height: 3em;
+  bottom: 0;
+  margin-top: -3em;
+  font: 7px sans-serif;
+}
+
+</style>
+<body onload="loadDashboard()">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
+<script src="rocChart.js"></script>
+<link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/select.css"></link>
+<link href="css/admin.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div id="wrapper">
+             
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li >
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+          </div>
+            <!-- /.navbar-collapse -->
+     </nav>
+     <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            <img src="img/IBM-logo-blue.png" style="width:10%;"alt='Logo' />Watson Model Evaluation Workbench <small>Dashboard</small>
+                        </h1>
+                       
+                    </div>
+                </div>
+
+<!-- ROW ! -->
+<!-- <div class="row">
+    <div class="col-xs-2 col-sm-1"><label> <h5>Service: </label></div>
+    <div class="col-xs-4 col-sm-2">
+            <a class="btn btn-default btn-select"  onclick="return loadSelection()">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">Select an Item</span>
+                <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                
+                <ul id="select_api">
+                    <li class="selected">Conversation</li>
+                    <li >NLC</li>
+                    <li>NLU</li>
+                    
+                </ul>
+            </a>
+        </div>
+</div> -->
+
+<!-- ROW -->
+<div class="row" id="select_api">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-comments fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="medium">NLC</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left" onclick="return loadSelection('NLC')">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-tasks fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="medium">Conversation</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left" onclick="return loadSelection('Conversation')">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-bar-chart fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="medium">NLU</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left" onclick="return loadSelection('NLU')">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- /.row -->
+
+                
+<br/><br/><br/>
+<div id="sub_container_1">
+<div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Evaluation Attributes</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-5"><label> <h5>Upload Test Data for model Performance Evaluation for: </label></div>
+                                    <div class="col-xs-4 col-sm-2" id="conversation_attr">
+                                      <a class="btn btn-default btn-select"  onclick="return loadAttributeSelection()">
+                                      <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                                      <span class="btn-select-value">Select an Item</span>
+                                      <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                
+                                     <ul id="select_api">
+                                         <li class="selected">Intent</li>
+                                         <li >Entities</li>
+            
+                                     </ul>
+                                     </a>
+                                </div>
+                                    <div class="col-xs-4 col-sm-2" id="nlc_attr" style="display:none">
+                                <a class="btn btn-default btn-select"  onclick="return loadAttributeSelection()">
+                               <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                               <span class="btn-select-value">Select an Item</span>
+                                <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                
+                                <ul>
+                                      <li class="selected">Classes</li>
+                
+                                </ul>
+                               </a>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+            </div>
+        
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Evaluation Input File</h3>
+                            </div>
+                            <div class="panel-body">
+                                <!-- File input -->
+                                    <div class="row">
+                                      <div class="col-lg-6 col-md-6">
+                                        <div class="col-xs-5 col-sm-5"><label> <h5>Input File: </label></div>
+                                        <div class="fileinput fileinput-new col-xs-5 col-sm-5" data-provides="fileinput">
+                                              <span class="btn btn-default btn-file"><input type="file"  id="inputEvalFile" /></span>
+                                        </div></div></div>
+                                       <div class="row"> 
+                                       <div class="col-lg-6 col-md-4 col-md-offset-4">   
+                                           <button type="button" class="btn btn-info pull-right" id="evaluate_btn" onclick="loadROC()">Evaluate</button>
+                                       </div>
+                                </div>
+                               </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                
+
+<!-- end of Sub Container 1 -->
+<br>
+
+<div id="sub_container_2">
+<!-- Graph parametres -->
+
+<div class="row">
+                    <div class="col-lg-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> ROC Chart</h3>
+                            </div>
+                            <br/>
+                            
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-lg-3 col-sm-1"><label> <h5>Parametres: </label></div>
+                                  <div class="col-xs-4 col-sm-2">
+                                    <a class="btn btn-default btn-select"  onclick="return loadSelection()">
+                                      <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                                      <span class="btn-select-value">Select an Item</span>
+                                      <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                
+                                      <ul id="select_api">
+                                          <li class="selected">Temperature</li>
+                                           <li >Conditions</li>
+                    
+                                       </ul>
+                                     </a>
+                                  </div>
+                            </div>
+                                     <div id="roc"> </div>
+                            </div>
+</div>
+</div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Summary Statistics</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">50</span>
+                                        <i class="fa fa-fw fa-comment"></i> Number of Cases
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">42</span>
+                                        <i class="fa fa-fw fa-comment"></i> Number Correct
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">82%</span>
+                                        <i class="fa fa-fw fa-check"></i> Accuracy
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">88%</span>
+                                        <i class="fa fa-fw fa-thermometer"></i> Sensitivity
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">80%</span>
+                                        <i class="fa fa-fw fa-sticky-note"></i> Specificity
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">3</span>
+                                        <i class="fa fa-fw fa-plus"></i> Positive Cases Missed
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">5</span>
+                                        <i class="fa fa-fw fa-minus"></i> Negative Cases Missed
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">0.905</span>
+                                        <i class="fa fa-fw fa-area-chart"></i> Fitted ROC area
+                                    </a>
+                                     <a href="#" class="list-group-item">
+                                        <span class="badge">0.892</span>
+                                        <i class="fa fa-fw fa-area-chart"></i> Empiric ROC area
+                                    </a>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</div>
+</div>
+<!-- End of Sub Container 2 -->
+
+<div class="row">
+<div class="panel-footer">
+IBM India SI Labs 2017
+</div>
+</div>
+                 </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+<!-- Javascript Functions -->
+<script>
+function loadDashboard(){
+ document.getElementById("sub_container_1").style.display="none";
+ document.getElementById("sub_container_2").style.display="none";
+ document.getElementById("inputEvalFile").innerHTML="";
+ 
+
+}
+function loadSelection(apiName){
+   document.getElementById("sub_container_1").style.display="block";
+     //alert(apiName);
+    //alert($(this).text()); // gets text contents of clicked li
+    if(apiName=="Conversation"){
+        document.getElementById("conversation_attr").style.display="block";
+        document.getElementById("nlc_attr").style.display="none";
+    }
+    else if(apiName=="NLC"){
+       document.getElementById("conversation_attr").style.display="none";
+        document.getElementById("nlc_attr").style.display="block";
+    }
+    else if(apiName=="NLU"){
+       document.getElementById("conversation_attr").style.display="none";
+        document.getElementById("nlc_attr").style.display="block";
+    }
+    
+
+   
+    return true;
+}
+function loadROC(){
+     document.getElementById("sub_container_2").style.display="block";
+     //return true;
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+
+
+</script>
+<script>
+
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 640 - margin.left - margin.right,
+    height = 520 - margin.top - margin.bottom;
+var x = d3.scale.linear()
+    .domain([0, 1])
+    .range([0, width]);
+var y = d3.scale.linear()
+    .domain([0, 1])
+    .range([height, 0]);
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+var line = d3.svg.line()
+    .x(function(d) { return x(d.fpr); })
+    .y(function(d) { return y(d.tpr); })
+    .interpolate("linear");
+var voronoi = d3.geom.voronoi()
+		.x(function(d){ return x(d.fpr);})
+		.y(function(d){ return y(d.tpr);})
+	    .clipExtent([[-2, -2], [width + 2, height + 2]]);
+var svg = d3.select("#roc").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+   ;    
+    
+svg.append("text")
+    .attr("class", "x label")
+    .attr("text-anchor", "end")
+    .attr("x", width)
+    .attr("y", height - 6)
+    .text("False Positive Fraction");
+    
+svg.append("text")
+    .attr("class", "y label")
+    .attr("text-anchor", "end")
+    .attr("y", 6)
+    .attr("dy", ".75em")
+    .attr("transform", "rotate(-90)")
+    .text("True Positive Fraction");    
+    
+var map = {"RS_conditions":"[\"0.2767601451632373\",\"0\",\"0\",\"0\",\"0\",\"0.23530506130158813\",\"0\",\"0\",\"0.23530506130158813\",\"0\",\"0\",\"0.7230075001716614\",\"0\",\"0.6692333221435547\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0.9270983934402466\",\"0\",\"0\",\"0.21012395169441334\",\"0\",\"0\",\"0.889564573764801\"]","GT_temperature":"[\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\"]","RS_temperature":"[\"0.6821634769439697\",\"0.9049559235572815\",\"0\",\"0\",\"0.6821634769439697\",\"0.26277755197425634\",\"0.23598963507976123\",\"0.7653567790985107\",\"0.6217306852340698\",\"0.621730387210846\",\"0\",\"0\",\"0.682163417339325\",\"0.6821634769439697\",\"0.621730625629425\",\"0.6217304468154907\",\"0.5724058151245117\",\"0.6821626424789429\",\"0\",\"1.0\",\"0.6821630597114563\",\"0.6821628212928772\",\"1.0\",\"0.6821628212928772\",\"0.6217303276062012\",\"0.28048244467267125\",\"0.6217308044433594\",\"0.621730387210846\",\"0\",\"0.6821631193161011\",\"0.5062103271484375\",\"0.713133692741394\",\"0.9361246228218079\",\"0.9255580306053162\",\"0.621730625629425\",\"0\",\"0.6821632981300354\",\"0.9587737917900085\",\"0.6821630001068115\",\"0\"]","GT_conditions":"[\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"0\"]"} ; 
+var evalparam = "temperature";
+//alert("map evalparam Label =  "+ map['RS_' + evalparam]);
+
+draw(svg, map, evalparam);
+/*d3.select("#sub").on("click", function(){
+   var nnn = document.getElementById("samplesize").value;
+    var beta = document.getElementById("beta").value;
+    draw(svg, nnn, beta);
+});*/
+    
+function draw(svg, map, param){
+
+var slabels = map['GT_' + evalparam];
+var smark = map['RS_' + evalparam]; 
+
+//var labels = JSON.parse("[" + slabels + "]");
+//var mark = JSON.parse("[" + smark + "]"); 
+
+var labels = JSON.parse(slabels);
+var mark = JSON.parse(smark); 
+    
+//var mark = []
+//var labels = [];
+    
+/*for(var i = 0; i < sampSi; i++){
+ var xx = Math.random() * 10
+ mark.push(xx);
+ var lp = Math.exp(effSi * xx) / (1 + Math.exp(effSi * xx));
+ if( Math.random() < lp  ){ labels.push(1); } else { labels.push(0); }
+}*/
+ 
+var markSort = mark.slice(0).sort();
+var labSort = [];    
+var oneDex = [];
+var zeroDex = [];
+for(var i = 0; i < markSort.length; i++){
+    var cranker = labels[mark.indexOf(markSort[i])]
+    labSort.push(cranker);   
+    if(cranker == 1){
+        oneDex.push(i);
+    } else {
+        zeroDex.push(i);
+    }
+}
+    
+var data = [];    
+for(var i =0; i<markSort.length; i++){
+    data.push({"tpr": calcTPR(oneDex, markSort, markSort[i]),
+     "fpr": calcFPR(zeroDex, markSort, markSort[i]),
+              "cut": markSort[i]});
+}
+ 
+var tess = voronoi(data);
+for(var i = 0; i < data.length; i++){
+	
+	data[i].vtess = tess[i];
+	
+} 
+svg.selectAll("path.line").remove();
+  svg.append("path")
+      .attr("class", "line")
+      .attr("d", line(data));
+  var cells = svg.append("g").attr("class", "vors").selectAll("g");
+  
+  cell = cells.data(data);
+  cell.exit().remove();
+	
+    var cellEnter = cell.enter().append("g");
+	
+    cellEnter.append("circle")
+    	.attr("class", "dot")
+   	 	.attr("r", 3.5)
+		.attr("cx", function(d) { return x(d.fpr); })
+		.attr("cy", function(d) { return y(d.tpr); })
+   	 	;
+	
+    cellEnter.append("path")
+        .attr("class", "tess")
+        ;
+       
+    //cell.select("path").attr("d", function(d) { return "M" + d.vtess.join("L") + "Z"; });   
+	
+	cellEnter.append("text").attr("class", "hidetext")
+	    .attr("x", function(d) { return x(d.fpr) + 10; })
+	    .attr("y", function(d) { return y(d.tpr) + 10; })
+	    .text(function(d) { return "cutoff: " + Math.round(d.cut*10)/10 ;  });
+}    
+    
+function calcTPR(oneDex, markSort, m){
+    
+    var TPR = 0;
+    for(var i = 0; i < oneDex.length; i++){
+       if(markSort[oneDex[i]] >= m) {
+           TPR = TPR + (1/oneDex.length);
+       }
+    }
+    return TPR;
+        
+}
+    
+function calcFPR(zeroDex, markSort, m){
+    
+    var FPR = 0;
+    for(var i = 0; i < zeroDex.length; i++){
+       if(markSort[zeroDex[i]] >= m) {
+           FPR = FPR + (1/zeroDex.length);
+       }
+    }
+    return FPR;
+        
+}        
+</script>
+
+</body>

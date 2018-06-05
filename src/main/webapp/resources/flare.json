@@ -1,0 +1,220 @@
+{
+  "name": "Enterprise",
+  "icon": "icons/ea.png",
+  "value": 0,
+  "type": "white",
+  "children": [
+    {
+      "name": "Data source 1",
+      "icon": "icons/datasource.png",
+      "value": 25,
+      "type": "red",
+      "children": [
+        {
+          "name": "Table 1_1",
+          "icon": "icons/table.png",
+          "value": 25,
+          "type": "red",
+          "children": [
+            {
+              "name": "Email",
+              "icon": "icons/email.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 3938
+            },
+            {
+              "name": "Name",
+              "icon": "icons/name.png",
+              "value": 0,
+              "type": "red",
+              "size": 3812
+            },
+            {
+              "name": "SSN",
+              "icon": "icons/ssn.png",
+              "value": 0,
+              "type": "red",
+              "size": 6714
+            },
+            {
+              "name": "Phone Number",
+              "icon": "icons/phone.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 743
+            }
+          ]
+        },
+        {
+          "name": "Table 1_2",
+          "icon": "icons/table.png",
+          "value": 25,
+          "type": "red",
+          "children": [
+            {
+              "name": "Name",
+              "icon": "icons/name.png",
+              "value": 0,
+              "type": "red",
+              "size": 3534
+            },
+            {
+              "name": "Social Handlers",
+              "icon": "icons/handlers.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 5731
+            },
+            {
+              "name": "SSN",
+              "icon": "icons/ssn.png",
+              "value": 0,
+              "type": "red",
+              "size": 7840
+            },
+            {
+              "name": "Address",
+              "icon": "icons/address.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 5914
+            },
+            {
+              "name": "Native",
+              "icon": "icons/native.png",
+              "value": 0,
+              "type": "green",
+              "size": 3416
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data source 2",
+      "icon": "icons/datasource.png",
+      "value": 25,
+      "type": "red",
+      "children": [
+        {
+          "name": "Table 2_1",
+          "icon": "icons/table.png",
+          "value": 25,
+          "type": "red",
+          "children": [
+            {
+              "name": "Medical_Info",
+              "icon": "icons/medical.png",
+              "value": 0,
+              "type": "green",
+              "size": 3938
+            },
+            {
+              "name": "Gender",
+              "icon": "icons/gender.png",
+              "value": 0,
+              "type": "green",
+              "size": 3812
+            },
+            {
+              "name": "Age",
+              "icon": "icons/age.png",
+              "value": 0,
+              "type": "red",
+              "size": 6714
+            },
+            {
+              "name": "Name",
+              "icon": "icons/name.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 743
+            }
+          ]
+        },
+        {
+          "name": "Table 2_2",
+          "icon": "icons/table.png",
+          "value": 25,
+          "type": "red",
+          "children": [
+            {
+              "name": "Phone Number",
+              "icon": "icons/phone.png",
+              "value": 0,
+              "type": "red",
+              "size": 3534
+            },
+            {
+              "name": "Bank Account Number",
+              "icon": "icons/bankaccount.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 5731
+            },
+            {
+              "name": "SSN",
+              "icon": "icons/ssn.png",
+              "value": 0,
+              "type": "red",
+              "size": 7840
+            },
+            {
+              "name": "Address",
+              "icon": "icons/address.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 5914
+            },
+            {
+              "name": "Native",
+              "icon": "icons/native.png",
+              "value": 0,
+              "type": "green",
+              "size": 3416
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "File System 1",
+      "icon": "icons/filesystem.png",
+      "value": 25,
+      "type": "#cccc00",
+      "children": [
+        {
+          "name": "File 1_1",
+          "icon": "icons/file.png",
+          "value": 25,
+          "type": "#cccc00",
+          "children": [
+            {
+              "name": "Email",
+              "icon": "icons/email.png",
+              "value": 0,
+              "type": "#cccc00",
+              "size": 1375
+            }
+          ]
+        },
+        {
+          "name": "File 1_2",
+          "icon": "icons/file.png",
+          "value": 25,
+          "type": "green",
+          "children": [
+            {
+              "name": "Native",
+              "icon": "icons/native.png",
+              "value": 0,
+              "type": "green",
+              "size": 2047
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
