@@ -62,8 +62,9 @@ designed for the cloud.
 
 ## 1 - Pre-requisites
 ## 2 - Deploying Application on IBM Cloud
-## 3 - Running the application/Model Evaluation
-## 4 - Analyze the Results
+## 3 - Develop the models
+## 4 - Running the application/Model Evaluation
+## 5 - Analyze the Results
 
 
 ### 1 - Pre-requisites
@@ -72,10 +73,7 @@ designed for the cloud.
 
 ### 2 - Deploying Application on IBM Cloud
 Two ways to Deploy:
-#### * 2.1 Deploy using "Deploy to IBM Cloud" Button
-
-
-
+* 2.1 Deploy using "Deploy to IBM Cloud" Button
 * 2.2 Manual deploy to IBM Cloud
    * Clone the repository 
    * Follow the below steps to generate war file and deploy in IBM bluemix
