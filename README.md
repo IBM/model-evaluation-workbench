@@ -169,10 +169,10 @@ to create NLU service
   Click `Create` and then take a note of the credentials as below:
   <br/><img src="Images/NLC_Credentials.png" alt="NLUCreateEdit" width="640" border="10" /><br/><br/>
 - Step4: NLU service instance should get created.
-  <br/><img src="Images/ NLC_Models_Screen.png" alt=" NLC_Models_Screen" width="640" border="10" /><br/><br/>
+  <br/><img src="Images/NLC_Models_Screen.png" alt="NLC_Models_Screen" width="640" border="10" /><br/><br/>
 - Step5: Create another Classifier as below screenshot.
 - Step6: Upload the available training data if already exists in csv format.
-  <br/><img src="Images/NLC1_Upload Training_dataset.png" alt="NLC1_Upload_Training_Data" width="640" border="10" /><br/><br/>
+  <br/><img src="Images/NLC1_UploadTraining_dataset.png" alt="NLC1_UploadTraining_Data" width="640" border="10" /><br/><br/>
 
 
 # Model Service Configurations
