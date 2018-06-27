@@ -179,7 +179,7 @@ If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3
 Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
 
 - Watson Service Configuration
-![](/Images/Service_Configuration1.png)
+![](/Images/NLC_Service_Configuration1.png)
 
 - Watson Model Evaluation Workbench: Dashboard
 ![](/Images/Dashboard1.png)
