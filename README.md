@@ -162,13 +162,13 @@ Develop the Sample Natural Language Classifier which we will use for Model Evalu
 
 ###### 3.1 Create NLC service instance
 - Step1: Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier)
-to create NLU service
+to create NLC service
 - Step2: Below screen is displayed
   <br/><img src="Images/NLC_CreateDefault.png" alt="NLC_CreateDefault" width="640" border="10" /><br/><br/>
 - Step3: Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
   Click `Create` and then take a note of the credentials as below:
   <br/><img src="Images/NLC_Credentials.png" alt="NLUCreateEdit" width="640" border="10" /><br/><br/>
-- Step4: NLU service instance should get created.
+- Step4: NLC service instance should get created.
   <br/><img src="Images/NLC_Models_Screen.png" alt="NLC_Models_Screen" width="640" border="10" /><br/><br/>
 - Step5: Create another Classifier as below screenshot.
 - Step6: Upload the available training data if already exists in csv format.
