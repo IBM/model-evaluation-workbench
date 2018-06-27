@@ -165,15 +165,15 @@ Administrator needs to configure the supported Watson Service's access/authentic
 The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below, 
 ```
 e.g.,
-  CONVERSATION_WORKSPACE_ID_CONFIG_1 = <workspaceid>
-  CONVERSATION_USERNAME_CONFIG_1 = <username >
-  CONVERSATION_PASSWORD_CONFIG_1 = < password>
+  NLC_USERNAME_CONFIG_1 = <username>
+  NLC_PASSWORD_CONFIG_1 = <password>
+  NLC_CLASSIFIER_ID_CONFIG_1 = < classifier_id>
 ```
-If User needs to configure multiple CONVERSATION service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
+If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
 ```
-CONVERSATION_WORKSPACE_ID_CONFIG_2 = <workspaceid>
-CONVERSATION_USERNAME_CONFIG_2 = <username >
-CONVERSATION_PASSWORD_CONFIG_2 = < password>
+  NLC_USERNAME_CONFIG_2 = <username>
+  NLC_PASSWORD_CONFIG_2 = <password>
+  NLC_CLASSIFIER_ID_CONFIG_2 = < classifier_id>
 ```
 
 Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
