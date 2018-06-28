@@ -210,7 +210,7 @@ For help generating other Liberty samples checkout the Liberty App Accelerator a
 [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
 
 
-###### 4. Running the application/Model Evaluation
+#### 4. Running the application/Model Evaluation
 
 #### Use case used here to demonstrate: 
 Created 2 models using Natural Language Classifier.
