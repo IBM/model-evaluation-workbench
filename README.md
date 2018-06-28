@@ -242,3 +242,16 @@ Below are the steps to Evaluate the performance:
 -	Step5: Click on Evaluate Performance button.
 <br/><img src="Images/Model_Evaluate_Button.png"        alt="Model_Evaluate_Button" width="640" border="10" /><br/><br/>
 
+
+
+# 5. Analyse the results 
+
+Now that we have the results which gives us the comparison between the uploaded models. The model evaluation will recommend for the best model.
+<br/><img src="Images/Model_Analysis1.png"        alt="Model_Analysis1" width="640" border="10" /><br/><br/>
+
+<br/><img src="Images/Model_Analysis2.png"        alt="Model_Evaluate_Button" width="640" border="10" /><br/><br/>
+
+
+
+
+
