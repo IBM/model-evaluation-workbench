@@ -208,3 +208,18 @@ Ready to learn how to interact with a database? Check out this [Sample and tutor
 For help generating other Liberty samples checkout the Liberty App Accelerator at [wasdev.net/accelerate](http://wasdev.net/accelerate)
 
 [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
+
+
+###### 4. Running the application/Model Evaluation
+
+#### Use case used here to demonstrate: 
+Created 2 models using Natural Language Classifier.
+ Model 1: Intentionally Built with appropriate training samples.
+ Model 2: Intentionally built with slight inappropriate training samples.
+
+Now, we would evaluate which model is performing better when compared to each other. For that we would have already configures as per application deployment steps.
+
+Below are the steps to Evaluate the performance:
+-	Step1: Ensure the configuration of the credentials in the Runtime Environment variables are set appropriately. See below screen grab.
+<br/><img src="Images/Model_Env_Variables_Setup.png" alt="Model_Env_Variables_Setup" width="640" border="10" /><br/><br/>
+
