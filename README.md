@@ -223,3 +223,22 @@ Below are the steps to Evaluate the performance:
 -	Step1: Ensure the configuration of the credentials in the Runtime Environment variables are set appropriately. See below screen grab.
 <br/><img src="Images/Model_Env_Variables_Setup.png" alt="Model_Env_Variables_Setup" width="640" border="10" /><br/><br/>
 
+
+
+-	Step2: Launch the app URL
+<br/><img src="Images/ ModelEval_App_Launch
+.png" alt=" ModelEval_App_Launch
+" width="640" border="10" /><br/><br/>
+<br/><img src="Images/Model_LaunchScreen.png" alt="Model_LaunchScreen" width="640" border="10" /><br/><br/>
+
+-	Step3: Click on NLC Evaluate model and select the classes from the drop-down bar.
+        <br/><img src="Images/Model_NLC_Evaluate.png"        alt="Model_NLC_Evaluate" width="640" border="10" /><br/><br/>
+
+
+-	Step4: In the model1 and model2 browse for the Truth file (the actual results that you have). This is the file which has the correct sample set of data.
+<br/><img src="Images/Model_Upload_TruthFile.png"        alt="Model_Upload_TruthFile" width="640" border="10" /><br/><br/>
+
+
+-	Step5: Click on Evaluate Performance button.
+<br/><img src="Images/Model_Evaluate_Button.png"        alt="Model_Evaluate_Button" width="640" border="10" /><br/><br/>
+
