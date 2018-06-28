@@ -62,7 +62,7 @@ designed for the cloud.
 
 ## 1 - Pre-requisites
 ## 2 - Deploying Application on IBM Cloud
-## 3 - Develop the models
+## 3 - Develop & Configure the models
 ## 4 - Running the application/Model Evaluation
 ## 5 - Analyze the Results
 
@@ -85,10 +85,10 @@ click `Deploy` button. The application should get deployed. Ensure that the appl
 is started and that a service is created and bound to the application just deployed. <br/>
 [![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/model-evaluation-workbench.git)
 
-##### 3.1.2 Deploy using Manual
+##### 2.2 Deploy using Manual
 
 
-#### 3.1 Deploy Java Liberty application to IBM Cloud
+#### 2.2.1 Deploy Java Liberty application to IBM Cloud
 You can deploy the Java Liberty application using the `Deploy to IBM Cloud` button or
 using manual steps.
 
@@ -99,7 +99,7 @@ This project contains a simple servlet application.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.ibm.com/muralidhar-chavan/cognitive-model-evaluation-workbench.git)
 
-## Running the application
+## 2.2.2 Running the application
 
 This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server. 
 
@@ -121,7 +121,7 @@ Use the following command to run the built application in Bluemix:
     ```bash
     $ cf push <appname> -p target/JavaHelloWorldApp.war
     ```
-## Developing and Deploying using Eclipse
+## 2.2.3 Developing and Deploying using Eclipse
 
 IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into an existing Eclipse environment to assist in integrating the developer's integrated development environment (IDE) with Bluemix.
 
@@ -156,9 +156,9 @@ IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into a
 
 ## Next Step
 
-# 3. Develop the Models:
+# 3. Develop & Configure the Models:
 
-Develop the Sample Natural Language Classifier which we will use for Model Evaluation.
+Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
 
 ###### 3.1 Create NLC service instance
 - Step1: Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier)
@@ -175,7 +175,7 @@ to create NLC service
   <br/><img src="Images/NLC1_UploadTraining_dataset.png" alt="NLC1_UploadTraining_Data" width="640" border="10" /><br/><br/>
 
 
-# Model Service Configurations
+# 3.2 Model Service Configurations
 
 Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
 
