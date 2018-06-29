@@ -7,11 +7,11 @@
     <packaging>war</packaging>
     <name>WorkbenchMLModelEvaluation</name>
 
-	<!--
+
 	<properties>
 		<java.version>1.6</java.version>
 	</properties>
-	-->
+	
 
 
 <!--	
