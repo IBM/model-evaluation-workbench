@@ -160,7 +160,7 @@ IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into a
 
 Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
 
-###### 3.1 Create NLC service instance
+#### 3.1 Create NLC service instance
 - Step1: Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier)
 to create NLC service
 - Step2: Below screen is displayed
@@ -175,7 +175,7 @@ to create NLC service
   <br/><img src="Images/NLC1_UploadTraining_dataset.png" alt="NLC1_UploadTraining_Data" width="640" border="10" /><br/><br/>
 
 
-# 3.2 Model Service Configurations
+#### 3.2 Model Service Configurations
 
 Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
 
@@ -226,9 +226,7 @@ Below are the steps to Evaluate the performance:
 
 
 -	Step2: Launch the app URL
-<br/><img src="Images/ ModelEval_App_Launch
-.png" alt=" ModelEval_App_Launch
-" width="640" border="10" /><br/><br/>
+<br/><img src="Images/ModelEval_App_Launch.png" alt="ModelEval_App_Launch" width="640" border="10" /><br/><br/>
 <br/><img src="Images/Model_LaunchScreen.png" alt="Model_LaunchScreen" width="640" border="10" /><br/><br/>
 
 -	Step3: Click on NLC Evaluate model and select the classes from the drop-down bar.
