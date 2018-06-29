@@ -250,6 +250,7 @@ Now that we have the results which gives us the comparison between the uploaded 
 <br/><img src="Images/Model_Analysis2.png"        alt="Model_Evaluate_Button" width="640" border="10" /><br/><br/>
 
 
+- Results: In this case, Model Evaluation has recommended “Model 1” as Excellent and “Model 2” as a poor model. We can now pick “Model 1” for our further usage.
 
 
 
