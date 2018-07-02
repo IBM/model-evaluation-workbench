@@ -74,18 +74,21 @@ designed for the cloud.
 ### 2 - Deploying Application on IBM Cloud
 Two ways to Deploy:
 * 2.1 Deploy using "Deploy to IBM Cloud" Button
-* 2.2 Manual deploy to IBM Cloud
+* 2.2 Manual deploy to the local machine
    * Clone the repository 
    * Follow the below steps to generate war file and deploy in IBM bluemix
  
-  -2.1 Deploy to IBM Cloud using "Deploy to Cloud" Button.
+  - 2.1 Deploy to IBM Cloud using "Deploy to Cloud" Button.
 Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud. You would
 be presented with a toolchain view and asked to "Deploy" the application. Go ahead and
 click `Deploy` button. The application should get deployed. Ensure that the application
 is started and that a service is created and bound to the application just deployed. <br/>
 [![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/model-evaluation-workbench.git)
 
-##### 2.2 Deploy using Manual
+##### 2.2 Manual deploy to the local machine
+
+-	Step1 : Launch Eclipse tool, under server tab add new Liberty Server.
+<br/><img src="Images/Local_NewLibertyServer.png"        alt="Local_NewLibertyServer" width="640" border="10" /><br/><br/>
 
 
 
