@@ -96,6 +96,9 @@ is started and that a service is created and bound to the application just deplo
 
 -	Step3: Start the server(Right click on the newly added server)
 	<br/><img src="Images/Local_Start_Liberty_Server.png"        alt="Local_Start_Liberty_Server" width="640" border="10" /><br/><br/>
+	-	Step4: Launch the application.
+<br/><img src="Images/Local_App_Launch.png"        alt="Local_App_Launch" width="640" border="10" /><br/><br/>
+
 
 
 ## Next Step
