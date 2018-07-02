@@ -92,7 +92,7 @@ is started and that a service is created and bound to the application just deplo
 
 -	Step2: Add config parameters to the server.env file within eclipse.
 2 set of Credentails related to the Cognitive services. 
-<br/><img src="Images/ Local_add_Config_Service_Credentials_paramaeters.png"        alt=" Local_add_Config_Service_Credentials_paramaeters" width="640" border="10" /><br/><br/>
+<br/><img src="Images/Local_add_Config_Service_Credentials_paramaeters.png"        alt="Local_add_Config_Service_Credentials_paramaeters" width="640" border="10" /><br/><br/>
 
 -	Step3: Start the server(Right click on the newly added server)
 	<br/><img src="Images/Local_Start_Liberty_Server.png"        alt="Local_Start_Liberty_Server" width="640" border="10" /><br/><br/>
