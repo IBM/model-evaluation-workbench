@@ -76,9 +76,10 @@ Two ways to Deploy:
 * 2.1 Deploy using "Deploy to IBM Cloud" Button
 * 2.2 Manual deploy to the local machine
    * Clone the repository 
-   * Follow the below steps to generate war file and deploy in IBM bluemix
+   * Follow the below steps.
+* 2.3 Manually Deploy to IBM CLoud(Bluemix)
  
-  - 2.1 Deploy to IBM Cloud using "Deploy to Cloud" Button.
+##### 2.1 Deploy to IBM Cloud using "Deploy to Cloud" Button.
 Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud. You would
 be presented with a toolchain view and asked to "Deploy" the application. Go ahead and
 click `Deploy` button. The application should get deployed. Ensure that the application
@@ -98,6 +99,9 @@ Add 2 set of Credentails related to the Cognitive services which you want to eva
 	<br/><img src="Images/Local_Start_Liberty_Server.png"        alt="Local_Start_Liberty_Server" width="640" border="10" /><br/><br/>
 	-	Step4: Launch the application.
 <br/><img src="Images/Local_App_Launch.png"        alt="Local_App_Launch" width="640" border="10" /><br/><br/>
+
+
+##### 2.3 Manually Deploy to IBM CLoud(Bluemix)
 
 
 
