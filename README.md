@@ -90,6 +90,8 @@ is started and that a service is created and bound to the application just deplo
 -	Step1 : Launch Eclipse tool, under server tab add new Liberty Server.
 <br/><img src="Images/Local_NewLibertyServer.png"        alt="Local_NewLibertyServer" width="640" border="10" /><br/><br/>
 
+-	Step2: Start the server(Right click on the newly added server)
+	<br/><img src="Images/Local_Start_Liberty_Server.png"        alt="Local_Start_Liberty_Server" width="640" border="10" /><br/><br/>
 
 
 ## Next Step
