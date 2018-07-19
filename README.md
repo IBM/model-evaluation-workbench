@@ -3,7 +3,7 @@
 This code pattern details about the Watson Model Evaluation Workbench which provides user a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.
 By the end of this code pattern reading, one will be able to:
 
-To compare their different Watson cognitive service’s models and selecting the threshold and best-performing machine learning model.
+To compare their different Watson cognitive service’s models and selecting the threshold and best-performing machine learning model. 
 
 User can configure their Watson cognitive service access details in workbench and input their model test data to workbench for service performance evaluation.
 
@@ -13,10 +13,9 @@ o	Recommendations:
 	Optimal threshold and maximized Accuracy for Accuracy optimization
 Receiver Operating Characteristic (ROC) curve
 
-## Architecture Diagram:
+## Architecture
 ![](/Images/Reference_Architecture.png)
 
-- Details
 1. User uses the client device(mobile, tablets, etc.,) to access the application.
 2. Client Invokes the URL. 
 3. Parsing Input test data.
@@ -27,8 +26,6 @@ Receiver Operating Characteristic (ROC) curve
 8. Compares Input data with cognitive model results and do performance evaluation(ROC Curve, etc.)
 9. Performance analysis is shown on UI.
 10. User consumes the performance analysis results.
-
-[Watson Model Evaluation Workbench](https://workbenchmodelevalpattern.au-syd.mybluemix.net/) through the URL https://workbenchmodelevalpattern.au-syd.mybluemix.net/
 
 # Included Components
 1. Java Liberty Run Time
@@ -47,14 +44,8 @@ Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profil
 a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server
 designed for the cloud.
 
-* J2EE: A secure Object-oriented programming language, used to build applications. IBM WebSphere Commerce platform is built on J2EE framework which includes (JSP, Java, Java Script, Struts, REST & Webservices, EJBs)
-
 # Watch The Video
-
-
-
-
-
+Will be added soon...
 
 
 
@@ -67,11 +58,11 @@ designed for the cloud.
 ## 5 - Analyze the Results
 
 
-### 1 - Pre-requisites
+### 1 Pre-requisites
 * Clone the GIT repository.
 * Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
-### 2 - Deploying Application on IBM Cloud
+### 2 Deploying Application on IBM Cloud
 Two ways to Deploy:
 * 2.1 Deploy using "Deploy to IBM Cloud" Button
 * 2.2 Manual deploy to the local machine
@@ -88,41 +79,38 @@ is started and that a service is created and bound to the application just deplo
 
 ##### 2.2 Manual deploy to the local machine
 
--	Step1 : Launch Eclipse tool, under server tab add new Liberty Server.
+-  Launch Eclipse tool, under server tab add new Liberty Server.
 <br/><img src="Images/Local_NewLibertyServer.png"        alt="Local_NewLibertyServer" width="640" border="10" /><br/><br/>
 
--	Step2: Add config parameters to the server.env file within eclipse.
+- Add config parameters to the server.env file within eclipse.
 Add 2 set of Credentails related to the Cognitive services which you want to evaluate. 
 <br/><img src="Images/Local_add_Config_Service_Credentials_paramaeters.png"        alt="Local_add_Config_Service_Credentials_paramaeters" width="640" border="10" /><br/><br/>
 
--	Step3: Start the server(Right click on the newly added server)
+- Start the server(Right click on the newly added server)
 	<br/><img src="Images/Local_Start_Liberty_Server.png"        alt="Local_Start_Liberty_Server" width="640" border="10" /><br/><br/>
-	-	Step4: Launch the application.
+	- Launch the application.
 <br/><img src="Images/Local_App_Launch.png"        alt="Local_App_Launch" width="640" border="10" /><br/><br/>
 
 
 ##### 2.3 Manually Deploy to IBM CLoud(Bluemix)
 
 
-
-## Next Step
-
 # 3. Develop & Configure the Models:
 
 Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
 
 #### 3.1 Create NLC service instance
-- Step1: Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier)
+-  Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier)
 to create NLC service
-- Step2: Below screen is displayed
+-   Below screen is displayed
   <br/><img src="Images/NLC_CreateDefault.png" alt="NLC_CreateDefault" width="640" border="10" /><br/><br/>
-- Step3: Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
+-   Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
   Click `Create` and then take a note of the credentials as below:
   <br/><img src="Images/NLC_Credentials.png" alt="NLUCreateEdit" width="640" border="10" /><br/><br/>
-- Step4: NLC service instance should get created.
+-   NLC service instance should get created.
   <br/><img src="Images/NLC_Models_Screen.png" alt="NLC_Models_Screen" width="640" border="10" /><br/><br/>
-- Step5: Create another Classifier as below screenshot.
-- Step6: Upload the available training data if already exists in csv format.
+-   Create another Classifier as below screenshot.
+-   Upload the available training data if already exists in csv format.
   <br/><img src="Images/NLC1_UploadTraining_dataset.png" alt="NLC1_UploadTraining_Data" width="640" border="10" /><br/><br/>
 
 
@@ -152,13 +140,7 @@ Application Dashboard screen provides users an option to select the Watson servi
 - Watson Model Evaluation Workbench: Dashboard
 ![](/Images/Dashboard1.png)
 
-Ready to learn how to interact with a database? Check out this [Sample and tutorial](https://github.com/IBM-Bluemix/get-started-java) to help you get started with a Java EE app, REST API and a database.
 
-## Liberty App Accelerator
-
-For help generating other Liberty samples checkout the Liberty App Accelerator at [wasdev.net/accelerate](http://wasdev.net/accelerate)
-
-[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
 
 
 # 4. Running the application/Model Evaluation
@@ -204,4 +186,21 @@ Now that we have the results which gives us the comparison between the uploaded 
 - Results: In this case, Model Evaluation has recommended “Model 1” as Excellent and “Model 2” as a poor model. We can now pick “Model 1” for our further usage.
 
 
+### LInks
+- Ready to learn how to interact with a database? Check out this [Sample and tutorial](https://github.com/IBM-Bluemix/get-started-java) to help you get started with a Java EE app, REST API and a database.
+
+## Liberty App Accelerator
+
+For help generating other Liberty samples checkout the Liberty App Accelerator at [wasdev.net/accelerate](http://wasdev.net/accelerate)
+
+[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
+
+### Learn More
+ - Links for Watson Assistant
+ - Links for Natural Language Understanding
+ - Links for Naturla Language Classifier
+ 
+ #### License
+ Apache 2.0
+ 
 
