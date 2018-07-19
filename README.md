@@ -48,11 +48,10 @@ designed for the cloud.
 Will be added soon...
 
 
-
-## Steps
-
-## 1 - Pre-requisites
-## 2 - Deploying Application on IBM Cloud
+# Steps
+Follow these steps to setup and run this code pattern. The steps are described in detail below.
+1. [Pre-requisites](#1-Pre-requisites)
+2. Deploying Application on IBM Cloud
 ## 3 - Develop & Configure the models
 ## 4 - Running the application/Model Evaluation
 ## 5 - Analyze the Results
