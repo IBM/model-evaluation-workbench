@@ -51,10 +51,10 @@ Will be added soon...
 # Steps
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-Pre-requisites)
-2. Deploying Application on IBM Cloud
-## 3 - Develop & Configure the models
-## 4 - Running the application/Model Evaluation
-## 5 - Analyze the Results
+2. [Deploying Application on IBM Cloud](#2-Deploying-Application-on-IBM-Cloud)
+3. [Develop and Configure the models](#3-Develop-and-Configure-the-models)
+4. [Running the application/Model Evaluation](#4-Running-the-application/Model-Evaluation)
+5. [Analyze the Results](#5-Analyze-the-Results)
 
 
 ### 1 Pre-requisites
