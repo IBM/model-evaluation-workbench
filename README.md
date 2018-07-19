@@ -16,14 +16,14 @@ Receiver Operating Characteristic (ROC) curve
 ## Architecture
 ![](/Images/Reference_Architecture.png)
 
-1. User uses the client device(mobile, tablets, etc.,) to access the application.
+1. User uses the client device (mobile, tablets, etc.,) to access the application.
 2. Client Invokes the URL. 
 3. Parsing Input test data.
-4. Invoke adapter which calls the Cognitive service models(NLC, NLU, etc.,)
-5. Parsing the Cognitive(model) service configuration.
+4. Invoke adapter which calls the Cognitive service models (NLC, NLU, etc.,)
+5. Parsing the Cognitive (model) service configuration.
 6. Connect to Cognitive model services.
 7. Gets response from Cognitie services.
-8. Compares Input data with cognitive model results and do performance evaluation(ROC Curve, etc.)
+8. Compares Input data with cognitive model results and do performance evaluation (ROC Curve, etc.)
 9. Performance analysis is shown on UI.
 10. User consumes the performance analysis results.
 
@@ -63,11 +63,11 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 ### 2 Deploying Application on IBM Cloud
 Two ways to Deploy:
-* 2.1 Deploy using "Deploy to IBM Cloud" Button
+* 2.1 Deploy using `Deploy to IBM Cloud` Button
 * 2.2 Manual deploy to the local machine
    * Clone the repository 
    * Follow the below steps.
-* 2.3 Manually Deploy to IBM CLoud(Bluemix)
+* 2.3 Manually Deploy to IBM Cloud(Bluemix)
  
 ##### 2.1 Deploy to IBM Cloud using "Deploy to Cloud" Button.
 Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud. You would
@@ -82,10 +82,10 @@ is started and that a service is created and bound to the application just deplo
 <br/><img src="Images/Local_NewLibertyServer.png"        alt="Local_NewLibertyServer" width="640" border="10" /><br/><br/>
 
 - Add config parameters to the server.env file within eclipse.
-Add 2 set of Credentails related to the Cognitive services which you want to evaluate. 
+Add 2 set of Credentials related to the Cognitive services which you want to evaluate. 
 <br/><img src="Images/Local_add_Config_Service_Credentials_paramaeters.png"        alt="Local_add_Config_Service_Credentials_paramaeters" width="640" border="10" /><br/><br/>
 
-- Start the server(Right click on the newly added server)
+- Start the server (Right click on the newly added server)
 	<br/><img src="Images/Local_Start_Liberty_Server.png"        alt="Local_Start_Liberty_Server" width="640" border="10" /><br/><br/>
 	- Launch the application.
 <br/><img src="Images/Local_App_Launch.png"        alt="Local_App_Launch" width="640" border="10" /><br/><br/>
@@ -197,7 +197,7 @@ For help generating other Liberty samples checkout the Liberty App Accelerator a
 ### Learn More
  - Links for Watson Assistant
  - Links for Natural Language Understanding
- - Links for Naturla Language Classifier
+ - Links for Natural Language Classifier
  
  #### License
  Apache 2.0
