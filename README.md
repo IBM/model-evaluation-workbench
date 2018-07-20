@@ -183,7 +183,7 @@ Now that we have the results which gives us the comparison between the uploaded 
 - Results: In this case, Model Evaluation has recommended “Model 1” as Excellent and “Model 2” as a poor model. We can now pick “Model 1” for our further usage.
 
 
-### LInks
+### Links
 - Ready to learn how to interact with a database? Check out this [Sample and tutorial](https://github.com/IBM-Bluemix/get-started-java) to help you get started with a Java EE app, REST API and a database.
 
 ## Liberty App Accelerator
@@ -193,11 +193,11 @@ For help generating other Liberty samples checkout the Liberty App Accelerator a
 [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
 
 ### Learn More
- - Links for Watson Assistant
- - Links for Natural Language Understanding
- - Links for Naturla Language Classifier
- 
+ - [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier)
+  - [Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding)
+  - [Watson Assistant](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation)
+  
  #### License
- Apache 2.0
+[Apache 2.0](LICENSE)
  
 
