@@ -173,9 +173,10 @@ Below are the steps to Evaluate the performance:
 # 5. Analyse the results 
 
 Now that we have the results which gives us the comparison between the uploaded models. The model evaluation will recommend for the best model.
-<br/><img src="Images/Model_Analysis1.png"        alt="Model_Analysis1" width="640" border="10" /><br/><br/>
 
-<br/><img src="Images/Model_Analysis2.png"        alt="Model_Evaluate_Button" width="640" border="10" /><br/><br/>
+See below screenshot, for the best model to be picked based on the score<br/><img src="Images/Model_Analysis1.png"        alt="Model_Analysis1" width="640" border="10" /><br/><br/>
+
+See below screenshot, for the accuraccy<br/><img src="Images/Model_Analysis2.png"        alt="Model_Evaluate_Button" width="640" border="10" /><br/><br/>
 
 
 - Results: In this case, Model Evaluation has recommended “Model 1” as Excellent and “Model 2” as a poor model. We can now pick “Model 1” for our further usage.
@@ -184,11 +185,9 @@ Now that we have the results which gives us the comparison between the uploaded 
 ### Links
 - Ready to learn how to interact with a database? Check out this [Sample and tutorial](https://github.com/IBM-Bluemix/get-started-java) to help you get started with a Java EE app, REST API and a database.
 
-## Liberty App Accelerator
+- Liberty App Accelerator: For help generating other Liberty samples checkout the Liberty App Accelerator at [wasdev.net/accelerate](http://wasdev.net/accelerate)
 
-For help generating other Liberty samples checkout the Liberty App Accelerator at [wasdev.net/accelerate](http://wasdev.net/accelerate)
-
-[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
+- [Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
 
 ### Learn More
  - [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier)
