@@ -29,8 +29,7 @@ Receiver Operating Characteristic (ROC) curve
 
 # Included Components
 * [Java Liberty Run Time](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime)
-2. Java Stastical Libraries
-3. Cognitive Services
+* [Cognitive Services](https://console.bluemix.net/catalog/)
  - Natural Language Classifier
  - Natural Language Understanding
  - Watson Assistant
