@@ -8,9 +8,9 @@ To compare their different Watson cognitive service’s models and selecting the
 User can configure their Watson cognitive service access details in workbench and input their model test data to workbench for service performance evaluation.
 
 Workbench execute supported Watson cognitive services with their input model’s test data, prepare performance evaluation data, calculates performance statistics and present user with the following recommendations, curve and summary statistics:
-o	Recommendations: 
+- Recommendations: 
 	Optimal threshold and maximized F1Score for F1Score optimization
-	Optimal threshold and maximized Accuracy for Accuracy optimization
+	Optimal threshold and maximized accuracy for accuracy optimization
 Receiver Operating Characteristic (ROC) curve
 
 ## Architecture
