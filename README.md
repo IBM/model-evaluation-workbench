@@ -1,6 +1,6 @@
 # Cognitive Model Evaluation
 
-This code pattern details about the Watson Model Evaluation Workbench which provides user a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.
+Cognitive models are branching out across numerous fields, and to evaluate these models is always a little challenge when you have multiple models in front of you to choose. This code pattern details about the Watson Model Evaluation Workbench which provides user a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.
 By the end of this code pattern reading, one will be able to:
 
 To compare their different Watson cognitive service’s models and selecting the threshold and best-performing machine learning model. 
@@ -142,10 +142,8 @@ Application Dashboard screen provides users an option to select the Watson servi
 
 # 4. Running the application/Model Evaluation
 
-#### Use case used here to demonstrate: 
-Created 2 models using Natural Language Classifier.
- Model 1: Intentionally Built with appropriate training samples.
- Model 2: Intentionally built with slight inappropriate training samples.
+#### Use Case:
+We created 2 models using Natural Language Classifier. 
 
 Now, we would evaluate which model is performing better when compared to each other. For that we would have already configures as per application deployment steps.
 
