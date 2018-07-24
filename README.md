@@ -74,6 +74,7 @@ Two ways to Deploy:
 
 
 ##### 2.2 Manually Deploy to IBM CLoud(Bluemix)
+
 - Launch Eclipse tool, under server tab add new Liberty Server.
 ![](Images/Local_NewLibertyServer.png)
  
