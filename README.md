@@ -52,14 +52,12 @@ Follow these steps to setup and run this code pattern. The steps are described i
 * Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
 ## 2. Deploying Application on IBM Cloud
-Two ways to Deploy:
 * Manual deploy to the local machine
    * Clone the repository
    * Follow the below steps.
-* Manually Deploy to IBM CLoud(Bluemix)
 
 
-##### 2.1 Manual deploy to the local machine
+##### Manual deploy to the local machine
 
 - Launch Eclipse tool, under server tab add new Liberty Server.
 ![](Images/Local_NewLibertyServer.png)
@@ -73,18 +71,6 @@ Two ways to Deploy:
 ![](Images/Local_App_Launch.png)
 
 
-##### 2.2 Manually Deploy to IBM CLoud(Bluemix)
-
-- Launch Eclipse tool, under server tab add new Liberty Server.
-![](Images/Local_NewLibertyServer.png)
- 
-- Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
-![](Images/Local_add_Config_Service_Credentials_paramaeters.png)
- 
-- Start the server(Right click on the newly added server)
-![](Images/Local_Start_Liberty_Server.png)
-- Launch the application.
-![](Images/Local_App_Launch.png)
 
 
 ## 3. Develop and Configure the Models:
