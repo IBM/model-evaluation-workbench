@@ -52,8 +52,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 * Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
 ## 2. Deploying Application on IBM Cloud
-Three ways to Deploy:
-* Deploy using "Deploy to IBM Cloud" Button
+Two ways to Deploy:
 * Manual deploy to the local machine
    * Clone the repository
    * Follow the below steps.
@@ -74,7 +73,7 @@ Three ways to Deploy:
 ![](Images/Local_App_Launch.png)
 
 
-##### 2.1 Manually Deploy to IBM CLoud(Bluemix)
+##### 2.2 Manually Deploy to IBM CLoud(Bluemix)
 
 
 ## 3. Develop and Configure the Models:
