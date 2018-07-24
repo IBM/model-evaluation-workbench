@@ -74,6 +74,16 @@ Two ways to Deploy:
 
 
 ##### 2.2 Manually Deploy to IBM CLoud(Bluemix)
+- Launch Eclipse tool, under server tab add new Liberty Server.
+![](images/Local_NewLibertyServer.png)
+ 
+- Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
+![](images/Local_add_Config_Service_Credentials_paramaeters.png)
+ 
+- Start the server(Right click on the newly added server)
+![](images/Local_Start_Liberty_Server.png)
+- Launch the application.
+![](images/Local_App_Launch.png)
 
 
 ## 3. Develop and Configure the Models:
