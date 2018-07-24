@@ -9,7 +9,7 @@ By the end of this code pattern reading, one will be able to:
 Workbench executes supported Watson cognitive services with their input model’s test data, prepare performance evaluation data, calculates performance statistics and present user with the following recommendations, curve and summary statistics:
 
 ## Architecture
-![](images/Reference_Architecture.png)
+![](Images/Reference_Architecture.png)
 
 1. User uses the client device(mobile, tablets, etc.,) to access the application.
 2. Client Invokes the URL.
@@ -67,15 +67,15 @@ Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud.
 ##### 2.2 Manual deploy to the local machine
 
 - Launch Eclipse tool, under server tab add new Liberty Server.
-![](images/Local_NewLibertyServer.png)
+![](Images/Local_NewLibertyServer.png)
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
-![](images/Local_add_Config_Service_Credentials_paramaeters.png)
+![](Images/Local_add_Config_Service_Credentials_paramaeters.png)
 
 - Start the server(Right click on the newly added server)
-![](images/Local_Start_Liberty_Server.png)
+![](Images/Local_Start_Liberty_Server.png)
 - Launch the application.
-![](images/Local_App_Launch.png)
+![](Images/Local_App_Launch.png)
 
 
 ##### 2.3 Manually Deploy to IBM CLoud(Bluemix)
@@ -88,15 +88,15 @@ Develop the Sample Natural Language Classifier model which we will be used for M
 #### 3.1 Create NLC service instance
 - Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
 - Below screen is displayed
-![](images/NLC_CreateDefault.png)
+![](Images/NLC_CreateDefault.png)
 - Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
 - Click `Create` and then take a note of the credentials as below:
-  ![](images/NLC_Credentials.png)
+  ![](Images/NLC_Credentials.png)
 -  NLC service instance should get created.
-![](images/NLC_Models_Screen.png)
+![](Images/NLC_Models_Screen.png)
 -   Create another Classifier as below screenshot.
 -   Upload the available training data if already exists in csv format.
-![](images/NLC1_UploadTraining_dataset.png)
+![](Images/NLC1_UploadTraining_dataset.png)
 
 
 #### 3.2 Model Service Configurations
@@ -120,10 +120,10 @@ If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3
 Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
 
 - Watson Service Configuration
-![](images/NLC_Service_Configuration1.png)
+![](Images/NLC_Service_Configuration1.png)
 
 - Watson Model Evaluation Workbench: Dashboard
-![](images/Dashboard1.png)
+![](Images/Dashboard1.png)
 
 
 ## 4. Running the application/Model Evaluation
@@ -135,20 +135,20 @@ Now, we would evaluate which model is performing better when compared to each ot
 
 Below are the steps to Evaluate the performance:
 -	Step1: Ensure the configuration of the credentials in the Runtime Environment variables are set appropriately. See below screen grab.
-![](images/Model_Env_Variables_Setup.png)
+![](Images/Model_Env_Variables_Setup.png)
 
 -	Step2: Launch the app URL
-![](images/ModelEval_App_Launch.png)
-![](images/Model_LaunchScreen.png)
+![](Images/ModelEval_App_Launch.png)
+![](Images/Model_LaunchScreen.png)
 
 -	Step3: Click on NLC Evaluate model and select the classes from the drop-down bar.
-![](images/Model_NLC_Evaluate.png)
+![](Images/Model_NLC_Evaluate.png)
 
 -	Step4: In the model1 and model2 browse for the Truth file (the actual results that you have). This is the file which has the correct sample set of data.
-![](images/Model_Upload_TruthFile.png)
+![](Images/Model_Upload_TruthFile.png)
 
 -	Step5: Click on Evaluate Performance button.
-![](images/Model_Evaluate_Button.png)
+![](Images/Model_Evaluate_Button.png)
 
 
 ## 5. Analyse the results
@@ -156,10 +156,10 @@ Below are the steps to Evaluate the performance:
 Now that we have the results which gives us the comparison between the uploaded models. The model evaluation will recommend for the best model.
 
 See below screenshot, for the best model to be picked based on the score
-![](images/Model_Analysis1.png)
+![](Images/Model_Analysis1.png)
 
 See below screenshot, for the accuraccy
-![](images/Model_Analysis2.png)
+![](Images/Model_Analysis2.png)
 
 **Results:** In this case, Model Evaluation has recommended “Model 1” as Excellent and “Model 2” as a poor model. We can now pick “Model 1” for our further usage.
 
