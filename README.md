@@ -123,7 +123,7 @@ Application Dashboard screen provides users an option to select the Watson servi
 ### Use Case:
 We created 2 models using Natural Language Classifier.
 
-Now, we would evaluate which model is performing better when compared to each other. For that we would have already configures as per application deployment steps.
+Now, we would evaluate which model is performing better when compared to each other. For that we would have already configured as per application deployment steps.
 
 Below are the steps to Evaluate the performance:
 -	Step1: Ensure the configuration of the credentials in the Runtime Environment variables are set appropriately. See below screen grab.
