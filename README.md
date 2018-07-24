@@ -47,11 +47,11 @@ Follow these steps to setup and run this code pattern. The steps are described i
 5. [Analyze the Results](#5-Analyze-the-Results)
 
 
-### 1. Pre-requisites
+## 1. Pre-requisites
 * Clone the GIT repository.
 * Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
-### 2. Deploying Application on IBM Cloud
+## 2. Deploying Application on IBM Cloud
 Three ways to Deploy:
 * Deploy using "Deploy to IBM Cloud" Button
 * Manual deploy to the local machine
