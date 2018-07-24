@@ -43,7 +43,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 1. [Pre-requisites](#1-pre-requisites)
 2. [Deploying Application on IBM Cloud](#2-deploying-application-on-ibm-cloud)
 3. [Develop and Configure the models](#3-develop-and-configure-the-models)
-4. [Running the application/Model Evaluation](#4-running-the-application-/-model-evaluation)
+4. [Running the application or Model Evaluation](#4-running-the-application-or-model-evaluation)
 5. [Analyze the Results](#5-analyze-the-results)
 
 
@@ -81,7 +81,7 @@ Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud.
 ##### 2.3 Manually Deploy to IBM CLoud(Bluemix)
 
 
-## 3. Develop & Configure the Models:
+## 3. Develop and Configure the Models:
 
 Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
 
@@ -126,7 +126,7 @@ Application Dashboard screen provides users an option to select the Watson servi
 ![](Images/Dashboard1.png)
 
 
-## 4. Running the application/Model Evaluation
+## 4. Running the application or Model Evaluation
 
 ### Use Case:
 We created 2 models using Natural Language Classifier.
