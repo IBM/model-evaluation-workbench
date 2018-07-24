@@ -151,7 +151,7 @@ Below are the steps to Evaluate the performance:
 ![](Images/Model_Evaluate_Button.png)
 
 
-## 5. Analyse the results
+## 5. Analyze the results
 
 Now that we have the results which gives us the comparison between the uploaded models. The model evaluation will recommend for the best model.
 
