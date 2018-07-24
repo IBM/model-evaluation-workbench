@@ -59,7 +59,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 ##### Manual deploy to the local machine
 
-- Launch Eclipse tool, under server tab add new Liberty Server.
+- Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory.
 ![](Images/Local_NewLibertyServer.png)
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
