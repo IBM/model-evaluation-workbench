@@ -15,7 +15,7 @@ Workbench executes supported Watson cognitive services with their input model’
 2. Client Invokes the URL.
 3. Parsing Input test data.
 4. Invoke adapter which calls the Cognitive service models(NLC, NLU, etc.,)
-5. Parsing the Cognitive(model) service configuration.
+5. Parsing the Cognitive model service configuration.
 6. Connect to Cognitive model services.
 7. Gets response from Cognitie services.
 8. Compares Input data with cognitive model results and do performance evaluation(ROC Curve, etc.)
@@ -24,7 +24,6 @@ Workbench executes supported Watson cognitive services with their input model’
 
 ## Included Components
 * [Java Liberty Run Time](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime)
-* [Cognitive Services](https://console.bluemix.net/catalog/)
 * [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier)
 * [Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding)
 * [Watson Assistant](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation)
@@ -33,6 +32,7 @@ Workbench executes supported Watson cognitive services with their input model’
 ## Featured Technologies
 
 * [Liberty for Java](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime): Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server designed for the cloud.
+* [Aritificial Intilligence](https://www.computerworld.com/article/2906336/emerging-technology/what-is-artificial-intelligence.html): Intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
 
 ## Watch The Video
 Will be added soon...
