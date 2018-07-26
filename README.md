@@ -139,8 +139,18 @@ Application Dashboard screen provides users an option to select the Watson servi
    * 4.1 Deploy the application to local machine manually
    * 4.2 Configure the app with the available cognitive models
 
+##### 4.1 Deploy the application to local machine manually
+
 - Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
-![](Images/Local_NewLibertyServer.png)
+![](Images/LibertySrv1.png)
+- Select the Libert Server
+![](Images/LibertySrv4.png)
+- Start the Liberty Server
+![](Images/LibertySrvStart.png)
+- Model Evaluation application started
+![](Images/LocalMachineAppStart.png)
+
+##### 4.4 Configure the app with the available cognitive models
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
 ![](Images/Local_add_Config_Service_Credentials_paramaeters.png)
