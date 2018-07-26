@@ -72,10 +72,13 @@ Develop the Natural Language Classifier models which we will be using for Model 
 ![](Images/NLC1_UploadTraining_dataset.png)
 
 
-
+```
 One can choose to deploy and run the application in 2 ways:
-* Deploy the Application to the IBM Cloud and Configure
-* Deploy application Manually and Configure
+* Deploy the Application to the IBM Cloud and Configure (or)
+* Deploy application Manually to local machine and Configure
+
+Choose Step 3 or Stpe 4 as per your convenience and need.
+```
 
 ## 3. Deploy the Application to the IBM Cloud and Configure
    * 3.1 Deploy to the IBM Cloud
@@ -132,7 +135,10 @@ Application Dashboard screen provides users an option to select the Watson servi
 
 
 
-## Deploy the application manually to local machine
+## 4. Deploy the application manually to local machine and Configure
+   * 4.1 Deploy the application to local machine manually
+   * 4.2 Configure the app with the available cognitive models
+
 - Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
 ![](Images/Local_NewLibertyServer.png)
 
