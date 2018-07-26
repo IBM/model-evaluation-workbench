@@ -56,7 +56,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 ## 2. Create the Cognitive models
  
-Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
+Develop the Natural Language Classifier models which we will be using for Model Evaluation.
 
 #### Create NLC service instance
 - Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
@@ -71,6 +71,11 @@ Develop the Sample Natural Language Classifier model which we will be used for M
 -   Upload the available training data if already exists in csv format.
 ![](Images/NLC1_UploadTraining_dataset.png)
 
+
+
+One can choose to deploy and run the application in 2 ways:
+* Deploy the Application to the IBM Cloud and Configure
+* Deploy application Manually and Configure
 
 ## 3. Deploy the Application to the IBM Cloud and Configure
    * 3.1 Deploy to the IBM Cloud
@@ -124,32 +129,11 @@ Application Dashboard screen provides users an option to select the Watson servi
 - Watson Service Configuration
 ![](Images/NLC_Service_Configuration1.png)
 
-- Watson Model Evaluation Workbench: Dashboard
-![](Images/Dashboard1.png)
-
-zzzzzzz
 
 
 
-
-
-
-
-
-
-
-
-##### 3.2 Configure the app with the available cognitive models
-
-* 2.1 Manual deploy to the local machine
-   * Clone the repository
-   * Follow the below steps.
-* 2.2 Manual deployment to the IBM Cloud
-
-
-##### 2.1 Manual deploy to the local machine
-
-- Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory.
+## Deploy the application manually to local machine
+- Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
 ![](Images/Local_NewLibertyServer.png)
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
@@ -161,121 +145,15 @@ zzzzzzz
 ![](Images/Local_App_Launch.png)
 
 
-##### 2.2 Manual deployment to IBM Cloud
 
-- Clone the repository from the GitHub.
-
-From the terminal, navigate to the cloned repository folder and then exceute the below commands:
-- Execute full Maven build to create the `target/workbenchModelEval.war` file:
-    ```bash
-    $ mvn clean install
-    ```
-    After the war file gets genrated below is the similar screen that you should be seeing:
-    ![](Images/mvnCleanInstall1.png)
-    
-    
-  Ensure In the manifest file, we have the unique name for App and the Host.
-  ![](Images/manifest.png)
-  
--  Push the application to the cloud account using the below command:
-    ```bash
-    $ bx cf push modelevalpattern3
-    ```
-See below screen shot for the successful deployment of the app to the cloud
-![](Images/bxPush.png)
-
-
-## 3. Develop and Configure the Models:
-
-Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
-
-The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below,
-```
-e.g.,
-  NLC_USERNAME_CONFIG_1 = <username>
-  NLC_PASSWORD_CONFIG_1 = <password>
-  NLC_CLASSIFIER_ID_CONFIG_1 = < classifier_id>
-```
-If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
-```
-  NLC_USERNAME_CONFIG_2 = <username>
-  NLC_PASSWORD_CONFIG_2 = <password>
-  NLC_CLASSIFIER_ID_CONFIG_2 = < classifier_id>
-```
-
-Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
-
-- Watson Service Configuration
-![](Images/NLC_Service_Configuration1.png)
-
-- Watson Model Evaluation Workbench: Dashboard
-![](Images/Dashboard1.png)
+zzzzzzz
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
-
-#### 3.1 Create NLC service instance
-- Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
-- Below screen is displayed
-![](Images/NLC_CreateDefault.png)
-- Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
-- Click `Create` and then take a note of the credentials as below:
-  ![](Images/NLC_Credentials.png)
--  NLC service instance should get created.
-![](Images/NLC_Models_Screen.png)
--   Create another Classifier as below screenshot.
--   Upload the available training data if already exists in csv format.
-![](Images/NLC1_UploadTraining_dataset.png)
-
-
-#### 3.2 Model Service Configurations
-
-Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
-
-The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below,
-```
-e.g.,
-  NLC_USERNAME_CONFIG_1 = <username>
-  NLC_PASSWORD_CONFIG_1 = <password>
-  NLC_CLASSIFIER_ID_CONFIG_1 = < classifier_id>
-```
-If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
-```
-  NLC_USERNAME_CONFIG_2 = <username>
-  NLC_PASSWORD_CONFIG_2 = <password>
-  NLC_CLASSIFIER_ID_CONFIG_2 = < classifier_id>
-```
-
-Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
-
-- Watson Service Configuration
-![](Images/NLC_Service_Configuration1.png)
-
-- Watson Model Evaluation Workbench: Dashboard
-![](Images/Dashboard1.png)
-
-
-
-## 4. Running the Application 
+## 4. Run the Application 
 
 #### Scenario:
 We created 2 models using Natural Language Classifier.
