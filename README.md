@@ -101,6 +101,17 @@ From the terminal, navigate to the cloned repository folder and then exceute the
 ![](Images/bxPush.png)
 
 -  We can now launch the app from the IBM Cloud console:
+![](Images/CloudDeployRunningApp.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
