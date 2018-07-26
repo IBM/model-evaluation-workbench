@@ -73,11 +73,9 @@ Develop the Natural Language Classifier models which we will be using for Model 
 
 
 ```
-One can choose to deploy and run the application in 2 ways:
-* Deploy the Application to the IBM Cloud and Configure (or)
-* Deploy application Manually to local machine and Configure
+The applicatioon can be either run on IBM cloud or deploy and run locally.
 
-Choose Step 3 or Stpe 4 as per your convenience and need.
+Choose either Step 3 or Stpe 4 as per your convenience and need.
 ```
 
 ## 3. Deploy the Application to the IBM Cloud and Configure
