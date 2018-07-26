@@ -81,13 +81,19 @@ From the terminal, navigate to the cloned repository folder and then exceute the
     ```bash
     $ mvn clean install
     ```
+    After the war file gets genrated below is the similar screen that you should be seeing:
+    ![](Images/mvnCleanInstall1.png)
     
     
   Ensure In the manifest file, we have the unique name for App and the Host.
+  ![](Images/manifest.png)
   
--  ```bash
-    $ bx cf push workbenchModelEval
+-  Push the application to the cloud account using the below command:
+```bash
+    $ bx cf push modelevalpattern3
     ```
+    See below screen shot for the successful deployment of the app to the cloud
+    ![](Images/bxPush.png)
 
 
 
