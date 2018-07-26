@@ -51,59 +51,11 @@ Follow these steps to setup and run this code pattern. The steps are described i
 * Clone the GIT repository.
 * Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
-## 2. Deploying the Application
-* 2.1 Manual deploy to the local machine
-   * Clone the repository
-   * Follow the below steps.
-* 2.2 Manual deployment to the IBM Cloud
-
-
-##### 2.1 Manual deploy to the local machine
-
-- Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory.
-![](Images/Local_NewLibertyServer.png)
-
-- Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
-![](Images/Local_add_Config_Service_Credentials_paramaeters.png)
-
-- Start the server(Right click on the newly added server)
-![](Images/Local_Start_Liberty_Server.png)
-- Launch the application.
-![](Images/Local_App_Launch.png)
-
-
-##### 2.2 Manual deployment to IBM Cloud
-
-- Clone the repository from the GitHub.
-
-From the terminal, navigate to the cloned repository folder and then exceute the below commands:
-- Execute full Maven build to create the `target/workbenchModelEval.war` file:
-    ```bash
-    $ mvn clean install
-    ```
-    After the war file gets genrated below is the similar screen that you should be seeing:
-    ![](Images/mvnCleanInstall1.png)
-    
-    
-  Ensure In the manifest file, we have the unique name for App and the Host.
-  ![](Images/manifest.png)
-  
--  Push the application to the cloud account using the below command:
-```bash
-    $ bx cf push modelevalpattern3
-```
-    See below screen shot for the successful deployment of the app to the cloud
-    ![](Images/bxPush.png)
-
-
-
-
-
-## 3. Develop and Configure the Models:
+## 2. Develop and Configure the Models:
 
 Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
 
-#### 3.1 Create NLC service instance
+#### 2.1 Create NLC service instance
 - Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
 - Below screen is displayed
 ![](Images/NLC_CreateDefault.png)
@@ -117,7 +69,7 @@ Develop the Sample Natural Language Classifier model which we will be used for M
 ![](Images/NLC1_UploadTraining_dataset.png)
 
 
-#### 3.2 Model Service Configurations
+#### 2.2 Model Service Configurations
 
 Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
 
@@ -142,6 +94,54 @@ Application Dashboard screen provides users an option to select the Watson servi
 
 - Watson Model Evaluation Workbench: Dashboard
 ![](Images/Dashboard1.png)
+
+## 3. Deploying the Application
+* 3.1 Manual deploy to the local machine
+   * Clone the repository
+   * Follow the below steps.
+* 3.2 Manual deployment to the IBM Cloud
+
+
+##### 3.1 Manual deploy to the local machine
+
+- Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory.
+![](Images/Local_NewLibertyServer.png)
+
+- Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
+![](Images/Local_add_Config_Service_Credentials_paramaeters.png)
+
+- Start the server(Right click on the newly added server)
+![](Images/Local_Start_Liberty_Server.png)
+- Launch the application.
+![](Images/Local_App_Launch.png)
+
+
+##### 3.2 Manual deployment to IBM Cloud
+
+- Clone the repository from the GitHub.
+
+From the terminal, navigate to the cloned repository folder and then exceute the below commands:
+- Execute full Maven build to create the `target/workbenchModelEval.war` file:
+    ```bash
+    $ mvn clean install
+    ```
+    After the war file gets genrated below is the similar screen that you should be seeing:
+    ![](Images/mvnCleanInstall1.png)
+    
+    
+  Ensure In the manifest file, we have the unique name for App and the Host.
+  ![](Images/manifest.png)
+  
+-  Push the application to the cloud account using the below command:
+    ```bash
+    $ bx cf push modelevalpattern3
+    ```
+See below screen shot for the successful deployment of the app to the cloud
+![](Images/bxPush.png)
+
+
+
+
 
 
 ## 4. Running the Application 
