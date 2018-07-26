@@ -43,7 +43,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 1. [Pre-requisites](#1-pre-requisites)
 2. [Deploying Application on IBM Cloud](#2-deploying-application-on-ibm-cloud)
 3. [Develop and Configure the models](#3-develop-and-configure-the-models)
-4. [Running the application or Model Evaluation](#4-running-the-application-or-model-evaluation)
+4. [Running the Application](#4-running-the-application)
 5. [Analyze the Results](#5-analyze-the-results)
 
 
@@ -118,9 +118,9 @@ Application Dashboard screen provides users an option to select the Watson servi
 ![](Images/Dashboard1.png)
 
 
-## 4. Running the application or Model Evaluation
+## 4. Running the Application 
 
-### Use Case:
+#### Scenario:
 We created 2 models using Natural Language Classifier.
 
 Now, we would evaluate which model is performing better when compared to each other. For that we would have already configured as per application deployment steps.
