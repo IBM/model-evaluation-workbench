@@ -91,7 +91,7 @@ From the terminal, navigate to the cloned repository folder and then exceute the
 -  Push the application to the cloud account using the below command:
 ```bash
     $ bx cf push modelevalpattern3
-    ```
+```
     See below screen shot for the successful deployment of the app to the cloud
     ![](Images/bxPush.png)
 
