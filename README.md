@@ -153,8 +153,10 @@ Application Dashboard screen provides users an option to select the Watson servi
 ##### 4.4 Configure the app with the available cognitive models
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
-![](Images/Local_add_Config_Service_Credentials_paramaeters.png)
+![](Images/ServiceCredLocal.png)
 
+_ Launch the application using the localhost URL:
+http://localhost:9091/ModelEvaluationWorkbench/
 - Start the server(Right click on the newly added server)
 ![](Images/Local_Start_Liberty_Server.png)
 - Launch the application.
