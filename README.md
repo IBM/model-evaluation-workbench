@@ -41,7 +41,7 @@ Will be added soon...
 ## Steps
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-pre-requisites)
-2. [Deploying Application on IBM Cloud](#2-deploying-application-on-ibm-cloud)
+2. [Deploying the Application](#2-deploying-the-application)
 3. [Develop and Configure the models](#3-develop-and-configure-the-models)
 4. [Running the Application](#4-running-the-application)
 5. [Analyze the Results](#5-analyze-the-results)
@@ -51,13 +51,14 @@ Follow these steps to setup and run this code pattern. The steps are described i
 * Clone the GIT repository.
 * Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
 
-## 2. Deploying Application on IBM Cloud
-* Manual deploy to the local machine
+## 2. Deploying the Application
+* 2.1 Manual deploy to the local machine
    * Clone the repository
    * Follow the below steps.
+* 2.2 Manual deployment to the IBM Cloud
 
 
-##### Manual deploy to the local machine
+##### 2.1 Manual deploy to the local machine
 
 - Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory.
 ![](Images/Local_NewLibertyServer.png)
@@ -69,6 +70,25 @@ Follow these steps to setup and run this code pattern. The steps are described i
 ![](Images/Local_Start_Liberty_Server.png)
 - Launch the application.
 ![](Images/Local_App_Launch.png)
+
+
+##### 2.2 Manual deployment to IBM Cloud
+
+- Clone the repository from the GitHub.
+
+From the terminal, navigate to the cloned repository folder and then exceute the below commands:
+- Execute full Maven build to create the `target/workbenchModelEval.war` file:
+    ```bash
+    $ mvn clean install
+    ```
+    
+    
+  Ensure In the manifest file, we have the unique name for App and the Host.
+  
+-  ```bash
+    $ bx cf push workbenchModelEval
+    ```
+
 
 
 
