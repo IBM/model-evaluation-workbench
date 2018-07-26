@@ -41,19 +41,69 @@ Will be added soon...
 ## Steps
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-pre-requisites)
-2. [Deploying the Application](#2-deploying-the-application)
-3. [Develop and Configure the models](#3-develop-and-configure-the-models)
-4. [Running the Application](#4-running-the-application)
-5. [Analyze the Results](#5-analyze-the-results)
+2. [Create the Cognitive models](#2-create-the-cognitive-models)
+3. [Deploy the application to the IBM Cloud and Configure](#3-Deploy-the-application-to-the-cloud-and-configure)
+4. [Deploy the application manually to local machine](#4-Deploy-the-application-manually-to-local-machine)
+5. [Run the application](#5-run-the-application)
+6. [Analyze the Results](#6-analyze-the-results)
 
 
 ## 1. Pre-requisites
 * Clone the GIT repository.
-* Have an IBM Cloud account. If NOT, you can create an account [here](https://console.bluemix.net/).
+* Have an IBM Cloud account. If NOT, you can create an account (IBM Cloud)(https://console.bluemix.net/).
 
 
 
-## 2. Deploying the Application
+## 2. Create the Cognitive models
+ 
+Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
+
+#### Create NLC service instance
+- Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
+- Below screen is displayed
+![](Images/NLC_CreateDefault.png)
+- Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
+- Click `Create` and then take a note of the credentials as below:
+  ![](Images/NLC_Credentials.png)
+-  NLC service instance should get created.
+![](Images/NLC_Models_Screen.png)
+-   Create another Classifier as below screenshot.
+-   Upload the available training data if already exists in csv format.
+![](Images/NLC1_UploadTraining_dataset.png)
+
+
+## 3. Deploy the Application to the IBM Cloud and Configure
+   * 3.1 Deploy to the IBM Cloud
+   * 3.2 Configure the app with the available cognitive models
+ 
+ 
+ 
+##### 3.1 Deploy to the IBM Cloud
+- Clone the repository from the GitHub.
+
+From the terminal, navigate to the cloned repository folder and then exceute the below commands:
+- Execute full Maven build to create the `target/workbenchModelEval.war` file:
+    ```bash
+    $ mvn clean install
+    ```
+    After the war file gets genrated below is the similar screen that you should be seeing:
+    ![](Images/mvnCleanInstall1.png)
+    
+    
+  Ensure In the manifest file, we have the unique name for App and the Host.
+  ![](Images/manifest.png)
+  
+-  Push the application to the cloud account using the below command:
+    ```bash
+    $ bx cf push modelevalpattern3
+    ```
+See below screen shot for the successful deployment of the app to the cloud
+![](Images/bxPush.png)
+
+
+
+##### 3.2 Configure the app with the available cognitive models
+
 * 2.1 Manual deploy to the local machine
    * Clone the repository
    * Follow the below steps.
@@ -99,6 +149,50 @@ See below screen shot for the successful deployment of the app to the cloud
 
 
 ## 3. Develop and Configure the Models:
+
+Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
+
+The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below,
+```
+e.g.,
+  NLC_USERNAME_CONFIG_1 = <username>
+  NLC_PASSWORD_CONFIG_1 = <password>
+  NLC_CLASSIFIER_ID_CONFIG_1 = < classifier_id>
+```
+If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
+```
+  NLC_USERNAME_CONFIG_2 = <username>
+  NLC_PASSWORD_CONFIG_2 = <password>
+  NLC_CLASSIFIER_ID_CONFIG_2 = < classifier_id>
+```
+
+Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
+
+- Watson Service Configuration
+![](Images/NLC_Service_Configuration1.png)
+
+- Watson Model Evaluation Workbench: Dashboard
+![](Images/Dashboard1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Develop the Sample Natural Language Classifier model which we will be used for Model Evaluation.
 
