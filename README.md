@@ -72,15 +72,16 @@ Develop the Natural Language Classifier models which we will be using for Model 
 ![](Images/NLC1_UploadTraining_dataset.png)
 
 
-```
-The applicatioon can be either run on IBM cloud or deploy and run locally.
-
-Choose either Step 3 or Stpe 4 as per your convenience and need.
-```
 
 ## 3. Deploy the Application to the IBM Cloud and Configure
    * 3.1 Deploy to the IBM Cloud
    * 3.2 Configure the app with the available cognitive models
+ 
+
+The applicatioon can be either run on IBM cloud or deploy and run locally.
+
+Choose either Step 3 or Stpe 4 as per your convenience and need.
+
  
 ##### 3.1 Deploy to the IBM Cloud
 - Clone the repository from the GitHub.
@@ -94,8 +95,8 @@ Choose either Step 3 or Stpe 4 as per your convenience and need.
     ![](Images/mvnCleanInstall1.png)
     
     
-  Ensure In the manifest file, we have the unique name for App and the Host.
-  ![](Images/manifest.png)
+  Ensure In the manifest file, we have the unique name for name and the Host.
+ 
   
 -  Push the application to the cloud account using the below command:
     ```bash
@@ -136,6 +137,11 @@ Application Dashboard screen provides users an option to select the Watson servi
 ## 4. Deploy the application manually to local machine and Configure
    * 4.1 Deploy the application to local machine manually
    * 4.2 Configure the app with the available cognitive models
+   
+
+The applicatioon can be either run on IBM cloud or deploy and run locally.
+
+Choose either Step 3 or Stpe 4 as per your convenience and need.
 
 ##### 4.1 Deploy the application to local machine manually
 
