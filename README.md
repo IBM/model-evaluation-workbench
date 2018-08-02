@@ -23,10 +23,10 @@ Workbench executes supported Watson cognitive services with their input model’
 10. User consumes the performance analysis results.
 
 ## Included Components
-* [Java Liberty Run Time](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime)
-* [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier)
-* [Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding)
-* [Watson Assistant](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation)
+* [Java Liberty Run Time](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime) - Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server designed for the cloud.
+* [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier) - The Natural Language Classifier service applies cognitive computing techniques to return the best matching classes for a sentence or phrase.
+* [Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding)- Analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles.
+* [Watson Assistant](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation) - Adds natural language interface to your application to automate interactions with your end users. Common applications include virtual agents and chat bots that can integrate and communicate on any channel or device. 
 
 
 ## Featured Technologies
