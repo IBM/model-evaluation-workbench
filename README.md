@@ -42,8 +42,8 @@ Will be added soon...
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-pre-requisites)
 2. [Create the Cognitive models](#2-create-the-cognitive-models)
-3. [Deploy the application to the IBM Cloud](#3-Deploy-the-application-to-the-cloud)
-4. [Deploy the application manually to local machine](#4-Deploy-the-application-manually-to-local-machine)
+3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-the-cloud)
+4. [Deploy the application to local machine](#4-deploy-the-application-to-local-machine)
 5. [Run the application](#5-run-the-application)
 6. [Analyze the Results](#6-analyze-the-results)
 
@@ -121,11 +121,11 @@ And Add the second set of model details  `NLC_USERNAME_CONFIG_1`, `NLC_PASSWORD_
 
 
 
-## 4. Deploy the application manually to local machine and Configure
+## 4. Deploy the application to local machine
    
 The application can be deployed on IBM Cloud or locally. Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
    
-### 4.1 Deploy the application to local machine manually
+### 4.1 Deploy to local machine 
 
 - Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
 ![](Images/LibertySrv1.png)
