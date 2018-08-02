@@ -49,12 +49,14 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 
 ## 1. Pre-requisites
-* Clone the [GIT repository](git@github.com:IBM/model-evaluation-workbench.git)
-* Have an IBM Cloud account. If NOT, you can create an account [IBM Cloud](https://console.bluemix.net/).
-* Install [Maven](https://maven.apache.org/install.html)
-* bx and CF (Links-----)
-* Eclipse tool(Links---)
-* 
+- IBM Cloud account: If you do not have an IBM Cloud account, you can create an account [here](https://console.bluemix.net/).
+- If you opt to deploy the Liberty application manually then
+  Cloud Foundry cli should be installed. If not installed, click [here](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) for instructions to install.
+- Maven should be installed. If not installed, you can download Maven from [here](https://maven.apache.org/download.cgi). You
+      can refer to installation instructions [here](https://maven.apache.org/install.html).
+- Clone the [GIT repository](https://github.com/IBM/model-evaluation-workbench.git)
+- [Eclipse tool](https://www.eclipse.org/downloads/)
+
 
 ## 2. Create the Cognitive models
  
