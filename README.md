@@ -142,7 +142,6 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 ![](Images/Local_Serv_Cred.png)
 
 - Start the Liberty Server
-
 ![](Images/LibertySrvStart.png)
 
 - Right Click on the Liberty Server created above, Click on the `Add and Remove`
