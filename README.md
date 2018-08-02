@@ -141,7 +141,11 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 
 ![](Images/LibertySrvStart.png)
 
-- Model Evaluation application started
+- Right Click on the Liberty Server created above, Click on the `Add and Remove`
+- Under Add and Remove wizard, from the available section move `ModelEvaluationWorkbench` to configured section.
+- Click on Finish.
+- Model Evaluation application started.
+- Under the Console tab, click on the default_host link: http://localhost:9091/ModelEvaluationWorkbench/
 
 ![](Images/LocalMachineAppStart.png)
 
