@@ -108,21 +108,10 @@ Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
 
 ##### 3.2 Configure the app with the cognitive models
 
-The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below,
-```
-e.g.,
-  NLC_USERNAME_CONFIG_1 = <username>
-  NLC_PASSWORD_CONFIG_1 = <password>
-  NLC_CLASSIFIER_ID_CONFIG_1 = < classifier_id>
-```
-If User needs to configure multiple Classifier service then CONFIG_2 or CONFIG_3, etc. can be configured as Bluemix user defined variables as below:
-```
-  NLC_USERNAME_CONFIG_2 = <username>
-  NLC_PASSWORD_CONFIG_2 = <password>
-  NLC_CLASSIFIER_ID_CONFIG_2 = < classifier_id>
-```
-
-Application Dashboard screen provides users an option to select the Watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
+Go to IBM Cloud Clonsole, click on application that was deployed, click on Runtime and then click on Environment variables. 
+Under User defined section Click on Add, then under `Name` enter the text as `NLC_USERNAME_CONFIG_1` and under value pass the username of the first NLC service instance that was created in section `Create NLC service instance`. 
+Repeat the same for adding `NLC_PASSWORD_CONFIG_1 = <password>`, `NLC_CLASSIFIER_ID_CONFIG_1`
+And Add the second set of model details  `NLC_USERNAME_CONFIG_1`, `NLC_PASSWORD_CONFIG_1 = <password>` and `NLC_CLASSIFIER_ID_CONFIG_1` similarly.
 
 - Watson Service Configuration
 ![](Images/NLC_Service_Configuration1.png)
