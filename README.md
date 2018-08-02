@@ -89,10 +89,10 @@ Create the Natural Language Classifier models by following the below steps:
 - Tap on one of the newly created NLC models and train them with the given dataset.
 ![](Images/NLC_Models_Screen.png)
 
-- Import the dataset1. Model will get trained using the dataset provided.
+- Import the [dataset1](https://github.com/IBM/model-evaluation-workbench/blob/master/src/main/data/NLC_import_Training1.csv). Model will get trained using the dataset provided.
 ![](Images/NLC1_UploadTraining_dataset.png)
 
-- Follow the above same steps for training the second NLC model using the dataset2.
+- Follow the above same steps for training the second NLC model using the [dataset2](https://github.com/IBM/model-evaluation-workbench/blob/master/src/main/data/NLC_import_Training2.csv).
 
 
 ## 3. Deploy the application to the IBM Cloud
@@ -190,7 +190,7 @@ Below are the steps to Evaluate the performance:
 -	Step3: Click on NLC Evaluate model and select the classes from the drop-down bar.
 ![](Images/Model_NLC_Evaluate.png)
 
--	Step4: In the model1 and model2 browse for the Truth file (the actual results that you have). This is the file which has the correct sample set of data.
+-	Step4: In the model1 and model2 browse for the [Truth csv file](https://github.com/IBM/model-evaluation-workbench/blob/master/src/main/data/NLC_import_Truth.csv) (the actual results that you have). This is the file which has the correct sample set of data.
 ![](Images/Model_Upload_TruthFile.png)
 
 -	Step5: Click on Evaluate Performance button.
