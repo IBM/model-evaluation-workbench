@@ -51,8 +51,8 @@ Follow these steps to setup and run this code pattern. The steps are described i
 ## 1. Pre-requisites
 * Clone the [GIT repository](git@github.com:IBM/model-evaluation-workbench.git)
 * Have an IBM Cloud account. If NOT, you can create an account [IBM Cloud](https://console.bluemix.net/).
-
-
+* Install [Maven](https://maven.apache.org/install.html)
+* bx and CF (Links-----)
 
 ## 2. Create the Cognitive models
  
@@ -76,24 +76,19 @@ Create the Natural Language Classifier models by following the below steps:
 
 
 ## 3. Deploy the Application to the IBM Cloud and Configure
-   * 3.1 Deploy to the IBM Cloud
-   * 3.2 Configure the app with the available cognitive models
- 
-
-The applicatioon can be either run on IBM cloud or deploy and run locally.
-
-Choose either Step 3 or Stpe 4 as per your convenience and need.
-
+  
+The application can be deployed on IBM Cloud or locally.
+Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
  
 ##### 3.1 Deploy to the IBM Cloud
-- Clone the repository from the GitHub.
+- Clone the repository from the GitHub(Link-----).
 
 - From the terminal, navigate to the cloned repository folder and then exceute the below commands:
 - Execute full Maven build to create the `target/workbenchModelEval.war` file:
     ```bash
     $ mvn clean install
     ```
-    After the war file gets genrated below is the similar screen that you should be seeing:
+    After the successfull execution of the above command, the war file gets generated under the target folder.
     ![](Images/mvnCleanInstall1.png)
     
     
