@@ -14,12 +14,12 @@ Workbench executes supported Watson cognitive services with their input model’
 1. User uses the client device(mobile, tablets, etc.,) to access the application.
 2. Client Invokes the URL.
 3. Parse Input test data.
-4. Invoke adapter which calls the Cognitive service models(NLC, NLU, etc.,)
-5. Parsing the Cognitive model service configuration.
+4. Invoke adapter which calls the Cognitive service models(Natural Language Classifier, Natural Language Understanding, etc.,)
+5. Parse the Cognitive model service configuration.
 6. Connect to Cognitive model services.
-7. Gets response from Cognitie services.
-8. Compares Input data with cognitive model results and do performance evaluation(ROC Curve, etc.)
-9. Performance analysis is shown on UI.
+7. Gets response from Cognitive services.
+8. Compares the expected result with cognitive model results and do performance evaluation.
+9. Performance analysis is shown on UI
 10. User consumes the performance analysis results.
 
 ## Included Components
