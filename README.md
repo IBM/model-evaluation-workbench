@@ -131,11 +131,12 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 * run `git clone git@github.com:IBM/model-evaluation-workbench.git` to clone the repository
    
 ### 4.2 Deploy to local machine 
-
-- Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
-![](Images/LibertySrv1.png)
-- Select the Libert Server
-![](Images/LibertySrv4.png)
+- Launch Eclipse
+- In the menu, goto file->Import
+- Under Import wizard, expand General folder and select `Existing Project into Workspace`. 
+- Click Next and browse to the cloned project folder.
+- Click the Finish button.
+- Setup Liberty server in eclipse as per this [Link](https://www.ibm.com/blogs/bluemix/2016/05/liberty-and-eclipse-create-server-p10/)
 - Start the Liberty Server
 ![](Images/LibertySrvStart.png)
 - Model Evaluation application started
