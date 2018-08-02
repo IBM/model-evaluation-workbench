@@ -92,6 +92,8 @@ Create the Natural Language Classifier models by following the below steps:
 - Import the dataset1. Model will get trained using the dataset provided.
 ![](Images/NLC1_UploadTraining_dataset.png)
 
+- Follow the above same steps for training the second NLC model using the dataset2.
+
 
 ## 3. Deploy the application to the IBM Cloud
   
