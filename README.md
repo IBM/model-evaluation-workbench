@@ -53,6 +53,8 @@ Follow these steps to setup and run this code pattern. The steps are described i
 * Have an IBM Cloud account. If NOT, you can create an account [IBM Cloud](https://console.bluemix.net/).
 * Install [Maven](https://maven.apache.org/install.html)
 * bx and CF (Links-----)
+* Eclipse tool(Links---)
+* 
 
 ## 2. Create the Cognitive models
  
