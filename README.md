@@ -106,7 +106,7 @@ Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
 -  See below screen shot for the successful deployment of the app to the cloud
 ![](Images/bxPush.png)
 
-- Open IBM Cloud Console, Under Dashboard you shouls see the above deployed application running. Click on the application.
+- Open IBM Cloud Console, Under Dashboard you should see the above deployed application running. Click on the application.
 ![](Images/CloudDeployRunningApp.png)
 - Click on Visist app URL link to launch the application.
 ![](Images/Model_LaunchScreen.png)
@@ -114,11 +114,10 @@ Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
 ### 3.2 Configure the app with the cognitive models
 
 Go to IBM Cloud Clonsole, click on application that was deployed, click on Runtime and then click on Environment variables. 
-Under User defined section Click on Add, then under `Name` enter the text as `NLC_USERNAME_CONFIG_1` and under value pass the username of the first NLC service instance that was created in section `Create NLC service instance`. 
+Under User defined section Click on Add, then under `Name` enter the text as `NLC_USERNAME_CONFIG_1` and under value pass the username of the first NLC service instance that was created in section `Create NLC service instance`. Click on Save.
 Repeat the same for adding `NLC_PASSWORD_CONFIG_1 = <password>`, `NLC_CLASSIFIER_ID_CONFIG_1`
 And Add the second set of model details  `NLC_USERNAME_CONFIG_1`, `NLC_PASSWORD_CONFIG_1 = <password>` and `NLC_CLASSIFIER_ID_CONFIG_1` similarly.
 
-- Watson Service Configuration
 ![](Images/NLC_Service_Configuration1.png)
 
 Skip Step 4 and Go to Step 5 to Run Application.
