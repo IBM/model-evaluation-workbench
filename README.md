@@ -42,7 +42,7 @@ Will be added soon...
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-pre-requisites)
 2. [Create the Cognitive models](#2-create-the-cognitive-models)
-3. [Deploy the application to the IBM Cloud and Configure](#3-Deploy-the-application-to-the-cloud-and-configure)
+3. [Deploy the application to the IBM Cloud](#3-Deploy-the-application-to-the-cloud)
 4. [Deploy the application manually to local machine](#4-Deploy-the-application-manually-to-local-machine)
 5. [Run the application](#5-run-the-application)
 6. [Analyze the Results](#6-analyze-the-results)
@@ -77,7 +77,7 @@ Create the Natural Language Classifier models by following the below steps:
 
 
 
-## 3. Deploy the Application to the IBM Cloud and Configure
+## 3. Deploy the Application to the IBM Cloud
   
 The application can be deployed on IBM Cloud or locally.
 Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
