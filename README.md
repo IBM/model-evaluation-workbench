@@ -137,6 +137,10 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 - Click Next and browse to the cloned project folder.
 - Click the Finish button.
 - Setup Liberty server in eclipse as per this [Link](https://www.ibm.com/blogs/bluemix/2016/05/liberty-and-eclipse-create-server-p10/)
+
+- Application needs to access models to send requests to and get responses from them. Access details of these models have to be provided in server config (server.env) file of liberty server. A sample server.env file snapshot is as in below image. You will need to provide the credentials of the models. You can access NLC credentials as described in section `Create NLC service instance`
+![](Images/Local_Serv_Cred.png)
+
 - Start the Liberty Server
 
 ![](Images/LibertySrvStart.png)
@@ -145,7 +149,7 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 - Under Add and Remove wizard, from the available section move `ModelEvaluationWorkbench` to configured section.
 - Click on Finish.
 - Model Evaluation application started.
-- Under the Console tab, click on the default_host link: http://localhost:9091/ModelEvaluationWorkbench/
+- Under the Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. Click on that link to launch the application.
 
 ![](Images/LocalMachineAppStart.png)
 
