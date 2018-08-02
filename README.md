@@ -138,8 +138,11 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 - Click the Finish button.
 - Setup Liberty server in eclipse as per this [Link](https://www.ibm.com/blogs/bluemix/2016/05/liberty-and-eclipse-create-server-p10/)
 - Start the Liberty Server
+
 ![](Images/LibertySrvStart.png)
+
 - Model Evaluation application started
+
 ![](Images/LocalMachineAppStart.png)
 
 ### 4.3 Configure the app with the available cognitive models
