@@ -49,23 +49,25 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 
 ## 1. Pre-requisites
-* Clone the GIT repository.
-* Have an IBM Cloud account. If NOT, you can create an account (IBM Cloud)(https://console.bluemix.net/).
+* Clone the [GIT repository](git@github.com:IBM/model-evaluation-workbench.git)
+* Have an IBM Cloud account. If NOT, you can create an account [IBM Cloud](https://console.bluemix.net/).
 
 
 
 ## 2. Create the Cognitive models
  
-Develop the Natural Language Classifier models which we will be using for Model Evaluation.
+While we can use any watson models, for the sake of this code pattern we will use Natural Language Classifier(NLC).
 
-#### Create NLC service instance
+Create the Natural Language Classifier models by following the below steps:
+
+### Create NLC service instance
 - Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
 - Below screen is displayed
 ![](Images/NLC_CreateDefault.png)
 - Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
-- Click `Create` and then take a note of the credentials as below:
+- Click `Create` and NLC service instance gets created and then take a note of the credentials as below:
   ![](Images/NLC_Credentials.png)
--  NLC service instance should get created.
+
 ![](Images/NLC_Models_Screen.png)
 -   Create another Classifier as below screenshot.
 -   Upload the available training data if already exists in csv format.
