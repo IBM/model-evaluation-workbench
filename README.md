@@ -64,6 +64,22 @@ While we can use any watson models, for the sake of this code pattern we will us
 Create the Natural Language Classifier models by following the below steps:
 
 ### Create NLC service instance
+
+#### 2.1 Create an instance of the service:
+
+- Go to the Natural Language Classifier [page](https://console.bluemix.net/catalog/services/natural-language-classifier) in the IBM Cloud Catalog.
+
+- Sign up for a free IBM Cloud account or log in [here](https://console.bluemix.net/).
+
+- Click Create.
+![](Images/NLC_CreateDefault.png)
+
+- Copy the credentials to authenticate to your service instance:
+- On the service dashboard, click the Service credentials tab.
+- Click View credentials under Actions.
+- Copy the username, password, and url values and save it in notepad(this will be required later).
+
+========================================zzzzzzz====================================================
 - Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
 - Below screen is displayed
 ![](Images/NLC_CreateDefault.png)
@@ -75,6 +91,8 @@ Create the Natural Language Classifier models by following the below steps:
 -   Create another Classifier as below screenshot.
 -   Upload the available training data if already exists in csv format.
 ![](Images/NLC1_UploadTraining_dataset.png)
+
+========================================zzzzzzz====================================================
 
 
 
@@ -155,9 +173,9 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 
 
 
-## 4. Run the Application 
+## 4. Run the Application
 
-#### Scenario:
+### Scenario:
 We created 2 models using Natural Language Classifier.
 
 Now, we would evaluate which model is performing better when compared to each other. For that we would have already configured as per application deployment steps.
