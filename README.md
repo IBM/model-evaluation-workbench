@@ -54,7 +54,6 @@ Follow these steps to setup and run this code pattern. The steps are described i
   Cloud Foundry cli should be installed. If not installed, click [here](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) for instructions to install.
 - Maven should be installed. If not installed, you can download Maven from [here](https://maven.apache.org/download.cgi). You
       can refer to installation instructions [here](https://maven.apache.org/install.html).
-- Clone the [GIT repository](https://github.com/IBM/model-evaluation-workbench.git)
 - Install [Eclipse tool](https://www.eclipse.org/downloads/)
 
 
@@ -120,14 +119,18 @@ And Add the second set of model details  `NLC_USERNAME_CONFIG_1`, `NLC_PASSWORD_
 - Watson Service Configuration
 ![](Images/NLC_Service_Configuration1.png)
 
-
+Skip Step 4 and Go to Step 5 to Run Application.
 
 
 ## 4. Deploy the application to local machine
    
 The application can be deployed on IBM Cloud or locally. Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
+
+### 4.1 Clone git repository
+* open command prompt. Change directory to location where you want to download project files. Go to that directory.
+* run `git clone git@github.com:IBM/model-evaluation-workbench.git` to clone the repository
    
-### 4.1 Deploy to local machine 
+### 4.2 Deploy to local machine 
 
 - Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
 ![](Images/LibertySrv1.png)
@@ -138,7 +141,7 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 - Model Evaluation application started
 ![](Images/LocalMachineAppStart.png)
 
-### 4.4 Configure the app with the available cognitive models
+### 4.3 Configure the app with the available cognitive models
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
 ![](Images/ServiceCredLocal.png)
