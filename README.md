@@ -91,23 +91,22 @@ Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
     After the successfull execution of the above command, the war file gets generated under the target folder.
     ![](Images/mvnCleanInstall1.png)
     
-    
-  Ensure In the manifest file, we have the unique name for name and the Host.
- 
+  Open the manifest.yml file and update name and host to be unique applicatipn name.  
+  
   
 -  Push the application to the cloud account using the below command:
     ```bash
-    $ bx cf push modelevalpattern3
+    $ bx cf push <Application_Name>
     ```
 -  See below screen shot for the successful deployment of the app to the cloud
 ![](Images/bxPush.png)
 
--  We can now launch the app from the IBM Cloud console:
+- Open IBM Cloud Console, Under Dashboard you shouls see the above deployed application running. Click on the application.
 ![](Images/CloudDeployRunningApp.png)
+- Click on Visist app URL link to launch the application.
+![](Images/Model_LaunchScreen.png)
 
-##### 3.2 Configure the app with the available cognitive models
-
-Administrator needs to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
+##### 3.2 Configure the app with the cognitive models
 
 The Watson Service's access details need to be configured as application's user defined variables in Bluemix console as below,
 ```
