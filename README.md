@@ -42,7 +42,7 @@ Will be added soon...
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-pre-requisites)
 2. [Create the Cognitive models](#2-create-the-cognitive-models)
-3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-the-cloud)
+3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-the-ibm-cloud)
 4. [Deploy the application to local machine](#4-deploy-the-application-to-local-machine)
 5. [Run the application](#5-run-the-application)
 6. [Analyze the Results](#6-analyze-the-results)
