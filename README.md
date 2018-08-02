@@ -84,9 +84,11 @@ The application can be deployed on IBM Cloud or locally.
 Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
  
 ### 3.1 Deploy to the IBM Cloud
-- Clone the repository from the GitHub(Link-----).
+- Clone the repository from the GitHub.
+* open command prompt. Change directory to location where you want to download project files. Go to that directory.
+* run `git clone git@github.com:IBM/model-evaluation-workbench.git` to clone the repository
 
-- From the terminal, navigate to the cloned repository folder and then exceute the below commands:
+- From the command prompt, navigate to the cloned repository folder and then exceute the below commands:
 - Execute full Maven build to create the `target/workbenchModelEval.war` file:
     ```bash
     $ mvn clean install
@@ -94,7 +96,7 @@ Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
     After the successfull execution of the above command, the war file gets generated under the target folder.
     ![](Images/mvnCleanInstall1.png)
     
-  Open the manifest.yml file and update name and host to be unique applicatipn name.  
+  Open the manifest.yml file and update name and host to be unique application name.  
   
   
 -  Push the application to the cloud account using the below command:
