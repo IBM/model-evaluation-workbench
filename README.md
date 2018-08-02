@@ -6,7 +6,7 @@ By the end of this code pattern reading, one will be able to:
 - To compare different Watson cognitive service models and selecting the threshold and best-performing machine learning model.
 - Configure Watson cognitive service access details in workbench and input model test data to workbench for service performance evaluation.
 
-Workbench executes supported Watson cognitive services with their input model’s test data, prepare performance evaluation data, calculates performance statistics and present user with the following recommendations, curve and summary statistics:
+Workbench executes supported Watson cognitive services with their input model’s test data, prepare performance evaluation data, calculates performance statistics and påresent user with the following recommendations, curve and summary statistics:
 
 ## Architecture
 ![](Images/Reference_Architecture.png)
