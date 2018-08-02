@@ -1,0 +1,54 @@
+What are the chances for rain?,conditions
+Is it warm?,temperature
+Will it be uncomfortably hot?,temperature
+Will high temperatures be dangerous?,temperature
+When will the heat subside?,temperature
+Is it cold?,temperature
+What is todays expected humidity?,conditions
+What is the expected high for today?,temperature
+How cold is it today?,temperature
+Will it be uncomfortably cold?,temperature
+will it be pleasant outside?
+When will the rain subside?,conditions
+How much snow are we expecting?,conditions
+Are the winds dangerous?,conditions
+What lows are we expecting?,temperature
+How much rain will fall today?,conditions
+Is the forecast calling for snow today?,conditions
+What highs are we expecting?,temperature
+Is it dangerously cold?,temperature
+Will we have much snow?,conditions
+Will the blizzard hit us?,conditions
+Is it cold outside?,temperature
+Will it rain?,conditions
+Will it be humid?,conditions
+Will it rain today?,conditions
+Will it be cloudy?,conditions
+Is it drizzling?,conditions
+Is it windy?,conditions
+How much snow do we expect?,conditions
+Will we have a cold day today?,temperature
+How hot is it today?,temperature
+Is it chilly?,temperature
+Is it sunny now?,conditions
+Is it hot?,temperature
+Is it windy outside?,conditions
+Will it be breezy?,conditions
+What is the expected snowfall today?,conditions
+Will it be dry?,conditions
+Will it be frigid?,temperature
+What is the expected temperature?,temperature
+Is it cloudy?,conditions
+Will we see some sun?,conditions
+Will it be sweltering?,temperature
+How cold is it now?,temperature
+Is it hot outside?,temperature
+is it very hot?,temperature
+will it be humid ?
+When will the cold subside?,temperature
+Are we expecting sunny conditions?,conditions
+Will we get snow?,conditions
+is it cool wind?,temperature
+What is the current temp in Celsius?,temperature
+Is it overcast?,conditions
+What is the temperature in Fahrenheit?,temperature
