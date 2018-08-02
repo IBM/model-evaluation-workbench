@@ -77,12 +77,12 @@ Create the Natural Language Classifier models by following the below steps:
 
 
 
-## 3. Deploy the Application to the IBM Cloud
+## 3. Deploy the application to the IBM Cloud
   
 The application can be deployed on IBM Cloud or locally.
 Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
  
-##### 3.1 Deploy to the IBM Cloud
+### 3.1 Deploy to the IBM Cloud
 - Clone the repository from the GitHub(Link-----).
 
 - From the terminal, navigate to the cloned repository folder and then exceute the below commands:
@@ -108,7 +108,7 @@ Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
 - Click on Visist app URL link to launch the application.
 ![](Images/Model_LaunchScreen.png)
 
-##### 3.2 Configure the app with the cognitive models
+### 3.2 Configure the app with the cognitive models
 
 Go to IBM Cloud Clonsole, click on application that was deployed, click on Runtime and then click on Environment variables. 
 Under User defined section Click on Add, then under `Name` enter the text as `NLC_USERNAME_CONFIG_1` and under value pass the username of the first NLC service instance that was created in section `Create NLC service instance`. 
@@ -136,7 +136,7 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 - Model Evaluation application started
 ![](Images/LocalMachineAppStart.png)
 
-##### 4.4 Configure the app with the available cognitive models
+### 4.4 Configure the app with the available cognitive models
 
 - Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
 ![](Images/ServiceCredLocal.png)
