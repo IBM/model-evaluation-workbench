@@ -13,7 +13,7 @@ Workbench executes supported Watson cognitive services with their input model’
 
 1. User uses the client device(mobile, tablets, etc.,) to access the application.
 2. Client Invokes the URL.
-3. Parsing Input test data.
+3. Parse Input test data.
 4. Invoke adapter which calls the Cognitive service models(NLC, NLU, etc.,)
 5. Parsing the Cognitive model service configuration.
 6. Connect to Cognitive model services.
