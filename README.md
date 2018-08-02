@@ -82,24 +82,15 @@ Create the Natural Language Classifier models by following the below steps:
 ![](Images/NLC_Credentials.png)
 - Copy the username, password, and url values and save it in notepad(this will be required later).
 
-_ As we require 2 NLC models, create another model by following the above steps with different name.
+- As we require 2 NLC models, create another model by following the above steps with different name.
 
+- Upon successful creation of the 2 NLC models, we need to train each of them with the attached datasets(dataset1 and dataset2)
 
-========================================zzzzzzz====================================================
-- Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
-- Below screen is displayed
-![](Images/NLC_CreateDefault.png)
-- Edit the field "Service name:" to say NLC_Model_Eval and leave the other settings default.
-- Click `Create` and NLC service instance gets created and then take a note of the credentials as below:
-  ![](Images/NLC_Credentials.png)
-
+- Tap on one of the newly created NLC models and train them with the given dataset.
 ![](Images/NLC_Models_Screen.png)
--   Create another Classifier as below screenshot.
--   Upload the available training data if already exists in csv format.
+
+- Import the dataset1. Model will get trained using the dataset provided.
 ![](Images/NLC1_UploadTraining_dataset.png)
-
-========================================zzzzzzz====================================================
-
 
 
 ## 3. Deploy the application to the IBM Cloud
