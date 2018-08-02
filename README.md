@@ -94,6 +94,8 @@ Create the Natural Language Classifier models by following the below steps:
 
 - Follow the above same steps for training the second NLC model using the [dataset2](https://github.com/IBM/model-evaluation-workbench/blob/master/src/main/data/NLC_import_Training2.csv).
 
+Finally, We have two models trained and ready to deploy and can be used for the model Evaluation.
+
 
 ## 3. Deploy the application to the IBM Cloud
   
