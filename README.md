@@ -120,15 +120,10 @@ And Add the second set of model details  `NLC_USERNAME_CONFIG_1`, `NLC_PASSWORD_
 
 
 ## 4. Deploy the application manually to local machine and Configure
-   * 4.1 Deploy the application to local machine manually
-   * 4.2 Configure the app with the available cognitive models
    
-
-The applicatioon can be either run on IBM cloud or deploy and run locally.
-
-Choose either Step 3 or Stpe 4 as per your convenience and need.
-
-##### 4.1 Deploy the application to local machine manually
+The application can be deployed on IBM Cloud or locally. Exceute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
+   
+### 4.1 Deploy the application to local machine manually
 
 - Launch Eclipse tool, under server tab add new Liberty Server and open the cloned reposirtory folder.
 ![](Images/LibertySrv1.png)
