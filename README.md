@@ -153,25 +153,6 @@ The application can be deployed on IBM Cloud or locally. Exceute Step 3 for depl
 
 ![](Images/LocalMachineAppStart.png)
 
-### 4.3 Configure the app with the available cognitive models
-
-- Add config parameters to the server.env file within eclipse. Add 2 set of Credentails related to the Cognitive services which you want to evaluate.
-![](Images/ServiceCredLocal.png)
-
-_ Launch the application using the localhost URL:
-http://localhost:9091/ModelEvaluationWorkbench/
-- Start the server(Right click on the newly added server)
-![](Images/Local_Start_Liberty_Server.png)
-- Launch the application.
-![](Images/Local_App_Launch.png)
-
-
-
-zzzzzzz
-
-
-
-
 
 
 ## 4. Run the Application 
