@@ -60,6 +60,8 @@ Follow these steps to setup and run this code pattern. The steps are described i
 ## 2. Create the Cognitive models
  
 While we can use any watson models, for the sake of this code pattern we will use Natural Language Classifier(NLC).
+This pattern requires minimum 2 NLC models to compare and evaluate the best performing model.
+Hence, we would require 2 instance of the NLC models.
 
 Create the Natural Language Classifier models by following the below steps:
 
@@ -77,7 +79,11 @@ Create the Natural Language Classifier models by following the below steps:
 - Copy the credentials to authenticate to your service instance:
 - On the service dashboard, click the Service credentials tab.
 - Click View credentials under Actions.
+![](Images/NLC_Credentials.png)
 - Copy the username, password, and url values and save it in notepad(this will be required later).
+
+_ As we require 2 NLC models, create another model by following the above steps with different name.
+
 
 ========================================zzzzzzz====================================================
 - Click [here](https://console.bluemix.net/catalog/services/natural-language-classifier) to create NLC service
