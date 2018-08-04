@@ -2,7 +2,7 @@
 
 # Machine learning Models' performance evaluation
 
-What are machine learning models? Machine learning models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
+Machine learning models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
 
 In machine learning world numerous models are being created for achieving a specific task. With so many models available, how can one decide which model to use? Which model is performing better? What are the various performance parameters for different models? This code pattern shows you a way to compare Watson Cognitive services models so as to decide which model performs better for a particular set of data. It provides user a platform to configure models, provide input data, execute and prepare performance evaluation statistics such as [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and [ROC curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic).
 
@@ -29,8 +29,6 @@ After going through this code pattern, you should be able to:
 ## Included Components
 * [Java Liberty Runtime](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime) - Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server designed for the cloud.
 * [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier) - The Natural Language Classifier service applies cognitive computing techniques to return the best matching classes for a sentence or phrase.
-* [Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding)- Analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles.
-* [Watson Assistant](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation) - Adds natural language interface to your application to automate interactions with your end users. Common applications include virtual agents and chat bots that can integrate and communicate on any channel or device.
 
 
 ## Featured Technologies
@@ -46,10 +44,10 @@ Will be added soon...
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Pre-requisites](#1-pre-requisites)
 2. [Create the Cognitive models](#2-create-the-cognitive-models)
-3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-the-ibm-cloud)
+3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-ibm-cloud)
 4. [Deploy the application to local machine](#4-deploy-the-application-to-local-machine)
 5. [Run the application](#5-run-the-application)
-6. [Analyze the Results](#6-analyze-the-results)
+6. [Analyze the Results](#6-analyze-results)
 
 
 ## 1. Pre-requisites
@@ -63,11 +61,11 @@ While we can use any Watson models for the sake of this code pattern, we will us
 ### 2.1 Create NLC service instances:
 TODO Cloud Object storage needed? if yes, include those steps
 - Login to [IBM Cloud](http://console.bluemix.net/) dashboard
-- Create NLC instance [here](https://console.bluemix.net/catalog/services/natural-language-classifier)
+- [Click](https://console.bluemix.net/catalog/services/natural-language-classifier) to begin creating NLC instance
 - Select necessary region, org and space and click `Create`.
 ![](Images/NLC_CreateDefault.png)
 - When the service is created, click `Service Credentials` in the left navigation bar.
-- Click View credentials under Actions.
+- Click `View Credentials` under Actions.
 ![](Images/NLC_Credentials.png)
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
@@ -91,8 +89,9 @@ Execute Step 3 for deploying on IBM Cloud and Step 4 for deploying locally.
 
 ### 3.1 Deploy to IBM Cloud
 
-* Maven should be installed. If not installed, you can download Maven from [here](https://maven.apache.org/download.cgi). You can refer to the installation instructions [here](https://maven.apache.org/install.html).
-* Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) if not already done and ensure that the target points to the region and space where you are running and deploying this code pattern.
+* Maven should be installed. If not installed, you can download maven from [here](https://maven.apache.org/download.cgi). You can refer to the installation instructions [here](https://maven.apache.org/install.html).
+* Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) if not already done
+* Login to IBM Cloud using CLI using `bx login` command. Ensure that the target points to the region and space where you are running and deploying this code pattern.
 
 * open command prompt. Change directory to location where you want to download project files. Go to that directory.
 * run `git clone git@github.com:IBM/model-evaluation-workbench.git` to clone the repository
@@ -135,14 +134,15 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 * Change directory to model-evaluation-workbench
 
 ### 4.2 Deploy to local machine
-- If eclipse is not installed on your local machine then install Eclipse following this [link](https://www.eclipse.org/downloads/)
+- If eclipse is not installed on your local machine then install Eclipse following instructions provided in this [link](https://www.eclipse.org/downloads/)
 - After the installation, launch Eclipse
-- In the menu, goto file->Import
-- Under Import wizard, expand General folder and select `Existing Project into Workspace`.
-- Click Next and browse to the cloned project folder.
-- Click the Finish button.
+- In the eclipse menu, click `file` and then click `import`
+- Under import wizard, expand `General` folder and select `Existing Project into Workspace`.
+- Click `Next` and browse to the cloned project folder.
+- Click the `Finish` button.
 - Setup Liberty server in eclipse as per this [Link](https://www.ibm.com/blogs/bluemix/2016/05/liberty-and-eclipse-create-server-p10/)
 - Application needs to access models to send requests to and get responses from them. Access details of these models have to be provided in server config (server.env) file of liberty server. A sample server.env file snapshot is as in below image. You will need to provide the credentials of the models. You can access NLC credentials as described in section `Create NLC service instance`
+
 ![](Images/Local_Serv_Cred.png)
 - Start the Liberty Server
 ![](Images/LibertySrvStart.png)
@@ -150,16 +150,13 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 - Under Add and Remove wizard, from the available section move `ModelEvaluationWorkbench` to configured section.
 - Click on Finish.
 - Model Evaluation application should be started.
-- In Exlipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. Click on that link to launch the application.
+- In Eclipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. Click on that link to launch the application.
 ![](Images/LocalMachineAppStart.png)
 
 
 ## 5. Run the Application
 
-### Scenario:
-We created two models using Natural Language Classifier.
-
-Now, we would evaluate which model is performing better when compared to each other.
+We created two models using Natural Language Classifier. Now, we would evaluate which model is performing better when compared to each other.
 
 - On the application home page click on `NLC` box
 - Under `Attribute` select `Classes`
