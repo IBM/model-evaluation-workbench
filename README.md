@@ -101,11 +101,12 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - On the popup Specify model language as english and click `Train`
 
 - To create another NLC model, we can use the same instance of the NLC and click on `Create Model` to create another instance of NLC service.
+
 ![](Images/CreateModel2.png)
 
 - Train that model with the file `../src/main/data/NLC_import_Training2.csv`
 
-Now, two sets of models NLC services are trained and ready to be used.
+Now, two sets of model NLC services are trained and ready to be used.
 
 
 ## 3. Deploy the application to IBM Cloud
