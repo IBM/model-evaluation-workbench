@@ -69,11 +69,11 @@ While we can use any Watson models for the sake of this code pattern, we will us
 ![](Images/Watson_Studio1.png)
 - Search for the text `Watson Studio`, click on `Watson Studio` service.
 ![](Images/Watson_Studio2.png)
-- provide a appropriate name(here we provided the name as `Watson Studio - ModelEval`) and description.
+- Provide a appropriate name(here we provided the name as `Watson Studio - ModelEval`) and description.
 ![](Images/Watson_Studio21.png)
 - Watson Studio instance gets created. Click on Get Started.
 ![](Images/Watson_Studio3.png)
-- Watson studio opens up. Clcik on `New Project`
+- Watson studio opens up. Click on `New Project`
 ![](Images/Watson_Studio4.png)
 - Select the `Complete` option and then click ok.
 ![](Images/Watson_Studio5.png)
@@ -94,12 +94,6 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
-- A `New Project` console will open. 
-- Under storage, 
-- Select the Cloud Storage service if already exists. If it doesn't exists, we need to [Create IBM Cloud Object Storage](https://eu-gb.dataplatform.ibm.com/data/discovery/cloud-object-storage/details?target=data-services&context=wdp) 
-![](Images/CloudObject.png)
-
-- Enter a project name and select this particular NLC instance name and click `Create`
 - On the right hand side of the screen there is a browse button. Click on the browse button and select the file `../src/main/data/NLC_import_Training1.csv`
 - Click on the checkbox against the file just uploaded under section `2. Add from Project`
 - Click `Add to model`
@@ -108,7 +102,7 @@ While we can use any Watson models for the sake of this code pattern, we will us
 
 - Repeat the above steps under section 2.1 to create another instance of NLC service and train that model with the file `../src/main/data/NLC_import_Training2.csv`
 
-Now, there two models NLC services trained and ready to be used.
+Now, two model NLC services trained and ready to be used.
 
 
 ## 3. Deploy the application to IBM Cloud
