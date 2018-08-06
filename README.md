@@ -2,7 +2,9 @@
 
 # Machine learning Models' performance evaluation
 
-Machine learning models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
+Machine learning(ML) models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
+Cognitive systems are not programmed and they perform as per the data on which they are trained on; to sense, predict, infer, and in some ways, think, using artificial intelligence and machine learning algorithms. 
+
 
 In machine learning world numerous models are being created for achieving a specific task. With so many models available, how can one decide which model to use? Which model is performing better? What are the various performance parameters for different models? This code pattern shows you a way to compare Watson Cognitive services models so as to decide which model performs better for a particular set of data. It provides user a platform to configure models, provide input data, execute and prepare performance evaluation statistics such as [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and [ROC curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic).
 
