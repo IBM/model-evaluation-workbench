@@ -71,7 +71,7 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
-- Select the Cloud Storage service if you already exists. If it doesn't exists, we need to [Create IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage) 
+- Select the Cloud Storage service if already exists. If it doesn't exists, we need to [Create IBM Cloud Object Storage](https://eu-gb.dataplatform.ibm.com/data/discovery/cloud-object-storage/details?target=data-services&context=wdp) 
 ![](Images/CloudObject.png)
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 - Enter a project name and select this particular NLC instance name and click `Create`
