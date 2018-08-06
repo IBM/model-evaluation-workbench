@@ -71,7 +71,7 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
-- A Cloud Storage to link or create the Cloud Onject Storage service.
+- You will be asked to select the Cloud Storage service if already exists. If doesn't exists, we need to [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage) 
 ![](Images/CloudObject.png)
 - If the Cloud Object Storage service(instance) is already created, then use the same else you will have to create one.
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
