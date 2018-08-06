@@ -30,8 +30,8 @@ After going through this code pattern, you should be able to:
 
 ## Included Components
 * [Java Liberty Runtime](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime) - Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server designed for the cloud.
-* [Natural Language Classifier](https://console.bluemix.net/catalog/services/natural-language-classifier) - The Natural Language Classifier service applies cognitive computing techniques to return the best matching classes for a sentence or phrase.
-
+* [Natural Language Classifier(NLC)](https://console.bluemix.net/catalog/services/natural-language-classifier) - The Natural Language Classifier service applies cognitive computing techniques to return the best matching classes for a sentence or phrase.
+* [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured/structured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
 ## Featured Technologies
 
@@ -54,7 +54,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 ## 1. Pre-requisites
 - IBM Cloud account: You must have IBM Cloud account to work with this code pattern. If you do not have an IBM Cloud account, you can create a one month free trail account [here](https://console.bluemix.net/).
-- [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured/structured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
+
 
 
 ## 2. Create the Cognitive models
@@ -63,9 +63,30 @@ While we can use any Watson models for the sake of this code pattern, we will us
 
 ### 2.1 Create NLC service instances:
 
-- Login to [IBM Cloud](http://console.bluemix.net/) dashboard
-- [Click](https://console.bluemix.net/catalog/services/natural-language-classifier) to begin creating NLC instance
-- Select necessary region, org and space and click `Create`.
+- Now with the recent changes, NLC instances can be created from watson studio service.
+- Login to [IBM Cloud](http://console.bluemix.net/) dashboard 
+- Click on Catalog to create a Watson Studio Instance.
+![](Images/Watson_Studio1.png)
+- Search for the text `Watson Studio`, click on `Watson Studio` service.
+![](Images/Watson_Studio2.png)
+- provide a appropriate name(here we provided the name as `Watson Studio - ModelEval`) and description.
+![](Images/Watson_Studio21.png)
+- Watson Studio instance gets created. Click on Get Started.
+![](Images/Watson_Studio3.png)
+- Watson studio opens up. Clcik on `New Project`
+![](Images/Watson_Studio4.png)
+- Select the `Complete` option and then click ok.
+![](Images/Watson_Studio5.png)
+- A `New Project` console will open. Provide project name and description.
+- We now require storage service for storing project assets.
+- Click on `Cloud Object Storage` link, which will navigate to create a cloud object storage service. 
+![](Images/Watson_Studio6.png)
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
+- Once storage service gets created, you will be diverted to the watson studio console. Click on `Assets` tab.
+![](Images/Watson_Studio7.png)
+- Under `Models`, click on `New Natural Language Classifier model`
+ ![](Images/Watson_Studio8.png)
+- Click `Create`.
 ![](Images/NLC_CreateDefault.png)
 - When the service is created, click `Service Credentials` in the left navigation bar.
 - Click `View Credentials` under Actions.
@@ -73,9 +94,11 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
+- A `New Project` console will open. 
+- Under storage, 
 - Select the Cloud Storage service if already exists. If it doesn't exists, we need to [Create IBM Cloud Object Storage](https://eu-gb.dataplatform.ibm.com/data/discovery/cloud-object-storage/details?target=data-services&context=wdp) 
 ![](Images/CloudObject.png)
-> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
+
 - Enter a project name and select this particular NLC instance name and click `Create`
 - On the right hand side of the screen there is a browse button. Click on the browse button and select the file `../src/main/data/NLC_import_Training1.csv`
 - Click on the checkbox against the file just uploaded under section `2. Add from Project`
