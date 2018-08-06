@@ -52,6 +52,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 ## 1. Pre-requisites
 - IBM Cloud account: You must have IBM Cloud account to work with this code pattern. If you do not have an IBM Cloud account, you can create a one month free trail account [here](https://console.bluemix.net/).
+- [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured/structured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
 
 ## 2. Create the Cognitive models
@@ -59,7 +60,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 While we can use any Watson models for the sake of this code pattern, we will use Natural Language Classifier or NLC service. This code pattern requires at least two NLC models to compare and evaluate. So, we will create two instances of the NLC service.
 
 ### 2.1 Create NLC service instances:
-TODO Cloud Object storage needed? if yes, include those steps
+
 - Login to [IBM Cloud](http://console.bluemix.net/) dashboard
 - [Click](https://console.bluemix.net/catalog/services/natural-language-classifier) to begin creating NLC instance
 - Select necessary region, org and space and click `Create`.
@@ -70,6 +71,8 @@ TODO Cloud Object storage needed? if yes, include those steps
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
+- If the Cloud Object Storage instance is already created, then use the same else you will have to create on.
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 - Enter a project name and select this particular NLC instance name and click `Create`
 - On the right hand side of the screen there is a browse button. Click on the browse button and select the file `../src/main/data/NLC_import_Training1.csv`
 - Click on the checkbox against the file just uploaded under section `2. Add from Project`
