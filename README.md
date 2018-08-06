@@ -71,9 +71,8 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
-- You will be asked to select the Cloud Storage service if already exists. If doesn't exists, we need to [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage) 
+- Select the Cloud Storage service if you already exists. If it doesn't exists, we need to [Create IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage) 
 ![](Images/CloudObject.png)
-- If the Cloud Object Storage service(instance) is already created, then use the same else you will have to create one.
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 - Enter a project name and select this particular NLC instance name and click `Create`
 - On the right hand side of the screen there is a browse button. Click on the browse button and select the file `../src/main/data/NLC_import_Training1.csv`
