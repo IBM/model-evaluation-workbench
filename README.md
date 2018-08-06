@@ -107,8 +107,8 @@ Now, two model NLC services trained and ready to be used.
 
 ## 3. Deploy the application to IBM Cloud
 
-The application can be deployed on IBM Cloud or locally.
-Execute Step 3 for deploying on IBM Cloud and Step 4 for deploying locally.
+The application can be deployed on IBM Cloud or locally. Execute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
+
 
 ### 3.1 Deploy to IBM Cloud
 
