@@ -1,6 +1,6 @@
 # Work in progress
 
-# Machine learning Models' performance evaluation
+# Performance Evaluation of Machine Learning Models
 
 Machine learning(ML) models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
 Cognitive systems are not programmed and they perform as per the data on which they are trained on; to sense, predict, infer, and in some ways, think, using artificial intelligence and machine learning algorithms. 
@@ -14,7 +14,8 @@ After going through this code pattern, you should be able to:
 - Configure model evaluation workbench to compare specific models and provide and test data.
 - Understand model evaluation parameters and know which model best suits your needs.
 
-## Architecture
+## Flow
+
 ![](Images/Reference_Architecture.png)
 
 1. User launches the application.
@@ -31,7 +32,7 @@ After going through this code pattern, you should be able to:
 ## Included Components
 * [Java Liberty Runtime](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime) - Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server designed for the cloud.
 * [Natural Language Classifier(NLC)](https://console.bluemix.net/catalog/services/natural-language-classifier) - The Natural Language Classifier service applies cognitive computing techniques to return the best matching classes for a sentence or phrase.
-* [IBM Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/cloud-object-storage): An IBM Cloud service that provides an unstructured/structured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
+* [IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage): An IBM Cloud service that provides an unstructured/structured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
 ## Featured Technologies
 
@@ -49,7 +50,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-ibm-cloud)
 4. [Deploy the application to local machine](#4-deploy-the-application-to-local-machine)
 5. [Run the application](#5-run-the-application)
-6. [Analyze the Results](#6-analyze-results)
+6. [Analyse the Results](#6-analyse-results)
 
 
 ## 1. Pre-requisites
@@ -67,30 +68,41 @@ While we can use any Watson models for the sake of this code pattern, we will us
 - Login to [IBM Cloud](http://console.bluemix.net/) dashboard 
 - Click on Catalog to create a Watson Studio Instance.
 ![](Images/Watson_Studio1.png)
+
 - Search for the text `Watson Studio`, click on `Watson Studio` service.
 ![](Images/Watson_Studio2.png)
+
 - Provide a appropriate name(here we provided the name as `Watson Studio - ModelEval`) and description.
 ![](Images/Watson_Studio21.png)
+
 - Watson Studio instance gets created. Click on Get Started.
 ![](Images/Watson_Studio3.png)
+
 - Watson studio opens up. Click on `New Project`
 ![](Images/Watson_Studio4.png)
+
 - Select the `Complete` option and then click ok.
 ![](Images/Watson_Studio5.png)
+
 - A `New Project` console will open. Provide project name and description.
 - We now require storage service for storing project assets.
 - Click on `Cloud Object Storage` link, which will navigate to create a cloud object storage service. 
 ![](Images/Watson_Studio6.png)
+
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 - Once storage service gets created, you will be diverted to the watson studio console. Click on `Assets` tab.
 ![](Images/Watson_Studio7.png)
+
 - Under `Models`, click on `New Natural Language Classifier model`
  ![](Images/Watson_Studio8.png)
+ 
 - Click `Create`.
 ![](Images/NLC_CreateDefault.png)
+
 - When the service is created, click `Service Credentials` in the left navigation bar.
 - Click `View Credentials` under Actions.
 ![](Images/NLC_Credentials.png)
+
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 - Click on `Launch Tool`
 - Click `Create Model`
@@ -177,7 +189,9 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 - Under Add and Remove wizard, from the available section move `ModelEvaluationWorkbench` to configured section.
 - Click on Finish.
 - Model Evaluation application should be started.
-- In Eclipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. Click on that link to launch the application.
+- In Eclipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. 
+
+Click on that link to launch the application.
 ![](Images/LocalMachineAppStart.png)
 
 
@@ -188,9 +202,11 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 - On the application home page click on `NLC` box
 - Under `Attribute` select `Classes`
 ![](Images/Model_NLC_Evaluate.png)
+
 - Select `MODEL 1` and `MODEL 2` checkboxes
 - Two browse buttons will be available since we have selected two models. Click on each browse button and select the file `src/main/data/NLC_import_Truth.csv` from your git repo. The same file is selected for both browse buttons because this file is the actual results file which needs to be compared with both the model results.
 ![](Images/Model_Upload_TruthFile.png)
+
 -	Step5: Click on Evaluate Performance button.
 ![](Images/Model_Evaluate_Button.png)
 
