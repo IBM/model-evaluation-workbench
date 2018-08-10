@@ -113,6 +113,8 @@ Cognitive Model Evaluation application is now deployed. This application now nee
 * Add second NLC service instance details as `NLC_USERNAME_CONFIG_2`, `NLC_PASSWORD_CONFIG_2` and `NLC_CLASSIFIER_ID_CONFIG_2`.
 ![](Images/NLC_Service_Configuration1.png)
 
+* Application will restart once we save these environment variables.
+
 Skip Step 4 and Go to Step 5 to Run Application.
 
 
