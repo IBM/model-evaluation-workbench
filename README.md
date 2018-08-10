@@ -50,7 +50,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-ibm-cloud)
 4. [Deploy the application to local machine](#4-deploy-the-application-to-local-machine)
 5. [Run the application](#5-run-the-application)
-6. [Analyse results](#6-analyse-results)
+6. [Analyse the results](#6-analyse-the-results)
 
 
 ## 1. Pre-requisites
@@ -162,6 +162,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 
 - Select `MODEL 1` and `MODEL 2` checkboxes
 - Two browse buttons will be available since we have selected two models. Click on each browse button and select the file `src/main/data/NLC_import_Truth.csv` from your git repo. The same file is selected for both browse buttons because this file is the actual results file which needs to be compared with both the model results.
+
 ![](Images/Model_Upload_TruthFile.png)
 
 -	Step5: Click on Evaluate Performance button.
@@ -170,7 +171,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 
 The application invokes both the NLC services, gets responses and displays various evaluation parameters.
 
-## 5. Analyse results
+## 5. Analyse the results
 
 The result shows a lot of statistical data for model performance evaluation. It is suggested that you become familiar with these [terminologies](https://console.bluemix.net/docs/services/watson-knowledge-studio/evaluate-ml.html#evaluate-ml)
 
