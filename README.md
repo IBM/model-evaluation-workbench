@@ -50,7 +50,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 3. [Deploy the application to the IBM Cloud](#3-deploy-the-application-to-ibm-cloud)
 4. [Deploy the application to local machine](#4-deploy-the-application-to-local-machine)
 5. [Run the application](#5-run-the-application)
-6. [Analyse the Results](#6-analyse-results)
+6. [Analyse Results](#6-analyse-results)
 
 
 ## 1. Pre-requisites
