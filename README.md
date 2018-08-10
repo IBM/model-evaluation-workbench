@@ -172,7 +172,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 
 The application invokes both the NLC services, gets responses and displays various evaluation parameters.
 
-## 5. Analyse the results
+## 6. Analyse the results
 
 The result shows a lot of statistical data for model performance evaluation. It is suggested that you become familiar with these [terminologies](https://console.bluemix.net/docs/services/watson-knowledge-studio/evaluate-ml.html#evaluate-ml)
 
