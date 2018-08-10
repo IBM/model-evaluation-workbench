@@ -36,8 +36,8 @@ After going through this code pattern, you should be able to:
 
 ## Featured Technologies
 
-* [Liberty for Java](https://console.bluemix.net/docs/runtimes/liberty/index.html#liberty_runtime): Develop, deploy, and scale Java web apps with ease. IBM WebSphere Liberty Profile is a highly composable, ultra-fast, ultra-light profile of IBM WebSphere Application Server designed for the cloud.
-* [Aritificial Intilligence](https://www.computerworld.com/article/2906336/emerging-technology/what-is-artificial-intelligence.html): Intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
+* [Java](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/welcome/welcome_javasdk_version.html): The Java programming language is a high-level, object-oriented language. When written, a Java program is compiled into bytecode. The bytecode is interpreted at run time by a platform-specific Java component
+* [Artificial Intilligence](https://www.computerworld.com/article/2906336/emerging-technology/what-is-artificial-intelligence.html): Intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
 
 ## Watch The Video
 Will be added soon...
@@ -60,63 +60,15 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 ## 2. Create the Cognitive models
 
-While we can use any Watson models for the sake of this code pattern, we will use Natural Language Classifier or NLC service. This code pattern requires at least two NLC models to compare and evaluate. So, we will create two instances of the NLC service.
+For this pattern to demonstrate, we would be creating & using Natural Language Classifier(NLC) models.
+This code pattern requires at least two NLC models to compare and evaluate. So, we will create two instances of the NLC service.
 
 ### 2.1 Create NLC service instances:
 
-- Now with the recent changes, NLC instances can be created from watson studio service.
-- Login to [IBM Cloud](http://console.bluemix.net/) dashboard 
-- Click on Catalog to create a Watson Studio Instance.
-![](Images/Watson_Studio1.png)
-
-- Search for the text `Watson Studio`, click on `Watson Studio` service.
-![](Images/Watson_Studio2.png)
-
-- Provide a appropriate name(here we provided the name as `Watson Studio - ModelEval`) and description.
-![](Images/Watson_Studio21.png)
-
-- Watson Studio instance gets created. Click on Get Started.
-![](Images/Watson_Studio3.png)
-
-- Watson studio opens up. Click on `New Project`
-![](Images/Watson_Studio4.png)
-
-- Select the `Complete` option and then click ok.
-![](Images/Watson_Studio5.png)
-
-- A `New Project` console will open. Provide project name and description.
-- We now require storage service for storing project assets.
-- Click on `Cloud Object Storage` link, which will navigate to create a cloud object storage service. 
-![](Images/Watson_Studio6.png)
-
-> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
-- Once storage service gets created, you will be diverted to the watson studio console. Click on `Assets` tab.
-![](Images/Watson_Studio7.png)
-
-- Under `Models`, click on `New Natural Language Classifier model`
- ![](Images/Watson_Studio8.png)
- 
-- Click `Create`.
-![](Images/NLC_CreateDefault.png)
-
-- When the service is created, click `Service Credentials` in the left navigation bar.
-- Click `View Credentials` under Actions.
-![](Images/NLC_Credentials.png)
-
+- Follow the instructions from the given [link](https://console.bluemix.net/docs/services/natural-language-classifier/getting-started.html#natural-language-classifier)
+- Use `weather_data_train.csv` `../src/main/data/weather_data_train.csv`, for training the first set of the model.
+- Use `weather_data_train1.csv` `../src/main/data/weather_data_train1.csv`, for training the second model. 
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
-- Click on `Launch Tool`
-- Click `Create Model`
-- On the right hand side of the screen there is a browse button. Click on the browse button and select the file `../src/main/data/NLC_import_Training1.csv`
-- Click on the checkbox against the file just uploaded.
-- Click `Add to model`
-- Click `Train Model`
-- On the popup Specify model language as english and click `Train`
-
-- To create another NLC model, we can use the same instance of the NLC and click on `Create Model` to create another instance of NLC service.
-
-![](Images/CreateModel2.png)
-
-- Train that model with the file `../src/main/data/NLC_import_Training2.csv`
 
 Now, two sets of model NLC services are trained and ready to be used.
 
