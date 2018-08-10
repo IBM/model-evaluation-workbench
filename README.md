@@ -135,8 +135,11 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 - Application needs to access models to send requests to and get responses from them. Access details of these models have to be provided in server config (server.env) file of liberty server. A sample server.env file snapshot is as in below image. You will need to provide the credentials of the models. You can access NLC credentials as described in section `Create NLC service instance`
 
 ![](Images/Local_Serv_Cred.png)
+
 - Start the Liberty Server
+
 ![](Images/LibertySrvStart.png)
+
 - Right Click on the Liberty Server created above, Click on the `Add and Remove`
 - Under Add and Remove wizard, from the available section move `ModelEvaluationWorkbench` to configured section.
 - Click on Finish.
@@ -144,6 +147,7 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 - In Eclipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. 
 
 Click on that link to launch the application.
+
 ![](Images/LocalMachineAppStart.png)
 
 
@@ -153,6 +157,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 
 - On the application home page click on `NLC` box
 - Under `Attribute` select `Classes`
+
 ![](Images/Model_NLC_Evaluate.png)
 
 - Select `MODEL 1` and `MODEL 2` checkboxes
@@ -160,6 +165,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 ![](Images/Model_Upload_TruthFile.png)
 
 -	Step5: Click on Evaluate Performance button.
+
 ![](Images/Model_Evaluate_Button.png)
 
 The application invokes both the NLC services, gets responses and displays various evaluation parameters.
@@ -171,9 +177,11 @@ The result shows a lot of statistical data for model performance evaluation. It 
 Results of running the two NLC models using the truth file enables the application to check how the results from each of the models are faring.
 
 The below screenshot shows various parameters such as `F1Score Optimization` and `Accuracy Optimization` and also provides `Model Rating`
+
 ![](Images/Model_Analysis1.png)
 
 The application also shows ROC chart, for both the models, for various parameters
+
 ![](Images/Model_Analysis2.png)
 
 In this case we can see that Model 1 fares better compared to model 2. Users can analyse various performance parameters and can take approriate decision
