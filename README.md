@@ -91,9 +91,6 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 * Change directory to model-evaluation-workbench
 * run the command `mvn clean install`
 * This should create the file `workbenchModelEval.war` under `target` folder
-
-![](Images/mvnCleanInstall1.png)
-
 * Open the manifest.yml file and update host to be unique, may be append with your ibm id.
 * Before pushing the application, Set the targeted organization or space using the below command:
 ``` bx target --cf```
