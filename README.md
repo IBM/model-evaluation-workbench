@@ -91,14 +91,23 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 * Change directory to model-evaluation-workbench
 * run the command `mvn clean install`
 * This should create the file `workbenchModelEval.war` under `target` folder
+
 ![](Images/mvnCleanInstall1.png)
+
 * Open the manifest.yml file and update host to be unique, may be append with your ibm id.
+* Before pushing the application, Set the targeted organization or space using the below command:
+``` bx target --cf```
 * Push the application to IBM Cloud using the command: ```bx cf push <Application_Name>```
 * The application should get deployed successfully. If not check the logs to determine the error and fix it.
+
 ![](Images/bxPush.png)
+
 - Open IBM Cloud Console, Under Dashboard you should see the above deployed application running. Click on the application.
+
 ![](Images/CloudDeployRunningApp.png)
+
 - Click on `Visit App URL` link to launch the application.
+
 ![](Images/Model_LaunchScreen.png)
 
 ### 3.2 Configure the application with the cognitive models
