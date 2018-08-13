@@ -71,7 +71,7 @@ This code pattern requires at least two NLC models to compare and evaluate. So, 
 - Use `weather_data_train1.csv` `../src/main/data/weather_data_train1.csv`, for training the second model. 
 - Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
 
-Now, Created two models and trained in one NLC service instance.
+Now, we have created and trained two models in one NLC service instance.
 
 
 
