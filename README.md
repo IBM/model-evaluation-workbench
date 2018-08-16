@@ -60,7 +60,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 ## 2. Create the Cognitive models
 
 For this pattern to demonstrate, we would be creating & using Natural Language Classifier(NLC) models.
-This code pattern requires at least two NLC models to compare and evaluate. So, we will create two instances of the NLC service.
+This code pattern requires at least two NLC models to compare and evaluate. So, we will create two classifier models in one NLC service instance.
 
 ### 2.1 Create NLC service instances:
 
