@@ -67,12 +67,12 @@ This code pattern requires at least two NLC models to compare and evaluate. So, 
 ### 2.1 Create NLC service instances:
 
 - Follow the instructions from the given [link](https://console.bluemix.net/docs/services/natural-language-classifier/getting-started.html#natural-language-classifier)
-- Use `weather_data_train.csv` `../src/main/data/weather_data_train.csv`, for training the first set of the model.
-- Use `weather_data_train1.csv` `../src/main/data/weather_data_train1.csv`, for training the second model. 
-- Copy username, password, and url values and save it as a text file. These credentials are required in later steps.
+- Use `NLC_TrainngDataset1.csv` `../src/main/data/NLC_TrainngDataset1.csv`, for training the first set of the model.
+- Use `NLC_TrainngDataset2.csv` `../src/main/data/NLC_TrainngDataset2.csv`, for training the second model. 
+- 
+- Copy username, password, and classifier/model_id and save it as a text file. These credentials are required in later steps.
 
 Now, we have created and trained two models in one NLC service instance.
-
 
 
 ## 3. Deploy the application to IBM Cloud
@@ -171,7 +171,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 ![](Images/Model_NLC_Evaluate.png)
 
 - Select `MODEL 1` and `MODEL 2` checkboxes
-- Two browse buttons will be available since we have selected two models. Click on each browse button and select the file `src/main/data/NLC_import_Truth.csv` from your git repo. The same file is selected for both browse buttons because this file is the actual results file which needs to be compared with both the model results.
+- Two browse buttons will be available since we have selected two models. Click on each browse button and select the file `src/main/data/NLC_TruthFile.csv` from your git repo. The same file is selected for both browse buttons because this file is the actual results file which needs to be compared with both the model results.
 
 ![](Images/Model_Upload_TruthFile.png)
 
