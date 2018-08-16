@@ -172,7 +172,7 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 
 ![](Images/Model_Upload_TruthFile.png)
 
--	Step5: Click on Evaluate Performance button.
+- Click on Evaluate Performance button.
 
 ![](Images/Model_Evaluate_Button.png)
 
