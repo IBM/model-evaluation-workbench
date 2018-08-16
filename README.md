@@ -1,5 +1,3 @@
-# Work in progress
-
 # Performance Evaluation of Machine Learning Models
 
 Machine learning(ML) models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
