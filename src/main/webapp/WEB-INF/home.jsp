@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
     font-weight: bold;
-} 
+}
 
 
 </style>
@@ -39,14 +39,14 @@ h1, h2, h3, h4, h5 {
 
 
 <div id="wrapper">
-             
+
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        
+
                         <li>
                             <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
@@ -72,17 +72,17 @@ h1, h2, h3, h4, h5 {
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <img src="img/IBM-logo-blue.png" style="width:10%;"alt='Logo' />Watson Model Evaluation Workbench <small>Introduction</small>
+                            Watson Model Evaluation Workbench <small>Introduction</small>
                         </h1>
-                       
+
                     </div>
                 </div>
             <div class="row">
                     <div class="col-lg-12">
-                    
+
                      <p>The Watson Model Evaluation Workbench provide users a platform to configure, execute and test user's cognitive model for tool's supported Watson cognitive services, prepare performance evaluation data and calculates performance statistics such as confusion matrix and ROC curve.</p>
                     </div>
-            </div>  
+            </div>
             <div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default">
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5 {
                             <div class="panel-body">
                                 <div class="row">
                                    <ol class="list-group">
-				                        <li class="list-group-item"> 
+				                        <li class="list-group-item">
 				                         <p> <b> Watson Model Evaluation Workbench for model performance evaluation </b>
                                                    <p> Cognitive systems are not programmed and they perform as per the data on which they are trained on; to sense, predict, infer, and in some ways, think, using artificial intelligence and machine learning algorithms. </p>
                                                    <p> IBM Watson Model Evaluation Workbench provide performance evaluation of machine learning models. It provides end to end solution by providing option to configure, execute & test user's cognitive model for the supported Watson cognitive service, prepare performance evaluation data and display model performance statistics. <p>
@@ -101,17 +101,17 @@ h1, h2, h3, h4, h5 {
                                                    <p>These statistics can be used for fine tuning model's parameters and selecting the best-performing model.</p>
                                             </p>
                                         </li>
-                                      <li class="list-group-item"> 
+                                      <li class="list-group-item">
 				                         <p> <b>Receiver Operating Characteristic (ROC) Curve </b>
                                                    <p> The ROC curve provide a means of comparison between classification models. The ROC curve shows false positive rate (1-specificity) on X-axis,  against true positive rate (sensitivity) on Y-axis. If curve climb quickly toward the top-left corner then it means the model correctly predicted the cases. The diagonal line is for a random prediction by the model. </p>
                                                  </p>
                                         </li>
-                                      <li class="list-group-item"> 
+                                      <li class="list-group-item">
 				                         <p> <b>Area Under the Curve (AUC) </b>
                                                    <p> Area under receiver operating characteristic (ROC) curve is often used as a measure of quality of the classification models. A random classifier has an area under the curve of 0.5, while AUC for a perfect classifier is equal to 1. The change in the probability (e.g. confidence) cut-off threshold has impact on machine learning model performance. For best performance, the ROC curve will reach the upper left corner of the plot and the probability threshold close to upper left will yield best performance for cognitive model. </p>
                                                  </p>
                                         </li>
-                                    <li class="list-group-item"> 
+                                    <li class="list-group-item">
 				                         <p> <b>Confusion Matrix</b>
                                                    <p> A confusion matrix shows the number of correct and incorrect predictions made by the classification model compared to the actual outcomes (target value) in the data. Following parameters are shown in the confusion matrix.  </p>
                                                    <p>Accuracy: the proportion of the total number of predictions that were correct.</p>
@@ -127,12 +127,12 @@ h1, h2, h3, h4, h5 {
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
+
+
+
+
         <div>
-            
+
             <div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default">
@@ -145,8 +145,8 @@ h1, h2, h3, h4, h5 {
                                    <ol class="list-group">
                                        <li class="list-group-item">
                                            <p> <b>Watson Service's Configuration:</b><br>
-                                                  Administrator need to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application. 
-                                                  <br>The Watson Service's access details need to be configured as application's user defined variables in Bluemix as below. <br>e.g.<br> 
+                                                  Administrator need to configure the supported Watson Service's access/authentication details in Watson Model Evaluation Workbench application.
+                                                  <br>The Watson Service's access details need to be configured as application's user defined variables in Bluemix as below. <br>e.g.<br>
                                                   &nbsp;&nbsp;CONVERSATION_WORKSPACE_ID_CONFIG_1 = &lt;workspaceid&gt; <br>
 	  											  &nbsp;&nbsp;CONVERSATION_USERNAME_CONFIG_1     = &lt;username &gt; <br>
 	  											  &nbsp;&nbsp;CONVERSATION_PASSWORD_CONFIG_1     = &lt; password&gt;<br>
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5 {
 											If User need to configure multiple CONVERSATION service then CONFIG_2 or CONFIG_3 can be configured as Bluemix user defined variables as below:<br>
 												  &nbsp;&nbsp;CONVERSATION_WORKSPACE_ID_CONFIG_2 = &lt;workspaceid&gt;<br>
 	  											  &nbsp;&nbsp;CONVERSATION_USERNAME_CONFIG_2     = &lt;username &gt;<br>
-	  											  &nbsp;&nbsp;CONVERSATION_PASSWORD_CONFIG_2     = &lt; password&gt;<br>	
+	  											  &nbsp;&nbsp;CONVERSATION_PASSWORD_CONFIG_2     = &lt; password&gt;<br>
 	  										</p>
 	  										<p>
 	  										Application Dashboard screen provide user an option to select the watson service configuration (e.g. "CONFIG 1", "CONFIG 2" etc.) to choose their choice of Watson service against which they want to evaluate their ML model.
@@ -175,8 +175,8 @@ h1, h2, h3, h4, h5 {
                                         </li>
                                        <li class="list-group-item">
                                            <p> <b>IBM Watson NLU:</b>
-                                                  Collect the concepts, keywords and entities model test examples into a json file as below format. 
-<small> <br/> 
+                                                  Collect the concepts, keywords and entities model test examples into a json file as below format.
+<small> <br/>
 {                                                  <br/>
   "input_url": "https://www.wsj.com/news/markets", <br/>
   "concepts": [                                    <br/>
@@ -197,22 +197,21 @@ h1, h2, h3, h4, h5 {
 }                                                  <br/>
                                        </small>
                                        </li>
-                                       
 
-                                       
+
+
                                     </ol>
-   
+
                               </div>
                           </div>
                     </div>
                 </div>
             </div>
-      </div>      
-           
+      </div>
+
 
 <div class="row">
 <div class="panel-footer">
-IBM India SI Labs 2017
 </div>
 </div>
                  </div>

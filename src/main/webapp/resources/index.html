@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
     font-weight: bold;
-} 
+}
 
 #container {
     width: 1200px;
@@ -119,22 +119,22 @@ ul.select2-results {
   stroke: blue;
   stroke-width: 1.5px;
 }
-    
+
 .dot {
     fill: none;
 }
 .vors :hover circle {
   fill: red;
 }
-   
+
 .vors :hover text {
 	opacity: 1;
-}   
-    
+}
+
 .hidetext {
     opacity: 0;
 }
-    
+
 
 a:nth-child(even){background-color: #f2f2f2}
 .footer {
@@ -161,14 +161,14 @@ a:nth-child(even){background-color: #f2f2f2}
 
 
 <div id="wrapper">
-             
+
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        
+
                         <li>
                             <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
@@ -194,9 +194,9 @@ a:nth-child(even){background-color: #f2f2f2}
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <img src="img/IBM-logo-blue.png" style="width:10%;"alt='Logo' />Watson Model Evaluation Workbench <small>Dashboard</small>
+                            Watson Model Evaluation Workbench <small>Dashboard</small>
                         </h1>
-                       
+
                     </div>
                 </div>
 
@@ -208,12 +208,12 @@ a:nth-child(even){background-color: #f2f2f2}
                 <input type="hidden" class="btn-select-input" id="" name="" value="" />
                 <span class="btn-select-value">Select an Item</span>
                 <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                 <ul id="select_api">
                     <li class="selected">Conversation</li>
                     <li >NLC</li>
                     <li>NLU</li>
-                    
+
                 </ul>
             </a>
         </div>
@@ -230,7 +230,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="medium">NLC</div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="medium">Conversation</div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="medium">NLU</div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -287,11 +287,11 @@ a:nth-child(even){background-color: #f2f2f2}
                             </a>
                         </div>
                     </div>
-                   
+
                 </div>
                 <!-- /.row -->
 
-                
+
 <br/><br/><br/>
 <div id="sub_container_1">
 <div class="row">
@@ -308,11 +308,11 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span class="btn-select-value">Select an Item</span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                      <ul id="select_api">
                                          <li class="selected">Intent</li>
                                          <li >Entities</li>
-            
+
                                      </ul>
                                      </a>
                                 </div>
@@ -321,10 +321,10 @@ a:nth-child(even){background-color: #f2f2f2}
                                <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                <span class="btn-select-value">Select an Item</span>
                                 <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                 <ul>
                                       <li class="selected">Classes</li>
-                
+
                                 </ul>
                                </a>
                             </div>
@@ -333,7 +333,7 @@ a:nth-child(even){background-color: #f2f2f2}
                     </div>
                 </div>
             </div>
-        
+
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -347,8 +347,8 @@ a:nth-child(even){background-color: #f2f2f2}
                                         <div class="fileinput fileinput-new col-xs-5 col-sm-5" data-provides="fileinput">
                                               <span class="btn btn-default btn-file"><input type="file"  id="inputEvalFile" /></span>
                                         </div></div></div>
-                                       <div class="row"> 
-                                       <div class="col-lg-6 col-md-4 col-md-offset-4">   
+                                       <div class="row">
+                                       <div class="col-lg-6 col-md-4 col-md-offset-4">
                                            <button type="button" class="btn btn-info pull-right" id="evaluate_btn" onclick="loadROC()">Evaluate</button>
                                        </div>
                                 </div>
@@ -358,7 +358,7 @@ a:nth-child(even){background-color: #f2f2f2}
                     </div>
                 </div>
                 <!-- /.row -->
-                
+
 
 <!-- end of Sub Container 1 -->
 <br>
@@ -373,7 +373,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                 <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> ROC Chart</h3>
                             </div>
                             <br/>
-                            
+
                             <div class="panel-body">
                               <div class="row">
                                 <div class="col-lg-3 col-sm-1"><label> <h5>Parametres: </label></div>
@@ -382,11 +382,11 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span class="btn-select-value">Select an Item</span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                       <ul id="select_api">
                                           <li class="selected">Temperature</li>
                                            <li >Conditions</li>
-                    
+
                                        </ul>
                                      </a>
                                   </div>
@@ -451,7 +451,6 @@ a:nth-child(even){background-color: #f2f2f2}
 
 <div class="row">
 <div class="panel-footer">
-IBM India SI Labs 2017
 </div>
 </div>
                  </div>
@@ -469,7 +468,7 @@ function loadDashboard(){
  document.getElementById("sub_container_1").style.display="none";
  document.getElementById("sub_container_2").style.display="none";
  document.getElementById("inputEvalFile").innerHTML="";
- 
+
 
 }
 function loadSelection(apiName){
@@ -488,9 +487,9 @@ function loadSelection(apiName){
        document.getElementById("conversation_attr").style.display="none";
         document.getElementById("nlc_attr").style.display="block";
     }
-    
 
-   
+
+
     return true;
 }
 function loadROC(){
@@ -579,24 +578,24 @@ var svg = d3.select("#roc").append("svg")
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-   ;    
-    
+   ;
+
 svg.append("text")
     .attr("class", "x label")
     .attr("text-anchor", "end")
     .attr("x", width)
     .attr("y", height - 6)
     .text("False Positive Fraction");
-    
+
 svg.append("text")
     .attr("class", "y label")
     .attr("text-anchor", "end")
     .attr("y", 6)
     .attr("dy", ".75em")
     .attr("transform", "rotate(-90)")
-    .text("True Positive Fraction");    
-    
-var map = {"RS_conditions":"[\"0.2767601451632373\",\"0\",\"0\",\"0\",\"0\",\"0.23530506130158813\",\"0\",\"0\",\"0.23530506130158813\",\"0\",\"0\",\"0.7230075001716614\",\"0\",\"0.6692333221435547\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0.9270983934402466\",\"0\",\"0\",\"0.21012395169441334\",\"0\",\"0\",\"0.889564573764801\"]","GT_temperature":"[\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\"]","RS_temperature":"[\"0.6821634769439697\",\"0.9049559235572815\",\"0\",\"0\",\"0.6821634769439697\",\"0.26277755197425634\",\"0.23598963507976123\",\"0.7653567790985107\",\"0.6217306852340698\",\"0.621730387210846\",\"0\",\"0\",\"0.682163417339325\",\"0.6821634769439697\",\"0.621730625629425\",\"0.6217304468154907\",\"0.5724058151245117\",\"0.6821626424789429\",\"0\",\"1.0\",\"0.6821630597114563\",\"0.6821628212928772\",\"1.0\",\"0.6821628212928772\",\"0.6217303276062012\",\"0.28048244467267125\",\"0.6217308044433594\",\"0.621730387210846\",\"0\",\"0.6821631193161011\",\"0.5062103271484375\",\"0.713133692741394\",\"0.9361246228218079\",\"0.9255580306053162\",\"0.621730625629425\",\"0\",\"0.6821632981300354\",\"0.9587737917900085\",\"0.6821630001068115\",\"0\"]","GT_conditions":"[\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"0\"]"} ; 
+    .text("True Positive Fraction");
+
+var map = {"RS_conditions":"[\"0.2767601451632373\",\"0\",\"0\",\"0\",\"0\",\"0.23530506130158813\",\"0\",\"0\",\"0.23530506130158813\",\"0\",\"0\",\"0.7230075001716614\",\"0\",\"0.6692333221435547\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0.9270983934402466\",\"0\",\"0\",\"0.21012395169441334\",\"0\",\"0\",\"0.889564573764801\"]","GT_temperature":"[\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\"]","RS_temperature":"[\"0.6821634769439697\",\"0.9049559235572815\",\"0\",\"0\",\"0.6821634769439697\",\"0.26277755197425634\",\"0.23598963507976123\",\"0.7653567790985107\",\"0.6217306852340698\",\"0.621730387210846\",\"0\",\"0\",\"0.682163417339325\",\"0.6821634769439697\",\"0.621730625629425\",\"0.6217304468154907\",\"0.5724058151245117\",\"0.6821626424789429\",\"0\",\"1.0\",\"0.6821630597114563\",\"0.6821628212928772\",\"1.0\",\"0.6821628212928772\",\"0.6217303276062012\",\"0.28048244467267125\",\"0.6217308044433594\",\"0.621730387210846\",\"0\",\"0.6821631193161011\",\"0.5062103271484375\",\"0.713133692741394\",\"0.9361246228218079\",\"0.9255580306053162\",\"0.621730625629425\",\"0\",\"0.6821632981300354\",\"0.9587737917900085\",\"0.6821630001068115\",\"0\"]","GT_conditions":"[\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"0\"]"} ;
 var evalparam = "temperature";
 //alert("map evalparam Label =  "+ map['RS_' + evalparam]);
 
@@ -606,87 +605,87 @@ draw(svg, map, evalparam);
     var beta = document.getElementById("beta").value;
     draw(svg, nnn, beta);
 });*/
-    
+
 function draw(svg, map, param){
 
 var slabels = map['GT_' + evalparam];
-var smark = map['RS_' + evalparam]; 
+var smark = map['RS_' + evalparam];
 
 //var labels = JSON.parse("[" + slabels + "]");
-//var mark = JSON.parse("[" + smark + "]"); 
+//var mark = JSON.parse("[" + smark + "]");
 
 var labels = JSON.parse(slabels);
-var mark = JSON.parse(smark); 
-    
+var mark = JSON.parse(smark);
+
 //var mark = []
 //var labels = [];
-    
+
 /*for(var i = 0; i < sampSi; i++){
  var xx = Math.random() * 10
  mark.push(xx);
  var lp = Math.exp(effSi * xx) / (1 + Math.exp(effSi * xx));
  if( Math.random() < lp  ){ labels.push(1); } else { labels.push(0); }
 }*/
- 
+
 var markSort = mark.slice(0).sort();
-var labSort = [];    
+var labSort = [];
 var oneDex = [];
 var zeroDex = [];
 for(var i = 0; i < markSort.length; i++){
     var cranker = labels[mark.indexOf(markSort[i])]
-    labSort.push(cranker);   
+    labSort.push(cranker);
     if(cranker == 1){
         oneDex.push(i);
     } else {
         zeroDex.push(i);
     }
 }
-    
-var data = [];    
+
+var data = [];
 for(var i =0; i<markSort.length; i++){
     data.push({"tpr": calcTPR(oneDex, markSort, markSort[i]),
      "fpr": calcFPR(zeroDex, markSort, markSort[i]),
               "cut": markSort[i]});
 }
- 
+
 var tess = voronoi(data);
 for(var i = 0; i < data.length; i++){
-	
+
 	data[i].vtess = tess[i];
-	
-} 
+
+}
 svg.selectAll("path.line").remove();
   svg.append("path")
       .attr("class", "line")
       .attr("d", line(data));
   var cells = svg.append("g").attr("class", "vors").selectAll("g");
-  
+
   cell = cells.data(data);
   cell.exit().remove();
-	
+
     var cellEnter = cell.enter().append("g");
-	
+
     cellEnter.append("circle")
     	.attr("class", "dot")
    	 	.attr("r", 3.5)
 		.attr("cx", function(d) { return x(d.fpr); })
 		.attr("cy", function(d) { return y(d.tpr); })
    	 	;
-	
+
     cellEnter.append("path")
         .attr("class", "tess")
         ;
-       
-    //cell.select("path").attr("d", function(d) { return "M" + d.vtess.join("L") + "Z"; });   
-	
+
+    //cell.select("path").attr("d", function(d) { return "M" + d.vtess.join("L") + "Z"; });
+
 	cellEnter.append("text").attr("class", "hidetext")
 	    .attr("x", function(d) { return x(d.fpr) + 10; })
 	    .attr("y", function(d) { return y(d.tpr) + 10; })
 	    .text(function(d) { return "cutoff: " + Math.round(d.cut*10)/10 ;  });
-}    
-    
+}
+
 function calcTPR(oneDex, markSort, m){
-    
+
     var TPR = 0;
     for(var i = 0; i < oneDex.length; i++){
        if(markSort[oneDex[i]] >= m) {
@@ -694,11 +693,11 @@ function calcTPR(oneDex, markSort, m){
        }
     }
     return TPR;
-        
+
 }
-    
+
 function calcFPR(zeroDex, markSort, m){
-    
+
     var FPR = 0;
     for(var i = 0; i < zeroDex.length; i++){
        if(markSort[zeroDex[i]] >= m) {
@@ -706,8 +705,8 @@ function calcFPR(zeroDex, markSort, m){
        }
     }
     return FPR;
-        
-}        
+
+}
 </script>
 
 </body>

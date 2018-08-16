@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
     font-weight: bold;
-} 
+}
 
 #container {
     width: 1200px;
@@ -124,22 +124,22 @@ ul.select2-results {
   stroke: blue;
   stroke-width: 1.5px;
 }
-    
+
 .dot {
     fill: none;
 }
 .vors :hover circle {
   fill: red;
 }
-   
+
 .vors :hover text {
 	opacity: 1;
-}   
-    
+}
+
 .hidetext {
     opacity: 0;
 }
-    
+
 
 a:nth-child(even){background-color: #f2f2f2}
 .footer {
@@ -169,14 +169,14 @@ a:nth-child(even){background-color: #f2f2f2}
 <script src="rocChart.js"></script>
 
 <div id="wrapper">
-             
+
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        
+
                         <li>
                             <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
@@ -202,9 +202,9 @@ a:nth-child(even){background-color: #f2f2f2}
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <img src="img/IBM-logo-blue.png" style="width:10%;"alt='Logo' />Watson Model Evaluation Workbench <small>Dashboard</small>
+                            Watson Model Evaluation Workbench <small>Dashboard</small>
                         </h1>
-                       
+
                     </div>
                 </div>
 	<form:form name="UploadForm" action="uploadfiles" modelAttribute="uploadForm" method="POST" enctype="multipart/form-data"   accept-charset=utf-8>
@@ -221,7 +221,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="medium">NLC</div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="medium">Conversation</div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="medium">NLU</div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -278,10 +278,10 @@ a:nth-child(even){background-color: #f2f2f2}
                             </a>
                         </div>
                     </div>
-                   
+
                 </div>
                 <!-- /.row -->
- 
+
 
 <div id="sub_container_1">
 <div class="row" >
@@ -291,7 +291,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Evaluation Inputs</h3>
                             </div>
                             <div class="panel-body">
- 
+
                                  <div class="row" id="attr">
                                     <div class="col-xs-5 col-sm-5"><label> <h5>Attribute: </label></div>
                                     <div class="col-xs-4 col-sm-2" >
@@ -299,21 +299,21 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span class="btn-select-value" id="attr_span" >Select an Item</span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                      <ul id="attr_list">
                                       </ul>
                                      </a>
                                     </div>
                                 </div>
- 
+
                               <div class="row" id="config">
                                     <div class="col-xs-5 col-sm-5"><label> <h5>Model Configuration: </label></div>
-                                    
+
                                     <div class="col-xs-4 col-sm-2" id="config_list">
-                                    
+
                             <input type="hidden" id="evalParam" name="evalParam" value="" />
     					    <input type="hidden" id="config" name="config" value="" />
-                                     
+
                                        <span class="checkbox">
                                          <label><input type="checkbox" name="model" value="1">MODEL 1</label>
                                        </span>
@@ -322,22 +322,22 @@ a:nth-child(even){background-color: #f2f2f2}
                                        </span>
                                        <span class="checkbox">
                                          <label><input type="checkbox" name="model" value="3">MODEL 3</label>
-                                       </span> 
+                                       </span>
                                        <span class="checkbox">
                                          <label><input type="checkbox" name="model" value="4">MODEL 4</label>
-                                       </span> 
+                                       </span>
                                        <span class="checkbox">
                                          <label><input type="checkbox" name="model" value="5">MODEL 5</label>
-                                       </span> 
+                                       </span>
                                 </div>
                             </div>
-                            
+
                             <div class="row">
                                       <div class="col-lg-12 col-md-6">
                                         <div class="col-xs-5 col-sm-5"><label><h5>Upload Model Evaluation Test Data:</label></div>
                                         <div class="fileinput fileinput-new col-xs-5 col-sm-5" data-provides="fileinput">
                                               <span class="btn btn-default btn-file">
-                                             
+
 										<table id="fileTable">
 							                <tr>
 							                    <td><input name="files[0]" type="file" /></td>
@@ -351,15 +351,15 @@ a:nth-child(even){background-color: #f2f2f2}
                                         </div>
                                         </div>
                                         <br>
-                                       <div class="row"> 
-                                       <div class="col-lg-1 col-md-1 col-md-offset-1">   
+                                       <div class="row">
+                                       <div class="col-lg-1 col-md-1 col-md-offset-1">
                                        </div>
 
-                                       <div class="col-lg-2 col-md-2 col-md-offset-2">   
+                                       <div class="col-lg-2 col-md-2 col-md-offset-2">
 							                <input id="addFile" type="button" value="Add File" />
                                        </div>
 
-                                       <div class="col-lg-2 col-md-2 col-md-offset-2">   
+                                       <div class="col-lg-2 col-md-2 col-md-offset-2">
                                            <button type="submit" class="btn btn-info pull-right" id="evaluate_btn"  onclick="loadROC()" >Evaluate  Performance</button>
                                        </div>
                                 </div>
@@ -370,9 +370,9 @@ a:nth-child(even){background-color: #f2f2f2}
                 </div>
 
 
-                
+
                 <!-- /.row -->
-       </form:form>         
+       </form:form>
 
 <!-- end of Sub Container 1 -->
 
@@ -432,7 +432,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                             <td><label id="bestAccuracyCorrect[1]"></label></td>
                                             <td><label id="bestAccuracyInCorrect[1]"></label></td>
                                       </tr>
-                                      
+
                                     </tbody>
                                </table>
                         </div>
@@ -497,7 +497,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                             <td><label id="bestAccuracyCorrect[2]"></label></td>
                                             <td><label id="bestAccuracyInCorrect[2]"></label></td>
                                       </tr>
-                                      
+
                                     </tbody>
                                </table>
                         </div>
@@ -562,7 +562,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                             <td><label id="bestAccuracyCorrect[3]"></label></td>
                                             <td><label id="bestAccuracyInCorrect[3]"></label></td>
                                       </tr>
-                                      
+
                                     </tbody>
                                </table>
                         </div>
@@ -627,7 +627,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                            <td><label id="bestAccuracyCorrect[4]"></label></td>
                                            <td><label id="bestAccuracyInCorrect[4]"></label></td>
                                       </tr>
-                                      
+
                                     </tbody>
                                </table>
                         </div>
@@ -692,7 +692,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                             <td><label id="bestAccuracyCorrect[5]"></label></td>
                                             <td><label id="bestAccuracyInCorrect[5]"></label></td>
                                       </tr>
-                                      
+
                                     </tbody>
                                </table>
                         </div>
@@ -718,7 +718,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                 <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> ROC Chart</h3>
                             </div>
                             <br/>
-                            
+
                             <div class="panel-body">
                               <div class="row">
                                 <div class="col-lg-3 col-sm-1"><label> <h5>Parameters: </label></div>
@@ -727,9 +727,9 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span  id="selected_param_value" class="btn-select-value">Select an Item</span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                 					<c:if test="${not empty GTMasterList}">
-										<ul id="evalParamNameUL">	
+										<ul id="evalParamNameUL">
 										<c:forEach var="listValue" items="${GTMasterList}" varStatus="loopCount">
 										  <c:if test="${loopCount.count eq 1}">
          										<li class="selected" value="${listValue}" >${listValue}</li>
@@ -739,24 +739,24 @@ a:nth-child(even){background-color: #f2f2f2}
         								  </c:if>
 										</c:forEach>
 										</ul>
-									</c:if>                
+									</c:if>
                                      </a>
                                   </div>
                             </div>
-                            
+
                             <input type="hidden" id="evalParamName" name="evalParamName" >
-                            
+
                                      <div id="roc"> </div>
                             </div>
 </div>
 </div>
 
                     <div class="col-lg-4">
-                    
+
                     <!-- Dynamic Summary Statistics -->
-                    
+
                         <!-- Summary Model 1  -->
-                        
+
                         <div id="sumModel1" class="panel panel-default">
                             <div class="panel-heading">
                                 <a data-toggle="collapse" href="#summarycollapse1"> <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Summary Statistics-MODEL 1</h3></a>
@@ -770,7 +770,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span id="selected_threshold_value1" class="btn-select-value"></span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                       <ul id="thresholdUL1">
                                           <li id="T1" value="0.1">0.1</li>
                                           <li id="T2" value="0.2">0.2</li>
@@ -782,12 +782,12 @@ a:nth-child(even){background-color: #f2f2f2}
                                           <li id="T8" value="0.8">0.8</li>
                      					  <li id="T9" value="0.9">0.9</li>
                                        </ul>
-                                       
+
                                      </a>
                                   </div>
                             </div>
                                 <div class="list-group">
-                                
+
                                     <a href="#" class="list-group-item">
                                         <span class="badge" id="numberofcases[1]"></span>
                                         <i class="fa fa-fw fa-comment"></i> Number of Cases
@@ -838,13 +838,13 @@ a:nth-child(even){background-color: #f2f2f2}
                                         <span class="badge" id="empiricrocarea[1]"></span>
                                         <i class="fa fa-fw fa-area-chart"></i> Empiric ROC area
                                     </a>
-                                     
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
-                    
+
 
   <!-- Summary Model 2  -->
                         <div id="sumModel2" class="panel panel-default">
@@ -860,7 +860,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span id="selected_threshold_value2" class="btn-select-value"></span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                       <ul id="thresholdUL2">
                                           <li id="T1" value="0.1">0.1</li>
                                           <li id="T2" value="0.2">0.2</li>
@@ -928,13 +928,13 @@ a:nth-child(even){background-color: #f2f2f2}
                                         <span class="badge" id="empiricrocarea[2]"></span>
                                         <i class="fa fa-fw fa-area-chart"></i> Empiric ROC area
                                     </a>
-                                     
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
-                        
+
 
 
   <!-- Summary Model 3  -->
@@ -951,7 +951,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span id="selected_threshold_value3" class="btn-select-value"></span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                       <ul id="thresholdUL3">
                                           <li id="T1" value="0.1">0.1</li>
                                           <li id="T2" value="0.2">0.2</li>
@@ -963,12 +963,12 @@ a:nth-child(even){background-color: #f2f2f2}
                                           <li id="T8" value="0.8">0.8</li>
                      					  <li id="T9" value="0.9">0.9</li>
                                        </ul>
-                                       
+
                                      </a>
                                   </div>
                             </div>
                                 <div class="list-group">
-                                
+
                                     <a href="#" class="list-group-item">
                                         <span class="badge" id="numberofcases[3]"></span>
                                         <i class="fa fa-fw fa-comment"></i> Number of Cases
@@ -1019,9 +1019,9 @@ a:nth-child(even){background-color: #f2f2f2}
                                         <span class="badge" id="empiricrocarea[3]"></span>
                                         <i class="fa fa-fw fa-area-chart"></i> Empiric ROC area
                                     </a>
-                                     
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -1042,7 +1042,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span id="selected_threshold_value4" class="btn-select-value"></span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                       <ul id="thresholdUL4">
                                           <li id="T1" value="0.1">0.1</li>
                                           <li id="T2" value="0.2">0.2</li>
@@ -1054,12 +1054,12 @@ a:nth-child(even){background-color: #f2f2f2}
                                           <li id="T8" value="0.8">0.8</li>
                      					  <li id="T9" value="0.9">0.9</li>
                                        </ul>
-                                       
+
                                      </a>
                                   </div>
                             </div>
                                 <div class="list-group">
-                                
+
                                     <a href="#" class="list-group-item">
                                         <span class="badge" id="numberofcases[4]"></span>
                                         <i class="fa fa-fw fa-comment"></i> Number of Cases
@@ -1110,9 +1110,9 @@ a:nth-child(even){background-color: #f2f2f2}
                                         <span class="badge" id="empiricrocarea[4]"></span>
                                         <i class="fa fa-fw fa-area-chart"></i> Empiric ROC area
                                     </a>
-                                     
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -1131,7 +1131,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                       <input type="hidden" class="btn-select-input" id="" name="" value="" />
                                       <span id="selected_threshold_value5" class="btn-select-value"></span>
                                       <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                
+
                                       <ul id="thresholdUL5">
                                           <li id="T1" value="0.1">0.1</li>
                                           <li id="T2" value="0.2">0.2</li>
@@ -1143,7 +1143,7 @@ a:nth-child(even){background-color: #f2f2f2}
                                           <li id="T8" value="0.8">0.8</li>
                      					  <li id="T9" value="0.9">0.9</li>
                                        </ul>
-                                       
+
                                      </a>
                                   </div>
                             </div>
@@ -1199,25 +1199,24 @@ a:nth-child(even){background-color: #f2f2f2}
                                         <span class="badge" id="empiricrocarea[5]"></span>
                                         <i class="fa fa-fw fa-area-chart"></i> Empiric ROC area
                                     </a>
-                                     
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
 
 <!-- End of Dynamic Summary -->
-                        
+
                     </div>
-                    
-                    
+
+
 </div>
 </div>
 <!-- End of Sub Container 2 -->
 
 <div class="row">
 <div class="panel-footer">
-IBM India SI Labs 2017
 </div>
 </div>
                  </div>
@@ -1241,9 +1240,9 @@ var labSort=[];
 var markSortList=['','','','','',''];
 var labSortList=['','','','','',''];
 
-var dTPR=[];  
+var dTPR=[];
 var dFPR=[];
-var auc=0.0; 
+var auc=0.0;
 
 var total=0;
 var tp=0;
@@ -1265,71 +1264,71 @@ function loadDashboard(){
 function loadSelection(apiName){
    apiNameGlobal=apiName;
    var out="";
-   
+
    var conversation,nlc,nlu=[];
-   conversation = document.getElementsByClassName("panel-green"); 
-   nlc = document.getElementsByClassName("panel-primary"); 
-   nlu = document.getElementsByClassName("panel-yellow"); 
-   
+   conversation = document.getElementsByClassName("panel-green");
+   nlc = document.getElementsByClassName("panel-primary");
+   nlu = document.getElementsByClassName("panel-yellow");
+
    //document.getElementById("servicelabel").innerHTML = "Service Name: " + apiName;
    document.getElementById("serviceName").value = apiName;
    document.getElementById("config").value = "1";
-   
+
    document.getElementById("sub_container_1").style.display="block";
     if(apiName=="Conversation"){
 	   $('#attr_span').html("Intents");
    		$('#attr_list').html(out);
 
-        document.getElementById("evalParam").value = "Intents";  
+        document.getElementById("evalParam").value = "Intents";
         document.getElementById("attr").style.display="block";
-        
-        conversation[0].style.boxShadow = "10px 20px 30px black"; 
-        conversation[0].style.border = "1px"; 
-        nlc[0].style.boxShadow = ""; 
+
+        conversation[0].style.boxShadow = "10px 20px 30px black";
+        conversation[0].style.border = "1px";
+        nlc[0].style.boxShadow = "";
         nlc[0].style.border = "";
-        nlu[0].style.boxShadow = ""; 
-        nlu[0].style.border = "";  
-        
+        nlu[0].style.boxShadow = "";
+        nlu[0].style.border = "";
+
     }
     else if(apiName=="NLC"){
 	   $('#attr_span').html("Classes");
    		$('#attr_list').html(out);
 
-        document.getElementById("evalParam").value = "Classes";  
+        document.getElementById("evalParam").value = "Classes";
        document.getElementById("attr").style.display="block";
-       
-       nlc[0].style.boxShadow = "10px 20px 30px black"; 
-       nlc[0].style.border = "1px"; 
-       conversation[0].style.boxShadow = ""; 
-       conversation[0].style.border = ""; 
-       nlu[0].style.boxShadow = ""; 
-       nlu[0].style.border = ""; 
-       
+
+       nlc[0].style.boxShadow = "10px 20px 30px black";
+       nlc[0].style.border = "1px";
+       conversation[0].style.boxShadow = "";
+       conversation[0].style.border = "";
+       nlu[0].style.boxShadow = "";
+       nlu[0].style.border = "";
+
     }
     else if(apiName=="NLU"){
        document.getElementById("evalParam").value = "Concepts";
        document.getElementById("attr").style.display="none";
-       
-       nlu[0].style.boxShadow = "10px 20px 30px black"; 
-       nlu[0].style.border = "1px"; 
-       conversation[0].style.boxShadow = ""; 
-       conversation[0].style.border = ""; 
-       nlc[0].style.boxShadow = ""; 
+
+       nlu[0].style.boxShadow = "10px 20px 30px black";
+       nlu[0].style.border = "1px";
+       conversation[0].style.boxShadow = "";
+       conversation[0].style.border = "";
+       nlc[0].style.boxShadow = "";
        nlc[0].style.border = "";
     }
-   
+
     return true;
 }
 
 function loadConfigSelection(){
    $('#config_list li').on('click', function(){
    configType=($(this).text());
-}); 
+});
    return true;
 }
 
 function loadROC(){
-    
+
      if ($("#config_list input:checkbox:checked").length > 0)
       {
        for(var i=0;i<$("#config_list input:checkbox:checked").length;i++){
@@ -1349,10 +1348,10 @@ function loadParamSelection(){
    var prevVal=$('#selected_param_value').text();
    $('#evalParamNameUL li').on('click', function(){
    		paramType=($(this).text());
-	}); 
+	});
     //alert("prevVal: "+ prevVal + " paramType: "+ paramType);
    if((paramType!=prevVal) && paramType.length>0){
-   
+
      $('#thresholdUL1 li').removeClass('selected');
      $('#T15').addClass('selected');
      $('#selected_threshold_value1').html("0.5");
@@ -1372,7 +1371,7 @@ function loadParamSelection(){
      $('#thresholdUL5 li').removeClass('selected');
      $('#T55').addClass('selected');
      $('#selected_threshold_value5').html("0.5");
-    
+
     }
     return true;
 }
@@ -1436,7 +1435,7 @@ $(document).on('click', function (e) {
                                                                     + '   <input type="file" name="files['+ fileIndex +']" />'
                                                                     + '</td></tr>');
                                         });
- 
+
                     });
 
 // Multiple files upload
@@ -1483,43 +1482,43 @@ var svg = d3.select("#roc").append("svg")
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-   ;    
-    
+   ;
+
 svg.append("text")
     .attr("class", "x label")
     .attr("text-anchor", "end")
     .attr("x", width)
     .attr("y", height - 6)
     .text("False Positive Fraction");
-    
+
 svg.append("text")
     .attr("class", "y label")
     .attr("text-anchor", "end")
     .attr("y", 6)
     .attr("dy", ".75em")
     .attr("transform", "rotate(-90)")
-    .text("True Positive Fraction");    
-    
+    .text("True Positive Fraction");
+
 <c:if test="${not empty GTMasterList}">
     //alert("not empty GT call ");
-    var serviceName = "${serviceName}" ; 
+    var serviceName = "${serviceName}" ;
    //alert(serviceName);
     loadSelection(serviceName);
 	loadROC();
     var map = ${ROCDataMap} ;
     //alert("map "+map);
-    
+
     var models =   ${models} ;
     //alert("models "+ models);
     //var modelconfig = JSON.parse("[" + models + "]");
-    
+
     //alert(modelconfig);
-    
+
     <c:forEach var="paramList" items="${GTMasterList}" end="0">
-      var sParamVal = '<c:out value="${paramList}" />'   ; 
+      var sParamVal = '<c:out value="${paramList}" />'   ;
       //alert("sParamVal CHG 111 " + sParamVal);
       //draw(svg, map, sParamVal);
-      
+
       $('#recModel1').hide();
       $('#sumModel1').hide();
 
@@ -1534,17 +1533,17 @@ svg.append("text")
 
       $('#recModel5').hide();
       $('#sumModel5').hide();
-      
 
-      
+
+
       for(var i=0;i<models.length;i++){
     		draw(svg, map, sParamVal,models[i]);
     		$("#config_list input:checkbox")[models[i]-1].checked = true;
-    		
+
            $('#recModel'+models[i]).show();
            $('#sumModel'+models[i]).show();
-    		
-    		
+
+
 	  }
 	</c:forEach>
  </c:if>
@@ -1561,7 +1560,7 @@ $("#evalParamNameUL li").click(function(){
      for(var i=0;i<models.length;i++){
     		draw(svg, map, evalParameter,models[i]);
 	  }
-    
+
 });
 
 //Assign the value
@@ -1599,82 +1598,82 @@ $("#configUL li").click(function(){
     $("#config").val($(this).attr("value"));
 });
 
-// Draw Function 
+// Draw Function
 
 function draw(svg, map, evalparam,model){
 	//var slabels = map['GT_' + evalparam];
-	//var smark = map['RS_' + evalparam]; 
+	//var smark = map['RS_' + evalparam];
 	//alert("model==" + model);
 	var color = rocColor[model];
 	//alert("color= " + color);
-	
-	
+
+
 	var slabels = map['CONFIG_' + model + '_' + 'GT_' + evalparam];
-	var smark = map['CONFIG_' + model + '_' + 'RS_' + evalparam]; 
-	
+	var smark = map['CONFIG_' + model + '_' + 'RS_' + evalparam];
+
 	//alert("smark = "+smark);
-	//alert("slabels = "+ slabels); 
-	
+	//alert("slabels = "+ slabels);
+
 	labels = JSON.parse(slabels);
-	mark = JSON.parse(smark); 
+	mark = JSON.parse(smark);
 
 	//alert("mark = "+mark);
-	//alert("labels = "+ labels);    
-	    
+	//alert("labels = "+ labels);
+
 	total = labels.length;
-	
+
 	function compareNumbers(a, b)
 	{
 	    return a - b;
 	}
 	markSort = mark.slice(0).sort(compareNumbers);                               // changes
-	
-	labSort = [];    
+
+	labSort = [];
 	var oneDex = [];
 	var zeroDex = [];
 	for(var i = 0; i < markSort.length; i++){
 	    var cranker = labels[mark.indexOf(markSort[i])] ;
-	    labSort.push(cranker);   
+	    labSort.push(cranker);
 	    if(parseInt(cranker) == 1){
 	        oneDex.push(i);
 	    } else {
 	        zeroDex.push(i);
 	    }
 	}
-	
+
 	markSortList[model] = markSort;
 	labSortList[model]  = labSort;
 
 	displaySummaryStats(markSort,labSort,0.5,model);
-	
+
 	//alert("markSort " + markSort);
 	//alert("labSort " + labSort);
 	//alert("POS " + oneDex.length);
 	//alert("NEG " + zeroDex.length);
-	
+
 	var bestThreshold = 0.0;
 	//var minDistance = 2.0;
-	
+
 	var bestThresholdF1Score = 0;
 	var bestF1Score = 0.0;
 	var bestTPRF1Score = 0.0;
 	var bestFPRF1Score = 0.0;
-	
+
 	var bestThresholdAccuracy = 0;
 	var bestAccuracy = 0.0;
 	var bestAccuracyIncorrect = 0.0;
-	
+
 	var tempTPR = 0;
 	var tempFPR = 0;
 	var tempF1Score = 0;
 	var tempAccuracy = 0;
-	
+
 	var cutoff = 0;
-	var rating = "Unknown"; 
+	var rating = "Unknown";
 
 for(var i =1; i<10; i++) {
     cutoff = i/10;
-    
+
     //distance = calcDistance(tempFPR,tempTPR);
    	calculate(markSort,labSort,cutoff);
 	tempF1Score = (2*tp)/((2*tp)+fp+fn);
@@ -1686,7 +1685,7 @@ for(var i =1; i<10; i++) {
      	minDistance = distance;
      	bestThreshold = cutoff;
     }
-*/    
+*/
     if (tempF1Score >= bestF1Score ) {
      	bestF1Score = tempF1Score;
      	bestThresholdF1Score = cutoff;
@@ -1700,7 +1699,7 @@ for(var i =1; i<10; i++) {
 }
 
 	//bestThreshold = Math.round(bestThreshold*10)/10 ;
-	
+
 	bestThresholdAccuracy = Math.round(bestThresholdAccuracy*10)/10 ;
 	bestAccuracyIncorrect = parseFloat((1-bestAccuracy)*100).toFixed(2);
 	bestAccuracy = parseFloat(bestAccuracy*100).toFixed(2);
@@ -1712,64 +1711,64 @@ for(var i =1; i<10; i++) {
 
     //rating = calcRating(minDistance);
     //alert("Rating: " + rating);
-		
-	document.getElementById("bestThresholdF1Score[" + model +"]").innerHTML="<h5>" + bestThresholdF1Score + "</h5>"; 
-	document.getElementById("bestF1Score[" + model +"]").innerHTML="<h5>" + bestF1Score + "%" +  "</h5>"; 
-	document.getElementById("bestTPRF1Score[" + model +"]").innerHTML="<h5>" + bestTPRF1Score + "</h5>"; 
-	document.getElementById("bestFPRF1Score[" + model +"]").innerHTML="<h5>" + bestFPRF1Score + "</h5>"; 
 
-	document.getElementById("bestAccuracy[" + model +"]").innerHTML="<h5>" + bestAccuracy + "%"  + "</h5>"; 
-	document.getElementById("bestThresholdAccuracy[" + model +"]").innerHTML="<h5>" + bestThresholdAccuracy + "</h5>"; 
-	document.getElementById("bestAccuracyCorrect[" + model +"]").innerHTML="<h5>" + bestAccuracy + "%"  + "</h5>"; 
-	document.getElementById("bestAccuracyInCorrect[" + model +"]").innerHTML="<h5>" + bestAccuracyIncorrect + "%"  + "</h5>"; 
-	
-	
-	//document.getElementById("bestThreshold").innerHTML=bestThreshold; 
+	document.getElementById("bestThresholdF1Score[" + model +"]").innerHTML="<h5>" + bestThresholdF1Score + "</h5>";
+	document.getElementById("bestF1Score[" + model +"]").innerHTML="<h5>" + bestF1Score + "%" +  "</h5>";
+	document.getElementById("bestTPRF1Score[" + model +"]").innerHTML="<h5>" + bestTPRF1Score + "</h5>";
+	document.getElementById("bestFPRF1Score[" + model +"]").innerHTML="<h5>" + bestFPRF1Score + "</h5>";
+
+	document.getElementById("bestAccuracy[" + model +"]").innerHTML="<h5>" + bestAccuracy + "%"  + "</h5>";
+	document.getElementById("bestThresholdAccuracy[" + model +"]").innerHTML="<h5>" + bestThresholdAccuracy + "</h5>";
+	document.getElementById("bestAccuracyCorrect[" + model +"]").innerHTML="<h5>" + bestAccuracy + "%"  + "</h5>";
+	document.getElementById("bestAccuracyInCorrect[" + model +"]").innerHTML="<h5>" + bestAccuracyIncorrect + "%"  + "</h5>";
+
+
+	//document.getElementById("bestThreshold").innerHTML=bestThreshold;
     //alert("Final MinDistance= " + minDistance + " bestThreshold= " + bestThreshold);
     //alert("Final bestAccuracy= " + bestAccuracy + " bestThresholdAccuracy= " + bestThresholdAccuracy);
     //alert("Final bestF1Score= " + bestF1Score + " bestThresholdF1Score= " + bestThresholdF1Score);
 
 var data = [];
- 
+
 for(var i =0; i<markSort.length; i++) {
     data.push({"tpr": calcTPR(oneDex, labSort, markSort, markSort[i]),          // changes
      "fpr": calcFPR(oneDex, labSort, markSort, markSort[i]),                   // changes
      "cut": markSort[i]});
 }
- 
+
 	var tess = voronoi(data);
 	for(var i = 0; i < data.length; i++){
 		data[i].vtess = tess[i];
 		//alert("data[i].fpr=" + data[i].fpr);
 		//alert("data[i].tpr=" + data[i].tpr);
-	} 
+	}
 
 //svg.selectAll("path.line").remove();    // for multimodel
   svg.append("path")
       .attr("class", "line")
       .attr("d", line(data))
       .style('stroke', color);
-      
+
   var cells = svg.append("g").attr("class", "vors").selectAll("g");
-  
+
   cell = cells.data(data);
   cell.exit().remove();
-	
+
     var cellEnter = cell.enter().append("g");
-	
+
     cellEnter.append("circle")
     	.attr("class", "dot")
    	 	.attr("r", 3.5)
 		.attr("cx", function(d) { return x(d.fpr); })
 		.attr("cy", function(d) { return y(d.tpr); })
    	 	;
-	
+
     cellEnter.append("path")
         .attr("class", "tess")
         .style('stroke', color);
 
-    //cell.select("path").attr("d", function(d) { return "M" + d.vtess.join("L") + "Z"; });   
-	
+    //cell.select("path").attr("d", function(d) { return "M" + d.vtess.join("L") + "Z"; });
+
 	cellEnter.append("text").attr("class", "hidetext")
 	    .attr("x", function(d) { return x(d.fpr) + 10; })
 	    .attr("y", function(d) { return y(d.tpr) + 10; })
@@ -1781,22 +1780,22 @@ for(var i =0; i<markSort.length; i++) {
     	return a.fpr - b.fpr;
 	}
 
-	
+
 	data = data.sort(compareMapKeys);
 	/*
 	for(var i = 0; i < data.length; i++){
 		alert("datasort[i].fpr=" + data[i].fpr);
 		alert("data[i].tpr=" + data[i].tpr);
-	} 
+	}
    */
 	auc=calcAUC(data);
 	//alert("auc=" + auc);
 
-	document.getElementById("empiricrocarea[" + model +"]").innerHTML=parseFloat(auc).toFixed(2);       
+	document.getElementById("empiricrocarea[" + model +"]").innerHTML=parseFloat(auc).toFixed(2);
 
 	document.getElementById("modelRating[" + model +"]").innerHTML="";
-	
-	if (auc > 0 && auc<=0.5){ 
+
+	if (auc > 0 && auc<=0.5){
 		document.getElementById("modelRating[" + model +"]").innerHTML='<b>Model Rating : "Poor"';
 	} else if (auc<=0.7 && auc> 0.5 ) {
 		document.getElementById("modelRating[" + model +"]").innerHTML='<b>Model Rating : "Fair"';
@@ -1806,8 +1805,8 @@ for(var i =0; i<markSort.length; i++) {
 		document.getElementById("modelRating[" + model +"]").innerHTML='<b>Model Rating : "Excellent"';
 	}
 
-	
-}    
+
+}
 
 
 function calcDistance(x,y){
@@ -1819,22 +1818,22 @@ function calcDistance(x,y){
 function calcRating(minDistance)
 {
   if ( minDistance >= 0.69) {    // 0.5
-     rating = "Poor";  
+     rating = "Poor";
   } else if ( minDistance >= 0.56 && minDistance < 0.69  ) {  // 0.4
-     rating = "Weak";  
+     rating = "Weak";
   } else if ( minDistance >= 0.42 && minDistance < 0.56  ) {  // 0.3
-     rating = "Marginal";  
+     rating = "Marginal";
   } else if ( minDistance >= 0.28 && minDistance < 0.42  ) {  // 0.2
-     rating = "Fair";  
+     rating = "Fair";
   } else if ( minDistance >= 0.14 && minDistance < 0.28  ) {  // 0.1
      rating = "Good";
   } else if ( minDistance >= 0 && minDistance < 0.14  ) {  // 0
-     rating = "Excellent"; 
-  } 
+     rating = "Excellent";
+  }
     return rating;
 }
 */
-    
+
 function calcTPR(oneDex,labSort,markSort, m){
     var TPR = 0;
 	var TP = 0;
@@ -1848,7 +1847,7 @@ function calcTPR(oneDex,labSort,markSort, m){
 	dTPR.push(TPR);
     return TPR;
 }
-    
+
 function calcFPR(oneDex,labSort, markSort, m){
     var FPR = 0;
     var FP = 0;
@@ -1860,24 +1859,24 @@ function calcFPR(oneDex,labSort, markSort, m){
     FPR = (FP/oneDex.length);
     dFPR.push(FPR);
     return FPR;
-} 
+}
 
 
 function calcAUC(data){
     var area = 0.0;
 	for(var i = 0; i < data.length-1; i++){
 		area += ( ( data[i+1].tpr + data[i].tpr ) / 2) * ( data[i+1].fpr - data[i].fpr);
-	} 
+	}
 
     return area;
-}  
+}
 
 
 function displaySummaryStats(markSortArg,labSortArg,cutoff,model){
 
    calculate(markSortArg,labSortArg,cutoff);
    //Fill number of correct cases
-   document.getElementById("numberofcases[" + model +"]").innerHTML=tp+tn+fp+fn;       
+   document.getElementById("numberofcases[" + model +"]").innerHTML=tp+tn+fp+fn;
 
    document.getElementById("numberofcorrect[" + model +"]").innerHTML=tp+tn;
    document.getElementById("correctpos[" + model +"]").innerHTML=tp;
@@ -1889,14 +1888,14 @@ function displaySummaryStats(markSortArg,labSortArg,cutoff,model){
    document.getElementById("f1score[" + model +"]").innerHTML=parseFloat((((2*tp)/((2*tp)+fp+fn))*100)).toFixed(2)+"%";
    document.getElementById("numberofpositivemissed[" + model +"]").innerHTML=fn;
    document.getElementById("numberofnegativemissed[" + model +"]").innerHTML=fp;
-} 
+}
 
 
 function calculate(mark,labels,cutoff){
 	tp=0;
-	fp=0;          
+	fp=0;
 	tn=0;
-	fn=0;   
+	fn=0;
   for(var i = 0; i < mark.length; i++){
      if ( parseFloat(mark[i]) >= parseFloat(cutoff)  ) {
           if (  parseInt(labels[i]) ==1 ) {
@@ -1912,8 +1911,8 @@ function calculate(mark,labels,cutoff){
           }
      }
   }
-  
-}      
+
+}
 
 
 
