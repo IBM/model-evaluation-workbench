@@ -69,8 +69,7 @@ This code pattern requires at least two NLC models to compare and evaluate. So, 
 - Follow the instructions from the given [link](https://console.bluemix.net/docs/services/natural-language-classifier/getting-started.html#natural-language-classifier)
 - Use `NLC_TrainngDataset1.csv` `../src/main/data/NLC_TrainngDataset1.csv`, for training the first set of the model.
 - Use `NLC_TrainngDataset2.csv` `../src/main/data/NLC_TrainngDataset2.csv`, for training the second model. 
-- 
-- Copy username, password, and classifier/model_id and save it as a text file. These credentials are required in later steps.
+- Copy username, password, and classifier_id/model_id and save it as a text file. These credentials are required in later steps.
 
 Now, we have created and trained two models in one NLC service instance.
 
