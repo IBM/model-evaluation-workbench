@@ -86,7 +86,8 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 * Login to IBM Cloud using CLI using ```bx login``` command. Ensure that the target points to the region and space where you are running and deploying this code pattern.
 
 * open command prompt. Change directory to location where you want to download project files. Go to that directory.
-* run ```git clone git@github.com:IBM/model-evaluation-workbench.git``` to clone the repository
+* run the below command to clone the repository
+```git clone git@github.com:IBM/model-evaluation-workbench.git```
 * Change directory to model-evaluation-workbench
 * run the command `mvn clean install`
 * This should create the file `workbenchModelEval.war` under `target` folder
