@@ -83,18 +83,28 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 
 * Maven should be installed. If not installed, you can download maven from [here](https://maven.apache.org/download.cgi). You can refer to the installation instructions [here](https://maven.apache.org/install.html).
 * Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) if not already done
-* Login to IBM Cloud using CLI using ```bx login``` command. Ensure that the target points to the region and space where you are running and deploying this code pattern.
+* Login to IBM Cloud using CLI using the below command. Ensure that the target points to the region and space where you are running and deploying this code pattern.
+
+```bx login```
 
 * open command prompt. Change directory to location where you want to download project files. Go to that directory.
 * run the below command to clone the repository
+
 ```git clone git@github.com:IBM/model-evaluation-workbench.git```
+
 * Change directory to model-evaluation-workbench
-* run the command `mvn clean install`
+* run the command 
+`mvn clean install`
+
 * This should create the file `workbenchModelEval.war` under `target` folder
 * Open the manifest.yml file and update host to be unique, may be append with your ibm id.
 * Before pushing the application, Set the targeted organization or space using the below command:
+
 ``` bx target --cf```
-* Push the application to IBM Cloud using the command: ```bx cf push <Application_Name>```
+
+* Push the application to IBM Cloud using the command: 
+```bx cf push <Application_Name>```
+
 * The application should get deployed successfully. If not check the logs to determine the error and fix it.
 
 ![](Images/bxPush.png)
