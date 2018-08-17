@@ -38,7 +38,8 @@ After going through this code pattern, you should be able to:
 * [Artificial Intilligence](https://www.computerworld.com/article/2906336/emerging-technology/what-is-artificial-intelligence.html): Intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
 
 ## Watch The Video
-Will be added soon...
+
+[Demo](https://www.youtube.com/watch?v=VkgqjqBnvWo&feature=youtu.be)
 
 
 ## Steps
