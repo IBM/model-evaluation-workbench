@@ -39,7 +39,8 @@ After going through this code pattern, you should be able to:
 
 ## Watch The Video
 
-[Demo](https://www.youtube.com/watch?v=VkgqjqBnvWo&feature=youtu.be)
+[Demo](https://youtu.be/VkgqjqBnvWo)
+
 
 
 ## Steps
