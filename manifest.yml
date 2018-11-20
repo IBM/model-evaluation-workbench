@@ -2,7 +2,12 @@ applications:
 - path: target/workbenchModelEval.war
   memory: 512M
   instances: 1
-  domain: mybluemix.net
   name: workbenchModelEval
-  host: workbenchModelEval
+  random-route: true
   disk_quota: 1024M
+env:
+  NLC_API_KEY_CONFIG_1: <API Key of NLC instance for config 1>
+  NLC_CLASSIFIER_ID_CONFIG_1: <NLC Classifier Id for config 1>
+  NLC_API_KEY_CONFIG_2: <API Key of NLC instance for config 2>
+  NLC_CLASSIFIER_ID_CONFIG_2: <NLC Classifier Id for config 1>
+  NLC_URL: https://gateway.watsonplatform.net/natural-language-classifier/api
