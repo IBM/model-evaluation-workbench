@@ -8,7 +8,7 @@ In machine learning world numerous models are being created for achieving a spec
 
 
 After going through this code pattern, you should be able to:
-- Create and deploy Watson services models
+- Create and deploy Watson services models.
 - Configure model evaluation workbench to compare specific models and provide and test data.
 - Understand model evaluation parameters and know which model best suits your needs.
 
@@ -58,18 +58,16 @@ Follow these steps to setup and run this code pattern. The steps are described i
 - IBM Cloud account: You must have IBM Cloud account to work with this code pattern. If you do not have an IBM Cloud account, you can create a one month free trail account [here](https://console.bluemix.net/).
 
 
-
 ## 2. Create the Cognitive models
 
-For this pattern to demonstrate, we would be creating & using Natural Language Classifier(NLC) models.
-This code pattern requires at least two NLC models to compare and evaluate. So, we will create two classifier models in one NLC service instance.
+For this pattern to demonstrate, we would be creating and using Natural Language Classifier(NLC) models. This code pattern requires at least two NLC models to compare and evaluate. So, we will create two classifier models in one NLC service instance.
 
 ### 2.1 Create NLC service instances:
 
 - Follow the instructions from the given [link](https://console.bluemix.net/docs/services/natural-language-classifier/getting-started.html#natural-language-classifier) to create and train the NLC models.
 - While you are training the first model, Use `NLC_TrainngDataset1.csv` file from `../src/main/data/NLC_TrainngDataset1.csv`.
 - While you are training the second model, Use `NLC_TrainngDataset2.csv` file from `../src/main/data/NLC_TrainngDataset2.csv`.
-- Copy API Key, Url and classifier_id/model_id and save it in a text file. These credentials are required in later steps.
+- Copy API Key, Url and classifier_id for each of the classifiers and save it in a text file. These credentials are required in later steps.
 
 Now, we have created and trained two models in one NLC service instance.
 
@@ -87,7 +85,7 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
      ```
 
 * open command prompt. Change directory to location where you want to download project files. Go to that directory.
-* run one of the below commands to clone the repository
+* run one of the below commands to clone the repository.
 
      ```
      git clone git@github.com:IBM/model-evaluation-workbench.git
@@ -99,19 +97,19 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
      git clone https://github.com/IBM/model-evaluation-workbench.git
      ```
 
-* Change directory to model-evaluation-workbench
-* run the command
+* Change directory to model-evaluation-workbench.
+* run the below command.
 
     ```
     mvn clean install
     ```
 
-* This should create the file `workbenchModelEval.war` under `target` folder
-* Open the manifest.yml file and update values as explained below
-  * For each classifier, update `NLC_API_KEY_CONFIG_x`, `NLC_CLASSIFIER_ID_CONFIG_x` with API Key and Classifier Id respectively. For first classifier, `x` is replaces with `1` and for second classifier, `x` is replaced with `2`.
-  * Update value against `NLC_URL`
+* This should create the file `workbenchModelEval.war` under `target` folder.
+* Open the manifest.yml file and update values as explained below.
+  * For each classifier, update `NLC_API_KEY_CONFIG_x`, `NLC_CLASSIFIER_ID_CONFIG_x` with API Key and Classifier Id respectively. For first classifier, `x` is replaces with `1` and for second classifier, `x` is replaced with `2` and so on.
+  * Update value against `NLC_URL`. It'll be same for all classifiers.
 
-* Before pushing the application, set the target organization and space using the below command:
+* Before pushing the application, set the target organisation and space using the below command:
 
      ```
      bx target --cf
@@ -210,7 +208,7 @@ The application also shows ROC chart, for both the models, for various parameter
 
 ![](images/Model_Analysis2.png)
 
-In this case we can see that Model 1 fares better compared to model 2. Users can analyse various performance parameters and can take approriate decision.
+In this case we can see that Model 1 fares better compared to model 2. Users can analyse various performance parameters and can take appropriate decision.
 
 
 ## 6. Links
