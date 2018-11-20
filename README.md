@@ -1,7 +1,7 @@
 # Performance Evaluation of Machine Learning Models
 
 Machine learning(ML) models are algorithms that are trained for a particular set of data. E.g. y = mx + c is an algorithm, whereas y = 2x + 3 is a model. You provide input to a model and it gives a response.
-Cognitive systems are not programmed and they perform as per the data on which they are trained on; to sense, predict, infer, and in some ways, think, using artificial intelligence and machine learning algorithms. 
+Cognitive systems are not programmed and they perform as per the data on which they are trained on; to sense, predict, infer, and in some ways, think, using artificial intelligence and machine learning algorithms.
 
 
 In machine learning world numerous models are being created for achieving a specific task. With so many models available, how can one decide which model to use? Which model is performing better? What are the various performance parameters for different models? This code pattern shows you a way to compare Watson Cognitive services models so as to decide which model performs better for a particular set of data. It provides user a platform to configure models, provide input data, execute and prepare performance evaluation statistics such as [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and [ROC curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic).
@@ -14,7 +14,7 @@ After going through this code pattern, you should be able to:
 
 ## Flow
 
-![](Images/Reference_Architecture.png)
+![](images/Reference_Architecture.png)
 
 1. User launches the application.
 2. Cloud authenticates the request and redirects it to the application.
@@ -68,8 +68,8 @@ This code pattern requires at least two NLC models to compare and evaluate. So, 
 
 - Follow the instructions from the given [link](https://console.bluemix.net/docs/services/natural-language-classifier/getting-started.html#natural-language-classifier) to create and train the NLC models.
 - While you are training the first model, Use `NLC_TrainngDataset1.csv` file from `../src/main/data/NLC_TrainngDataset1.csv`.
-- While you are training the second model, Use `NLC_TrainngDataset2.csv` file from `../src/main/data/NLC_TrainngDataset2.csv`. 
-- Copy username, password, and classifier_id/model_id and save it as a text file. These credentials are required in later steps.
+- While you are training the second model, Use `NLC_TrainngDataset2.csv` file from `../src/main/data/NLC_TrainngDataset2.csv`.
+- Copy API Key, Url and classifier_id/model_id and save it in a text file. These credentials are required in later steps.
 
 Now, we have created and trained two models in one NLC service instance.
 
@@ -77,9 +77,6 @@ Now, we have created and trained two models in one NLC service instance.
 ## 3. Deploy the application to IBM Cloud
 
 The application can be deployed on IBM Cloud or locally. Execute Step 3 for deploying on IBM Cloud or Step 4 to deploy locally.
-
-
-### 3.1 Deploy to IBM Cloud
 
 * Maven should be installed. If not installed, you can download maven from [here](https://maven.apache.org/download.cgi). You can refer to the installation instructions [here](https://maven.apache.org/install.html).
 * Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) if not already done
@@ -90,28 +87,37 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
      ```
 
 * open command prompt. Change directory to location where you want to download project files. Go to that directory.
-* run the below command to clone the repository
+* run one of the below commands to clone the repository
 
      ```
      git clone git@github.com:IBM/model-evaluation-workbench.git
      ```
 
+     or
+
+     ```
+     git clone https://github.com/IBM/model-evaluation-workbench.git
+     ```
+
 * Change directory to model-evaluation-workbench
-* run the command 
+* run the command
 
     ```
     mvn clean install
     ```
 
 * This should create the file `workbenchModelEval.war` under `target` folder
-* Open the manifest.yml file and update host to be unique, may be append with your ibm id.
-* Before pushing the application, Set the targeted organization or space using the below command:
+* Open the manifest.yml file and update values as explained below
+  * For each classifier, update `NLC_API_KEY_CONFIG_x`, `NLC_CLASSIFIER_ID_CONFIG_x` with API Key and Classifier Id respectively. For first classifier, `x` is replaces with `1` and for second classifier, `x` is replaced with `2`.
+  * Update value against `NLC_URL`
 
-     ``` 
+* Before pushing the application, set the target organization and space using the below command:
+
+     ```
      bx target --cf
      ```
 
-* Push the application to IBM Cloud using the command: 
+* Push the application to IBM Cloud using the command:
 
      ```
      bx cf push <Application_Name>
@@ -119,32 +125,15 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 
 * The application should get deployed successfully. If not check the logs to determine the error and fix it.
 
-![](Images/bxPush.png)
+![](images/bxPush.png)
 
 - Open IBM Cloud Console, Under Dashboard you should see the above deployed application running. Click on the application.
 
-![](Images/CloudDeployRunningApp.png)
+![](images/CloudDeployRunningApp.png)
 
 - Click on `Visit App URL` link to launch the application.
 
-![](Images/Model_LaunchScreen.png)
-
-### 3.2 Configure the application with the cognitive models
-
-Cognitive Model Evaluation application is now deployed. This application now needs details of the models which it needs to invoke for comparing various models.
-* Go to IBM Cloud Console
-* Click on the application that was deployed in previous step
-* Click on Runtime and then click on Environment variables.
-* Under `User defined` section Click on `Add`
-* Under `Name` enter `NLC_USERNAME_CONFIG_1` and under value pass the username of the first NLC service instance that was created in section [Create NLC service instance](#21-create-nlc-service-instances)
-* Click on Save.
-* Repeat above steps for adding `NLC_PASSWORD_CONFIG_1`, and `NLC_CLASSIFIER_ID_CONFIG_1`
-* Add second NLC service instance details as `NLC_USERNAME_CONFIG_2`, `NLC_PASSWORD_CONFIG_2` and `NLC_CLASSIFIER_ID_CONFIG_2`.
-![](Images/NLC_Service_Configuration1.png)
-
-* Application will restart once we save these environment variables.
-
-Skip Step 4 and Go to Step 5 to Run Application.
+![](images/Model_LaunchScreen.png)
 
 
 ## 4. Deploy the application to local machine
@@ -157,7 +146,7 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
    ```
    git clone git@github.com:IBM/model-evaluation-workbench.git
    ```
-   
+
 * Change directory to model-evaluation-workbench
 
 ### 4.2 Deploy to local machine
@@ -170,21 +159,21 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
 - Setup Liberty server in eclipse as per this [Link](https://www.ibm.com/blogs/bluemix/2016/05/liberty-and-eclipse-create-server-p10/)
 - Application needs to access models to send requests to and get responses from them. Access details of these models have to be provided in server config (server.env) file of liberty server. A sample server.env file snapshot is as in below image. You will need to provide the credentials of the models. You can access NLC credentials as described in section `Create NLC service instance`
 
-![](Images/Local_Serv_Cred.png)
+![](images/Local_Serv_Cred.png)
 
 - Start the Liberty Server
 
-![](Images/LibertySrvStart.png)
+![](images/LibertySrvStart.png)
 
 - Right Click on the Liberty Server created above, Click on the `Add and Remove`
 - Under Add and Remove wizard, from the available section move `ModelEvaluationWorkbench` to configured section.
 - Click on Finish.
 - Model Evaluation application should be started.
-- In Eclipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/. 
+- In Eclipse, under Console tab, you will see default_host link similar to http://localhost:9091/ModelEvaluationWorkbench/.
 
 Click on that link to launch the application.
 
-![](Images/LocalMachineAppStart.png)
+![](images/LocalMachineAppStart.png)
 
 
 ## 5. Run the Application
@@ -194,16 +183,16 @@ We created two models using Natural Language Classifier. Now, we would evaluate 
 - On the application home page click on `NLC` box
 - Under `Attribute` select `Classes`
 
-![](Images/Model_NLC_Evaluate.png)
+![](images/Model_NLC_Evaluate.png)
 
 - Select `MODEL 1` and `MODEL 2` checkboxes
 - Two browse buttons will be available since we have selected two models. Click on each browse button and select the file `src/main/data/NLC_TruthFile.csv` from your git repo. The same file is selected for both browse buttons because this file is the actual results file which needs to be compared with both the model results.
 
-![](Images/Model_Upload_TruthFile.png)
+![](images/Model_Upload_TruthFile.png)
 
 - Click on Evaluate Performance button.
 
-![](Images/Model_Evaluate_Button.png)
+![](images/Model_Evaluate_Button.png)
 
 The application invokes both the NLC services, gets responses and displays various evaluation parameters.
 
@@ -215,11 +204,11 @@ Results of running the two NLC models using the truth file enables the applicati
 
 The below screenshot shows various parameters such as `F1Score Optimization` and `Accuracy Optimization` and also provides `Model Rating`
 
-![](Images/Model_Analysis1.png)
+![](images/Model_Analysis1.png)
 
 The application also shows ROC chart, for both the models, for various parameters
 
-![](Images/Model_Analysis2.png)
+![](images/Model_Analysis2.png)
 
 In this case we can see that Model 1 fares better compared to model 2. Users can analyse various performance parameters and can take approriate decision.
 
