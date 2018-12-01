@@ -35,7 +35,7 @@ After going through this code pattern, you should be able to:
 ## Featured Technologies
 
 * [Java](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/welcome/welcome_javasdk_version.html): The Java programming language is a high-level, object-oriented language. When written, a Java program is compiled into bytecode. The bytecode is interpreted at run time by a platform-specific Java component
-* [Artificial Intilligence](https://www.computerworld.com/article/2906336/emerging-technology/what-is-artificial-intelligence.html): Intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
+* [Artificial Intelligence](https://www.computerworld.com/article/2906336/emerging-technology/what-is-artificial-intelligence.html): Intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
 
 ## Watch The Video
 
@@ -105,7 +105,7 @@ The application can be deployed on IBM Cloud or locally. Execute Step 3 for depl
     ```
 
 * This should create the file `workbenchModelEval.war` under `target` folder.
-* Open the manifest.yml file and update values as explained below.
+* Open the `manifest.yml` file and update values as explained below.
   * For each classifier, update `NLC_API_KEY_CONFIG_x`, `NLC_CLASSIFIER_ID_CONFIG_x` with API Key and Classifier Id respectively. For first classifier, `x` is replaces with `1` and for second classifier, `x` is replaced with `2` and so on.
   * Update value against `NLC_URL`. It'll be same for all classifiers.
 
